@@ -1,0 +1,59 @@
+# ByteIO / Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info
+dist/
+build/
+
+# Virtual Environment
+venv/
+.venv/
+.venv314/
+env/
+
+# 评测生成物（带时间戳的 report_*.json / summary_*.md，由 run_benchmarks.py 产出）
+benchmarks/results/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+# Office 临时锁文件（Word/PPT 打开时生成，形如 ~$xxx.docx）
+~$*
+
+# Cloned reference repos (not part of this project)
+git/
+
+# Project Specific
+data/
+logs/
+*.log
+*.json # If logs or temporary data
+!.gitkeep
+!docs/evidence/**/*.json
+tmp/
+.pytest-tmp-*/
+.pnpm-store/
+
+# Milvus / Docker related if any local state
+milvus/
+*.db
+
+# Local sensitive mapping (never commit)
+security_index.json
+
+# Local secrets — never commit (see .env.example for the template)
+.env
+.env.*
+!.env.example
+
+# Secret scanning reports
+secrets-scan-report.txt

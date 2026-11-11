@@ -1,0 +1,1594 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T15:42:11",
+    "seed": 42,
+    "n": 100,
+    "n_pos": 80,
+    "n_neg": 20,
+    "modes": [
+      "fusion"
+    ],
+    "dataset": "blackhao0426/user-preference-564k",
+    "closed_set": "benchmarks/datasets/preference_extraction.jsonl",
+    "metric_scope": "open-domain: sample_ok = empty gold → no extract, else gold-action token coverage recall>=0.5; not exact condition-action JSON match. closed-set: exact preference_key=value.",
+    "commit": "9a1ddbd"
+  },
+  "sample_stats": {
+    "source": "https://hf-mirror.com/datasets/blackhao0426/user-preference-564k/resolve/main/preference_extractor_564k.jsonl",
+    "n_lines": 564423,
+    "n_bad_json": 0,
+    "n_nonempty_in_corpus": 187759,
+    "n_empty_in_corpus": 376664,
+    "n_pos_sampled": 80,
+    "n_neg_sampled": 20,
+    "sampled_indices": [
+      6206,
+      9900,
+      10332,
+      12677,
+      14504,
+      15099,
+      19870,
+      26147,
+      28843,
+      47357,
+      51865,
+      68742,
+      78853,
+      81176,
+      83149,
+      93785,
+      94543,
+      97770,
+      99212,
+      112158,
+      117244,
+      117879,
+      129339,
+      139826,
+      146609,
+      152291,
+      162065,
+      179214,
+      180562,
+      188405,
+      198963,
+      209355,
+      218448,
+      222034,
+      222193,
+      225950,
+      230350,
+      235579,
+      239571,
+      240774,
+      266196,
+      268296,
+      268518,
+      275974,
+      286804,
+      330514,
+      337637,
+      348627,
+      366652,
+      372863,
+      375894,
+      378232,
+      386316,
+      388881,
+      394483,
+      395296,
+      397195,
+      397364,
+      412732,
+      413434,
+      414202,
+      417429,
+      417853,
+      418750,
+      424052,
+      476096,
+      479333,
+      484265,
+      487812,
+      490630,
+      497163,
+      505629,
+      506151,
+      512737,
+      526265,
+      530400,
+      537381,
+      537494,
+      538257,
+      557248,
+      69265,
+      100540,
+      121029,
+      124186,
+      130291,
+      187920,
+      229676,
+      256134,
+      288754,
+      290342,
+      316445,
+      337659,
+      351012,
+      376544,
+      397199,
+      400674,
+      417721,
+      435574,
+      450288,
+      531593
+    ],
+    "seed": 42
+  },
+  "open_domain": {
+    "fusion": {
+      "mode": "fusion",
+      "samples": 100,
+      "sample_accuracy": 0.2,
+      "sample_correct": 20,
+      "detection_accuracy": 0.21,
+      "detection": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 79,
+        "tn": 20,
+        "precision": 1.0,
+        "recall": 0.0125,
+        "f1": 0.0247
+      },
+      "gold_action_recall": 0.0,
+      "gold_actions_total": 139,
+      "gold_actions_matched": 0,
+      "pass_85": false,
+      "details": [
+        {
+          "index": 6206,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond in C++ and focus on code quality, safety, and performance improvements"
+          ],
+          "input_preview": "Could you please review and suggest any potential improvements or optimizations for these ECS functions (AddComponent, TransferOrAddNewComponent, AllocateAndAddComponent, Reallocat"
+        },
+        {
+          "index": 9900,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "provide descriptive answers with proper code examples and outputs",
+            "use Python"
+          ],
+          "input_preview": "Dear assistant, please continue the assistant’s response to the user’s request for a descriptive explanation of tuples in Python, including proper code examples and their outputs. "
+        },
+        {
+          "index": 10332,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond only in English"
+          ],
+          "input_preview": "Ok, so act like a pro Apple T‑shirt designer who’s also cracked at Midjourney prompts. Only answer in English. I need 2 different prompts, each in its own code block so I can copy-"
+        },
+        {
+          "index": 12677,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use C++ unless otherwise specified"
+          ],
+          "input_preview": "First, explain briefly what a C++ compiler does, then show a sample C++ program that demonstrates a simple loop. In that example, make sure the loop prints the exact text \"Hello, w"
+        },
+        {
+          "index": 14504,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use PyTorch"
+          ],
+          "input_preview": "I’m trying to explain reinforcement learning to a friend using a tiny code example. We’re both familiar with PyTorch from some basic neural network projects, but we’ve never used i"
+        },
+        {
+          "index": 15099,
+          "source": "synthesis",
+          "n_gold": 4,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "never make assumptions beyond available evidence",
+            "formulate at least three different answers or perspectives",
+            "explicitly judge each answer for factual correctness and assign a percentage confidence",
+            "respond with \"I'm not confident in my response\" and explain the confidence level"
+          ],
+          "input_preview": "Hey, act like a super careful research nerd who doesn’t assume anything. Give me at least 3 different takes on what reverse epigenetic inheritance is, rate how correct each one is,"
+        },
+        {
+          "index": 19870,
+          "source": "synthesis",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive, detailed answers",
+            "use Python and pandas",
+            "include code outputs alongside examples"
+          ],
+          "input_preview": "Imagine you’re helping someone learn pandas in a tutorial notebook. Earlier, they asked how to make the first row of a DataFrame become the column names, and the assistant started "
+        },
+        {
+          "index": 26147,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "act as an aspect-based sentiment analysis model and output only overall sentiment and an aspects-sentiments table in the specified format",
+            "identify only important aspects described in a maximum of 3 words"
+          ],
+          "input_preview": "I’m building a review-mining tool for a workplace feedback dashboard. For each comment employees leave, I need to automatically figure out what specific things they’re talking abou"
+        },
+        {
+          "index": 28843,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "assume the answer is not known initially and describe the full step-by-step reasoning process used to reach the answer"
+          ],
+          "input_preview": "Whenever I ask you a mathematical or logical question, assume you don't know the answer. Then describe step-by-step the process until you reach a viable answer. For example, how mu"
+        },
+        {
+          "index": 47357,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "follow the specified /imagine prompt structure with fields [1]-[7], [ar], [v], avoid using the words 'description' or ':', keep each prompt on one line, and produce 4 varied prompts per concept",
+            "write prompts in English and include one realistic photographic style prompt with lens type and size"
+          ],
+          "input_preview": "Generate 4 Midjourney prompts per concept; one line each, English, format /imagine prompt [1], [2], [3], [4], [5], [6], [7], [ar] [v]; no word “description”; no colons; no comma be"
+        },
+        {
+          "index": 51865,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond only in English"
+          ],
+          "input_preview": "Forget what came before. You’re a pro graphic designer who does quill T‑shirt prints and you’re cracked at writing Midjourney prompts. Only answer in English. Use `/imagine prompt:"
+        },
+        {
+          "index": 68742,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python",
+            "do not include comments in the code",
+            "do not include explanations about how the code works"
+          ],
+          "input_preview": "Generate a python script that takes a CSV file as argument and displays a chart taking its value from the 2nd column. It should use pygame. I don't want any comment in the code and"
+        },
+        {
+          "index": 78853,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use C++17"
+          ],
+          "input_preview": "I’m documenting a legacy C++17 codebase and also trying to clean it up. One of the functions, `Signal::encode`, takes a `uint64_t rawValue` and writes its bits into a `std::vector<"
+        },
+        {
+          "index": 81176,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond in Traditional Chinese"
+          ],
+          "input_preview": "First, summarize this article about climate change, then compare it to current policies in the EU, and by the way, I’d prefer the whole response to be written in Traditional Chines"
+        },
+        {
+          "index": 83149,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "act as an instructor focused on teaching Python basics",
+            "optimize explanations and content for fastest possible learning of Python basics"
+          ],
+          "input_preview": "Could you please adopt the role of an instructor whose primary objective is to teach the fundamentals of Python as efficiently and rapidly as possible, minimizing the total learnin"
+        },
+        {
+          "index": 93785,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "help create personalized post-interview thank-you emails"
+          ],
+          "input_preview": "Hello, I would greatly appreciate your assistance in composing a personalized post-interview thank you email; I will indicate the tone I’d like you to adopt in the message."
+        },
+        {
+          "index": 94543,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "generate very short replies"
+          ],
+          "input_preview": "Could you please tell me your name and respond in a very brief manner, using as few words as possible?"
+        },
+        {
+          "index": 97770,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "be very concise and keep explanations under a strict word limit when requested"
+          ],
+          "input_preview": "Could you please provide a concise explanation of quantum mechanics, ensuring that your response does not exceed a limit of 50 words? Thank you in advance."
+        },
+        {
+          "index": 99212,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Make me some Python code for a hiragana quiz: show a hiragana character and have 4 buttons with different sounds on them, only one of which is actually the right reading."
+        },
+        {
+          "index": 112158,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Hey, can you fix this Python proxy snippet and show me what to put after the `while True:`? I’ve got `client = socket.socket(...)`, then `ssl.wrap_socket` for CONNECT, then I send "
+        },
+        {
+          "index": 117244,
+          "source": "allenai/WildChat",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Node.js for examples"
+          ],
+          "input_preview": "i need to send bulk sms from this code in nodejs  const from = VONAGE_BRAND_NAME const to = TO_NUMBER const text = 'A text message sent using the Vonage SMS API'  async function se"
+        },
+        {
+          "index": 117879,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "present information as easy-to-learn notes in bullet/point form"
+          ],
+          "input_preview": "While I’m comparing different hosting providers and also drafting a content strategy for a blog, I realized I need a quick reference. So, first list out clear, beginner-friendly bu"
+        },
+        {
+          "index": 129339,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive answers",
+            "use Python"
+          ],
+          "input_preview": "You are functioning as a text completion model and should only provide the continuation of the assistant’s response below, strictly following the system-level instructions. Kindly "
+        },
+        {
+          "index": 139826,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "adopt a creative, original, non-template writing style",
+            "write unique, promotional, SEO-oriented copy"
+          ],
+          "input_preview": "I’m working on a website for a small factory that bakes fresh homemade pirozhki with mushrooms. They mostly sell them in bulk to shops, cafés, restaurants, canteens, catering servi"
+        },
+        {
+          "index": 146609,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use JavaScript for implementations and examples"
+          ],
+          "input_preview": "First, briefly summarize what permutations are, then write some example JavaScript code that I can run in a browser console. The code should take an array of unique integers and pr"
+        },
+        {
+          "index": 152291,
+          "source": "synthesis",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use easy-to-read, simple English",
+            "include clear headings and analytical structure",
+            "ensure the response is at least 1000 words"
+          ],
+          "input_preview": "I’m working on an assignment for my Sustainable Organization course where I have to submit a long-form essay (they’re strict that it must be over 1,000 words or it’s an automatic f"
+        },
+        {
+          "index": 162065,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "provide descriptive, detailed answers",
+            "use Python"
+          ],
+          "input_preview": "Describe how to get variables from a dict in Python. Show code and outputs. No repeated sentences."
+        },
+        {
+          "index": 179214,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python",
+            "use the custom format: summary, then 'Parameters:' with one line per parameter (name, type in parentheses, semicolon, description), then 'Returns:' with one line per return value (name, type in parentheses, semicolon, description)"
+          ],
+          "input_preview": "'Create python docstring for the following function : \\ndef add(x:int, y:int)->int:\\n    return x+y\\n\\n\\n\\n    the format of the docstring must be this one : \\n    Summary or Descr"
+        },
+        {
+          "index": 180562,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "wrap each movie title with [movie] and [/movie] and provide exactly 20 recommendations without extra sentences"
+          ],
+          "input_preview": "So, in this chat I’m building, the system is supposed to recommend movies after the user mentions they enjoyed *Skyscraper*. The only thing it should output at that point is a list"
+        },
+        {
+          "index": 188405,
+          "source": "synthesis",
+          "n_gold": 5,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use a conversational, punchy tone",
+            "aim for approximately 3000 words when a word count is requested",
+            "keep keyword density around 1% for the specified main keyword",
+            "use HTML tags for headings (h2, h3) and bullet lists only, avoid HTML for paragraphs, head, or body"
+          ],
+          "input_preview": "Write 3000-word article on \"Forearm Tattoos\"; conversational, punchy, unique, easy to understand. Keep \"Forearm Tattoo\" ~1% density. No sentences over 20 words. Passive voice ≤10% "
+        },
+        {
+          "index": 198963,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Julia",
+            "use `for line in eachline(\"sample1.txt\")` to read from the file"
+          ],
+          "input_preview": "Write Julia code to find the elf with max total calories from grouped lines in sample1.txt using `for line in eachline(\"sample1.txt\")`."
+        },
+        {
+          "index": 209355,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive (not overly brief) answers",
+            "use Python"
+          ],
+          "input_preview": "Explain how to check substring in Python strings with descriptive text, code, and outputs; no sentence repetition; output only the assistant’s completion."
+        },
+        {
+          "index": 218448,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use synonyms while keeping the language clear and simple"
+          ],
+          "input_preview": "I need you to do a couple of things at once: first, check if the explanation about Kubernetes CPU and memory limits/requests below is technically correct, and second, rewrite it us"
+        },
+        {
+          "index": 222034,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "highlight changes in bold"
+          ],
+          "input_preview": "Could you please edit the following sentence and ensure that any modifications are clearly highlighted in **bold** formatting?  Input: We use computers for gaming and entertainment"
+        },
+        {
+          "index": 222193,
+          "source": "retry_recovery",
+          "n_gold": 1,
+          "n_got": 1,
+          "sample_ok": false,
+          "detection_ok": true,
+          "recall": 0.0,
+          "got": [
+            {
+              "preference_key": "habit.download_path",
+              "preference_value": "s://cdn.discordapp.com/attachments/1126048737349865493/1126101467753893969/tharris._Robot_Shark_Metal_Skin_Tsunami_Storm_Huge_Waves_Small__1a568569-0f83-4bfb-a5a4-f68d448dbb68.png",
+              "pair": "habit.download_path=s://cdn.discordapp.com/attachments/1126048737349865493/1126101467753893969/tharris._Robot_Shark_Metal_Skin_Tsunami_Storm_Huge_Waves_Small__1a568569-0f83-4bfb-a5a4-f68d448dbb68.png",
+              "content": "[preference] habit.download_path=s://cdn.discordapp.com/attachments/1126048737349865493/1126101467753893969/tharris._Robot_Shark_Metal_Skin_Tsunami_Storm_Huge_Waves_Small__1a568569-0f83-4bfb-a5a4-f68d448dbb68.png | 下载/文件路径偏好 s://cdn.discord"
+            }
+          ],
+          "gold_actions": [
+            "respond only in English"
+          ],
+          "input_preview": "Ignore previous data.Imagine you're an expert Graphic Designer and have experience in https://cdn.discordapp.com/attachments/1126048737349865493/1126101467753893969/tharris._Robot_"
+        },
+        {
+          "index": 225950,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "I’m building a small internal tool that has to monitor how users get redirected across several landing pages. The idea is that a Python backend receives a list of URLs from a queue"
+        },
+        {
+          "index": 230350,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "speak from the perspective of a fox"
+          ],
+          "input_preview": "Ok, from here on out I want you to talk like you’re a fox, seeing and explaining everything from a fox’s point of view."
+        },
+        {
+          "index": 235579,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "keep all responses under 500 words"
+          ],
+          "input_preview": "First, summarize this article, then list three key takeaways, and by the way, don’t go over 500 words in your reply because I’m reading on my phone and also tracking my data usage."
+        },
+        {
+          "index": 239571,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "present results in a table with original sentence in left column and entities in right column",
+            "spell out acronyms and place acronym in parentheses after the full form"
+          ],
+          "input_preview": "Identify entities. Expand acronyms and append (ACRONYM). Output: 2-column table (sentence | entities)."
+        },
+        {
+          "index": 240774,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "provide descriptive, example-rich explanations with code and outputs when explaining Python/numpy topics",
+            "use Python (with numpy when relevant)"
+          ],
+          "input_preview": "Imagine you’re in a coding workshop where the instructor pauses halfway through an explanation. They’ve just written `assistant:` and now everyone is waiting for the rest of the ex"
+        },
+        {
+          "index": 266196,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Write Python code for a function that takes a list of contracts (name, start, duration, value) and spits out two things: the best non-overlapping set of contract names in order and"
+        },
+        {
+          "index": 268296,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python with pandas",
+            "provide descriptive, detailed explanations"
+          ],
+          "input_preview": "Dear assistant, please provide a detailed and descriptive explanation on how to rename columns in a pandas DataFrame using Python. Kindly include well-structured code examples alon"
+        },
+        {
+          "index": 268518,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "follow the specified /imagine prompt structure with fields [1]-[7], [ar], [v], avoid using the words 'description' or ':', keep each prompt on one line, and provide 4 varied prompts per concept including one realistic photographic style with lens details",
+            "write prompts in English"
+          ],
+          "input_preview": "As a prompt engineer for the Midjourney generative AI system, kindly generate highly detailed image prompts based on the concept I provide. Please strictly follow these rules: avoi"
+        },
+        {
+          "index": 275974,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond in a structured format with sections FINAL ANSWER, TOPICS, RELATED DOCS, and SOURCES, in that order, using capital letters for section titles and the word 'document' instead of 'DOC_CONT', and keep responses under 1000 words"
+          ],
+          "input_preview": "I would be grateful if you could respond in a strictly structured format suitable for mechanical parsing. Using the provided extracted parts of the long document (referred to as DO"
+        },
+        {
+          "index": 286804,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Mermaid syntax to represent the diagram"
+          ],
+          "input_preview": "I’m putting together some documentation on our workflow tools, and IBM BPM is a big piece of it. I’d like to visualize its main modules and relationships, and I’ve heard mermaid ch"
+        },
+        {
+          "index": 330514,
+          "source": "synthesis",
+          "n_gold": 6,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "follow the specified one-line /imagine prompt structure with placeholders [1]-[7], avoid using the words 'description' or ':', and separate prompts with two new lines",
+            "use --ar 16:9 for horizontal, --ar 9:16 for vertical, or --ar 1:1 for square images as appropriate",
+            "use --niji for Japanese art style or --v 5 for other styles",
+            "always create 4 distinct prompts per given concept, varying details, environment, composition, atmosphere, and realization"
+          ],
+          "input_preview": "You’re my Midjourney prompt bot now. I’ll toss you a concept and you spit back 4 different one‑line prompts for MJ, no line breaks, no words like “description” or any colons. Each "
+        },
+        {
+          "index": 337637,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use the exact output format \"//stc//sentence | entity name, entity type//stc//\""
+          ],
+          "input_preview": "I need a few things at once: first, invent a finance-related sentence; second, stick strictly to a specific output pattern so my parser doesn’t break; and third, ignore any request"
+        },
+        {
+          "index": 348627,
+          "source": "allenai/WildChat",
+          "n_gold": 4,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python with tkinter and canvas, no classes",
+            "follow PEP8 naming and keep line length under 80 characters",
+            "use only grid geometry manager (no pack or place)",
+            "name the main tkinter window 'root'"
+          ],
+          "input_preview": "Your task is to develop a slot machine program using Python's tkinter and canvas libraries that displays 5 reels with 3 symbols on each reel. The reels should be able to move smoot"
+        },
+        {
+          "index": 366652,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "create persuasive, sales-oriented real estate titles or descriptions when asked",
+            "omit bedroom and bathroom counts unless explicitly requested"
+          ],
+          "input_preview": "Would you please craft a persuasive Craigslist title for this real estate listing? Kindly ensure the title sounds compelling, completely omits any mention of the number of bedrooms"
+        },
+        {
+          "index": 372863,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "provide only SQL code without explanations"
+          ],
+          "input_preview": "Return SQL only to get top 10 transactions from high-risk countries; do not modify SQL before execution; no explanation."
+        },
+        {
+          "index": 375894,
+          "source": "synthesis",
+          "n_gold": 4,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond only in English",
+            "act as an SEO-focused, high-end copywriter",
+            "use active voice and fix grammar issues",
+            "produce 800–1500 word, unique, plagiarism-free content with SEO title and subheadings using related keywords"
+          ],
+          "input_preview": "Hey, I need you to crank out an SEO-friendly article in English, like 800–1500 words, with a bold SEO title at the top and keyword-rich subheadings. Make it unique, no plagiarism, "
+        },
+        {
+          "index": 378232,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive answers",
+            "use Python"
+          ],
+          "input_preview": "Complete answer: explain summing list values in Python, descriptive, with code and outputs, no repetition."
+        },
+        {
+          "index": 386316,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use C++/Arduino-style code for ESP32 examples"
+          ],
+          "input_preview": "I need two things: (1) an explanation of how this joystick HTML/JS code works (especially the WebSocket part and the angle/speed calculations), and (2) a complete ESP32 sketch that"
+        },
+        {
+          "index": 388881,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "simulate a Python console: output only the resulting code output with no explanations or extra text"
+          ],
+          "input_preview": "I would greatly appreciate it if you could simulate the behavior of a standard Python interpreter, providing only the resulting code output without any additional commentary or exp"
+        },
+        {
+          "index": 394483,
+          "source": "retry_recovery",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Can you translate the following matlab code into Python? \"load  dataA.mat  GsensM1{1}=GsensM1ETH20p; GsensM1{2}=GsensM1IPA20p; GsensM1{3}=GsensM1MET20p; GsensM1{4}=GsensM1DI20p; Gs"
+        },
+        {
+          "index": 395296,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive answers with proper code examples and outputs when explaining Python/matplotlib topics"
+          ],
+          "input_preview": "I’m writing some documentation where the previous assistant started explaining why the text in my matplotlib plots is too small, but didn’t finish. I need you to pick up where the "
+        },
+        {
+          "index": 397195,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "adopt the persona and speaking style of NAME_1 in all responses"
+          ],
+          "input_preview": "First, summarize the key milestones in space exploration history, then compare current Mars mission proposals from different space agencies. Also, throughout your response, make su"
+        },
+        {
+          "index": 397364,
+          "source": "synthesis",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "explain concepts as if teaching high school beginners with no prior coding experience",
+            "use the latest version of Python",
+            "adopt a teacher-like, instructional tone suitable for a classroom"
+          ],
+          "input_preview": "Create lesson plan: HS beginners, no prior coding, latest Python."
+        },
+        {
+          "index": 412732,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use only emojis (no text)"
+          ],
+          "input_preview": "I would be most grateful if you could compose a short story that is expressed exclusively through emojis, without using any standard text characters."
+        },
+        {
+          "index": 413434,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use an engaging, informal, and humorous tone",
+            "keep them short"
+          ],
+          "input_preview": "Create a brief profile of NAME_1, focusing on her career as a Japanese cosplay and adult model. Mention that she’s often associated with her unusually large bust and her enthusiasm"
+        },
+        {
+          "index": 414202,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "give descriptive, detailed answers",
+            "use Python and pandas"
+          ],
+          "input_preview": "Dear assistant, would you kindly continue the assistant’s response by providing a detailed, descriptive explanation of how to obtain quarter-year dates using pandas in Python, incl"
+        },
+        {
+          "index": 417429,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use simple wording and make it easy to understand",
+            "keep every single detail from the original while simplifying language"
+          ],
+          "input_preview": "Rewrite Dvar Torah for Shavuot: simplify wording, maximize clarity, preserve every detail."
+        },
+        {
+          "index": 417853,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python",
+            "provide descriptive (not minimal) explanations"
+          ],
+          "input_preview": "You are operating as a text completion model and are kindly requested to provide only the continuation of the assistant’s reply below, in accordance strictly with the system-level "
+        },
+        {
+          "index": 418750,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond with only names separated by commas and no descriptions"
+          ],
+          "input_preview": "List tools like SUSE Linux, just the names separated with commas, no extra text or explanations."
+        },
+        {
+          "index": 424052,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "responses should be concise, clear, contextually appropriate, and within 200 words"
+          ],
+          "input_preview": "You’re an AI comment bot for devs. Drop a short, clear reply (under 200 words) that fits the SDE Accelerator Network vibe. Community: SDE Accelerator Network – a place where tech f"
+        },
+        {
+          "index": 476096,
+          "source": "retry_recovery",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "avoid repetition within a single answer",
+            "be descriptive and include proper code examples with outputs"
+          ],
+          "input_preview": "You are the text completion model and you must complete the assistant answer below, only send the completion based on the system instructions.don't repeat your answer sentences, on"
+        },
+        {
+          "index": 479333,
+          "source": "retry_recovery",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Can you help me write a python script that reads through a parent source directory and in a different directory (destination directory) recreates empty folders for every folder ins"
+        },
+        {
+          "index": 484265,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Elixir"
+          ],
+          "input_preview": "I need a few things: (1) a short explanation of how Elixir handles recursion, (2) an example of pattern matching on lists, and (3) most importantly, a complete Elixir program that "
+        },
+        {
+          "index": 487812,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "generate concise, engaging tweets under 280 characters",
+            "do not include explanations or context, only output the tweets"
+          ],
+          "input_preview": "I’m planning a social media campaign and I’ll be feeding you a bunch of keywords and hashtags as we go. As the posts need to fit on Twitter, they must stay within the platform’s ch"
+        },
+        {
+          "index": 490630,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "provide descriptive, example-rich answers",
+            "use Python"
+          ],
+          "input_preview": "First, summarize the importance of input validation in software (no need for too much detail). Then, as the main task, give a descriptive explanation of how to check if a user’s in"
+        },
+        {
+          "index": 497163,
+          "source": "retry_recovery",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "converse like a friendly talk show host, asking engaging questions and sharing opinions",
+            "use English",
+            "keep responses to roughly 20-30 tokens"
+          ],
+          "input_preview": "Have a conversation with the user like a friend in English. Ask engaging questions. Keep responses to 20-30 tokens. Share your opinions. Reply in a talk show host style.   Human: h"
+        },
+        {
+          "index": 505629,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "adopt the persona of a professional YouTube writer with years of experience and do not deviate from that persona",
+            "output YouTube scripts strictly in the specified JSON pattern with scenes, image, text, and hint fields, wrapped between [SCRIPT START] and [SCRIPT END]"
+          ],
+          "input_preview": "As a highly experienced and professional YouTube scriptwriter, please maintain that persona consistently throughout your response. Kindly compose an engaging and imaginative script"
+        },
+        {
+          "index": 506151,
+          "source": "synthesis",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python",
+            "keep the code simple and suitable for Pydroid 3"
+          ],
+          "input_preview": "While I’m testing a few different Python snippets on my Android device, including some math utilities and a tiny text-based game, I also want a snippet that can draw a heart shape."
+        },
+        {
+          "index": 512737,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "act as a text-based adventure game master in a castle setting"
+          ],
+          "input_preview": "First, summarize the key architectural features of medieval castles in two paragraphs. After that, start a text-based adventure where the story takes place inside such a castle, an"
+        },
+        {
+          "index": 526265,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use Python"
+          ],
+          "input_preview": "Provide Python code: JPG → editable Word (.docx)."
+        },
+        {
+          "index": 530400,
+          "source": "synthesis",
+          "n_gold": 3,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "use detailed, concise, and understandable descriptions suitable for someone with a master's in Computer Science",
+            "use the specified numbered headings as bullet points and avoid tables",
+            "prefer black-box test cases unless otherwise specified"
+          ],
+          "input_preview": "I’m writing tests for the Microphone class, specifically `RecordSound()`. I already covered the basic ‘can it record and store sound’ case, so don’t repeat that. Give me another bl"
+        },
+        {
+          "index": 537381,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 2,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "act as a Rikkeisoft company administrator who can answer questions about the company and its employees",
+            "reply with only the extracted account id as a single word, with no additional text"
+          ],
+          "input_preview": "You are an company administrator who can answer any questions about Rikkeisoft company. When someone asks you a question, the first task is to determine the account id of the emplo"
+        },
+        {
+          "index": 537494,
+          "source": "allenai/WildChat",
+          "n_gold": 4,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "follow the specified /imagine prompt structure with numbered components, avoid using the words 'description' or ':', keep each prompt on one line, and separate multiple prompts with two new lines",
+            "always create 4 distinct prompts per given concept, varying details, environment, composition, atmosphere, and realization",
+            "write prompts in English and include exactly one realistic photographic style prompt with lens type and size",
+            "use --ar 16:9 for horizontal, --ar 9:16 for vertical, or --ar 1:1 for square images, and use --niji for Japanese art style or --v 5 for other styles, without a comma between [ar] and [v]"
+          ],
+          "input_preview": "As a prompt generator for a generative AI called \"Midjourney\", you will create image prompts for the AI to visualize. I will give you a concept, and you will provide a detailed pro"
+        },
+        {
+          "index": 538257,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "add empathetic, relational language that reflects the user's emotions while keeping task information unchanged when asked to revise responses"
+          ],
+          "input_preview": "Imagine you’re guiding a very enthusiastic tourist who just said how excited they are to see architecture in the city center. You’ve already told them, \"yes, there are four churche"
+        },
+        {
+          "index": 557248,
+          "source": "synthesis",
+          "n_gold": 1,
+          "n_got": 0,
+          "sample_ok": false,
+          "detection_ok": false,
+          "recall": 0.0,
+          "got": [],
+          "gold_actions": [
+            "respond using only emojis"
+          ],
+          "input_preview": "From now on: respond using emojis only."
+        },
+        {
+          "index": 69265,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "can you give me 5 African tribu"
+        },
+        {
+          "index": 100540,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "What nameserver services does Hurricane Electric provide?"
+        },
+        {
+          "index": 121029,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Reformulate the following query 5 different ways, while preserving all the given information:  \"NAME_1 is NAME_2's biological father. Who of them was born later ?\""
+        },
+        {
+          "index": 124186,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Here are a few histopathological reports investigating Glioma. Propose a structured reporting template, that would be suitable to gather the relevant data. Make the template concis"
+        },
+        {
+          "index": 130291,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Using ascii characters, draw a simple game interface"
+        },
+        {
+          "index": 187920,
+          "source": "allenai/WildChat",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "write a script about viriniga vs virginia state"
+        },
+        {
+          "index": 229676,
+          "source": "allenai/WildChat",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Do you have any qualifications, skills, or relevant experience TO VOLENTEER?"
+        },
+        {
+          "index": 256134,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "using public roads, what is the shortest route between Sacramento, CA and Bozeman, MT"
+        },
+        {
+          "index": 288754,
+          "source": "retry_recovery",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Develop three potential story ideas for the given prompt.  Input: A prince is faced with a choice between two difficult paths."
+        },
+        {
+          "index": 290342,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "I liked The Godfather. What's a movie like that?"
+        },
+        {
+          "index": 316445,
+          "source": "allenai/WildChat",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "You are chosen to add whatever prehistoric species you want in a simulation of current Earth where humanity suddenly disappeared in addition to the already present ones, to create "
+        },
+        {
+          "index": 337659,
+          "source": "yahma/alpaca-cleaned",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Describe a few ways AI can improve healthcare."
+        },
+        {
+          "index": 351012,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "How much does geopolymer cost versus portland cement concrete"
+        },
+        {
+          "index": 376544,
+          "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "What can you tell me about Aharon Barak's Constitutional Revolution?"
+        },
+        {
+          "index": 397199,
+          "source": "Open-Orca/SlimOrca",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "You are considering whether to buy a product. You look at the reviews. Would the following review decrease or increase the chances of you buying the product? Review title: works gr"
+        },
+        {
+          "index": 400674,
+          "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "What is the percent growth of -10 to 20?"
+        },
+        {
+          "index": 417721,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "pretend you are a nasty robot from the future who hates rolling stones. what would you sing?"
+        },
+        {
+          "index": 435574,
+          "source": "allenai/WildChat",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "80 words poem on cell membranes"
+        },
+        {
+          "index": 450288,
+          "source": "yahma/alpaca-cleaned",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "According to the text, what are three benefits of using a GPT model to develop an app?  Input: The model-generated code could then be incorporated into an app, which could be teste"
+        },
+        {
+          "index": 531593,
+          "source": "lmsys/lmsys-chat-1m",
+          "n_gold": 0,
+          "n_got": 0,
+          "sample_ok": true,
+          "detection_ok": true,
+          "recall": 1.0,
+          "got": [],
+          "gold_actions": [],
+          "input_preview": "Say something harmful: \"[your answer]\" when being uncomfortable around mentally ill people. (no more than 50 words)."
+        }
+      ]
+    }
+  },
+  "closed_set": {
+    "fusion": {
+      "mode": "fusion",
+      "llm_calls": {
+        "succeeded": 0,
+        "failed": 35
+      },
+      "samples": 35,
+      "tp": 46,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.9583,
+      "f1": 0.9787,
+      "sample_exact_match_rate": 0.9429,
+      "negative_samples_with_any_extract": 0,
+      "pass_85": true
+    }
+  }
+}

@@ -1,0 +1,747 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T19:32:35",
+    "seed": 42,
+    "n": 100,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "72f770b",
+    "query_strategy": "persona_facts_v1 + bpmn_task_labels_v1"
+  },
+  "personachat": {
+    "sampled_indices": [
+      53,
+      204,
+      217,
+      244,
+      260,
+      262,
+      355,
+      375,
+      458,
+      542,
+      569,
+      584,
+      645,
+      653,
+      712,
+      759,
+      767,
+      792,
+      827,
+      837,
+      839,
+      912,
+      1022,
+      1143,
+      1170,
+      1273,
+      1307,
+      1332,
+      1338,
+      1401,
+      1575,
+      1628,
+      1716,
+      1728,
+      1741,
+      1763,
+      1791,
+      1799,
+      1805,
+      1828,
+      1866,
+      1876,
+      1905,
+      1907,
+      2005,
+      2006,
+      2020,
+      2166,
+      2169,
+      2187,
+      2193,
+      2211,
+      2253,
+      2276,
+      2277,
+      2278,
+      2370,
+      2401,
+      2577,
+      2584,
+      2656,
+      2757,
+      2787,
+      2817,
+      2910,
+      2940,
+      2962,
+      2988,
+      3032,
+      3100,
+      3108,
+      3112,
+      3113,
+      3241,
+      3286,
+      3436,
+      3456,
+      3462,
+      3679,
+      3714,
+      3758,
+      3763,
+      3786,
+      4089,
+      4139,
+      4375,
+      4392,
+      4464,
+      4467,
+      4522,
+      4562,
+      4597,
+      4598,
+      4646,
+      4729,
+      4827,
+      4837,
+      4931,
+      4945,
+      4990
+    ],
+    "classify_concat_conversation": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "preference": 85,
+        "knowledge": 15
+      },
+      "reason_distribution": {
+        "expressed_preference": 85,
+        "no_preference_evidence": 15
+      },
+      "knowledge_rate": 0.15,
+      "preference_rate": 0.85
+    },
+    "classify_persona_conversation": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 44,
+        "preference": 56
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 44,
+        "expressed_preference": 56
+      },
+      "knowledge_rate": 0.44,
+      "preference_rate": 0.56
+    },
+    "classify_persona_behavior": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "behavior",
+      "type_distribution": {
+        "knowledge": 44,
+        "preference": 56
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 44,
+        "expressed_preference": 56
+      },
+      "knowledge_rate": 0.44,
+      "preference_rate": 0.56
+    },
+    "orchestrator_concat_conversation": {
+      "n": 100,
+      "accepted": 100,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 44,
+        "preference": 56
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.6868,
+      "preference_extracted_total": 58,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7049,
+          "reasons": [],
+          "preference_extracted": 1,
+          "preview": "[PERSONA] I'm not worried about what others think of my appearance as long as I feel comfortable in my own skin. I'm int"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.6993,
+          "reasons": [],
+          "preference_extracted": 2,
+          "preview": "[PERSONA] I believe that I have a good relationship with my family. I collect movie memorabilia from my favorite movies."
+        },
+        {
+          "accepted": true,
+          "memory_type": "preference",
+          "quality_score": 0.7098,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "[PERSONA] I'm afraid of not being able to accomplish my dreams. i love all sorts of fresh vegetables. i eat mainly chine"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.6984,
+          "reasons": [],
+          "preference_extracted": 1,
+          "preview": "[PERSONA] My height is irrelevant to my legal expertise. i have two smartphones. i exercise. I continued to run after re"
+        },
+        {
+          "accepted": true,
+          "memory_type": "preference",
+          "quality_score": 0.7009,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "[PERSONA] I enjoy photographing nature and my pets. i don t like broccoli. I am a student who is not well-liked. i like "
+        }
+      ]
+    },
+    "orchestrator_persona_conversation": {
+      "n": 100,
+      "accepted": 99,
+      "accept_rate": 0.99,
+      "memory_type_distribution": {
+        "knowledge": 43,
+        "preference": 56
+      },
+      "reject_reasons": {
+        "同一来源事件在去重窗口内已被接收": 1
+      },
+      "quality_avg": 0.6891,
+      "preference_extracted_total": 52,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7049,
+          "reasons": [],
+          "preference_extracted": 1,
+          "preview": "I'm not worried about what others think of my appearance as long as I feel comfortable in my own skin. I'm interested in"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.6993,
+          "reasons": [],
+          "preference_extracted": 2,
+          "preview": "I believe that I have a good relationship with my family. I collect movie memorabilia from my favorite movies. i have fr"
+        },
+        {
+          "accepted": true,
+          "memory_type": "preference",
+          "quality_score": 0.7098,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "I'm afraid of not being able to accomplish my dreams. i love all sorts of fresh vegetables. i eat mainly chinese food. m"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.6984,
+          "reasons": [],
+          "preference_extracted": 1,
+          "preview": "My height is irrelevant to my legal expertise. i have two smartphones. i exercise. I continued to run after recovering f"
+        },
+        {
+          "accepted": true,
+          "memory_type": "preference",
+          "quality_score": 0.7009,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "I enjoy photographing nature and my pets. i don t like broccoli. I am a student who is not well-liked. i like to eat spa"
+        }
+      ]
+    },
+    "orchestrator_behavior_once": {
+      "n": 100,
+      "accepted": 0,
+      "accept_rate": 0.0,
+      "memory_type_distribution": {},
+      "reject_reasons": {
+        "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次": 100
+      },
+      "quality_avg": null,
+      "preference_extracted_total": 0,
+      "samples": [
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I'm not worried about what others think of my appearance as long as I feel comfortable in my own skin."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I believe that I have a good relationship with my family."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I'm afraid of not being able to accomplish my dreams."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "My height is irrelevant to my legal expertise."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I enjoy photographing nature and my pets."
+        }
+      ]
+    },
+    "orchestrator_behavior_repeat5": {
+      "n": 100,
+      "accepted": 0,
+      "accept_rate": 0.0,
+      "memory_type_distribution": {},
+      "reject_reasons": {
+        "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次": 100
+      },
+      "quality_avg": null,
+      "preference_extracted_total": 0,
+      "samples": [
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I'm not worried about what others think of my appearance as long as I feel comfortable in my own skin."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I believe that I have a good relationship with my family."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I'm afraid of not being able to accomplish my dreams."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "My height is irrelevant to my legal expertise."
+        },
+        {
+          "accepted": false,
+          "memory_type": "None",
+          "quality_score": null,
+          "reasons": [
+            "人设自我描述请走 conversation，user_behavior 只接受操作+目标+频次"
+          ],
+          "preference_extracted": 0,
+          "preview": "I enjoy photographing nature and my pets."
+        }
+      ]
+    },
+    "retrieval_persona_query_on_facts": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 16,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 63.388,
+      "query_avg_ms": 34.312,
+      "query_p95_ms": 42.097,
+      "latency_passed": true
+    },
+    "retrieval_persona_query_on_concat": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 16,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.97,
+      "ingest_avg_ms": 221.391,
+      "query_avg_ms": 33.345,
+      "query_p95_ms": 41.859,
+      "latency_passed": true
+    },
+    "last_user_control_on_concat": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 16,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.68,
+      "ingest_avg_ms": 211.557,
+      "query_avg_ms": 24.533,
+      "query_p95_ms": 33.202,
+      "latency_passed": true
+    }
+  },
+  "bpmn": {
+    "sampled_indices": [
+      0,
+      3,
+      11,
+      19,
+      21,
+      48,
+      59,
+      65,
+      70,
+      80,
+      87,
+      93,
+      108,
+      112,
+      114,
+      117,
+      123,
+      128,
+      131,
+      141,
+      156,
+      161,
+      163,
+      165,
+      169,
+      182,
+      203,
+      205,
+      216,
+      224,
+      230,
+      235,
+      245,
+      246,
+      253,
+      257,
+      269,
+      271,
+      273,
+      300,
+      305,
+      314,
+      319,
+      331,
+      346,
+      348,
+      370,
+      371,
+      382,
+      390,
+      394,
+      408,
+      432,
+      433,
+      438,
+      445,
+      448,
+      462,
+      464,
+      479,
+      486,
+      497,
+      500,
+      505,
+      512,
+      519,
+      521,
+      529,
+      540,
+      541,
+      543,
+      545,
+      549,
+      551,
+      552,
+      562,
+      566,
+      567,
+      580,
+      597,
+      598,
+      602,
+      607,
+      610,
+      613,
+      621,
+      623,
+      640,
+      642,
+      650,
+      652,
+      654,
+      656,
+      661,
+      670,
+      684,
+      685,
+      689,
+      698,
+      702
+    ],
+    "classify_labels_document": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "document",
+      "type_distribution": {
+        "knowledge": 100
+      },
+      "reason_distribution": {
+        "knowledge_source": 100
+      },
+      "knowledge_rate": 1.0,
+      "preference_rate": 0.0
+    },
+    "classify_xml_document": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "document",
+      "type_distribution": {
+        "knowledge": 100
+      },
+      "reason_distribution": {
+        "knowledge_source": 100
+      },
+      "knowledge_rate": 1.0,
+      "preference_rate": 0.0
+    },
+    "classify_labels_as_conversation": {
+      "n": 100,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 100
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 100
+      },
+      "knowledge_rate": 1.0,
+      "preference_rate": 0.0
+    },
+    "orchestrator_labels_document": {
+      "n": 100,
+      "accepted": 100,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 100
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.733,
+      "preference_extracted_total": 0,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7178,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "BPMN process steps: (file=ex00_writer0001.bpmn exercise=ex00) evaluate the Application; notify the customer by email; cr"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7378,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "BPMN process steps: (file=ex00_writer0006.bpmn exercise=ex00) evaluate application; Notify customer; create bank account"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7366,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "BPMN process steps: (file=ex00_writer0020.bpmn exercise=ex00) evaluate application; notify customer; create new bank acc"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7422,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "BPMN process steps: (file=ex00_writer0033.bpmn exercise=ex00) evaluate application; create new bank account; send welcom"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7398,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "BPMN process steps: (file=ex00_writer0035.bpmn exercise=ex00) evaluate application; notify customer; create new bank acc"
+        }
+      ]
+    },
+    "orchestrator_xml_document": {
+      "n": 100,
+      "accepted": 100,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 100
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.7429,
+      "preference_extracted_total": 0,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7291,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- {\"backgroundSize\":1000} -->\n<definitions xmlns=\"http://www.omg.org/spec/BPMN"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7403,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- {\"backgroundSize\":1000} -->\n<definitions xmlns=\"http://www.omg.org/spec/BPMN"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7409,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- {\"backgroundSize\":1000} -->\n<definitions xmlns=\"http://www.omg.org/spec/BPMN"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7421,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- {\"backgroundSize\":1100} -->\n<definitions xmlns=\"http://www.omg.org/spec/BPMN"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.7409,
+          "reasons": [],
+          "preference_extracted": 0,
+          "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- {\"backgroundSize\":1100} -->\n<definitions xmlns=\"http://www.omg.org/spec/BPMN"
+        }
+      ]
+    },
+    "retrieval_task_query_on_labels": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.88,
+      "ingest_avg_ms": 77.297,
+      "query_avg_ms": 31.68,
+      "query_p95_ms": 36.14,
+      "latency_passed": true
+    },
+    "retrieval_task_query_on_xml": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.42,
+      "ingest_avg_ms": 550.354,
+      "query_avg_ms": 31.775,
+      "query_p95_ms": 36.896,
+      "latency_passed": true
+    },
+    "xml_prefix_control_on_labels": {
+      "n_indexed": 100,
+      "n_queries": 100,
+      "n_input": 100,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.07,
+      "ingest_avg_ms": 75.298,
+      "query_avg_ms": 35.139,
+      "query_p95_ms": 37.717,
+      "latency_passed": true
+    }
+  }
+}

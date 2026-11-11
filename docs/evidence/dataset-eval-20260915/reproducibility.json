@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-09-15T13:11:39",
+  "stamp": "20260915-1311",
+  "project": {
+    "workspace_head": "f7a56137e6cd83fb52eab68f19a37ad3f104f087",
+    "workspace_head_short": "f7a5613",
+    "eval_code_commit": "17af2b3f509ecea1ed10f1b02134277e530775ed",
+    "eval_code_note": "preference parallel workers + restrict_llm_to_known_keys for closed-set fusion",
+    "origin_master": "2c8b13c5e224f33a4b8aaf7e0ba097c0cdfeee7c",
+    "status_short": "M docs/evidence/dataset-eval-20260914/README.md\n M \"docs/\\346\\265\\213\\350\\257\\225\\347\\273\\223\\346\\236\\234.md\"\n M frontend/pnpm-lock.yaml\n M frontend/src/main.js\n M frontend/src/style.css\n M scripts/eval_behavior_knowledge_datasets.py\n M scripts/eval_conflict_longmemeval.py\n M scripts/eval_dialog_quant_datasets.py\n M scripts/eval_dialog_tool_datasets.py\nMM scripts/eval_preference_hf_dataset.py\n M scripts/eval_retrieval_datasets.py\nMM scripts/pref_eval_dataset.py\nM  src/preference/extractor.py\nM  src/preference/store.py\nA  tests/test_eval_parallel.py\n?? docs/evidence/dataset-eval-20260914/behavior_knowledge_20260914-212504.json\n?? docs/evidence/dataset-eval-20260914/behavior_knowledge_20260914-221101.json\n?? docs/evidence/dataset-eval-20260914/conflict_longmemeval_20260914-211852.json\n?? docs/evidence/dataset-eval-20260914/conflict_longmemeval_20260914-220445.json\n?? docs/evidence/dataset-eval-20260914/dialog_quant_20260914-212649.json\n?? docs/evidence/dataset-eval-20260914/dialog_quant_20260914-221249.json\n?? docs/evidence/dataset-eval-20260914/dialog_tool_20260914-212022.json\n?? docs/evidence/dataset-eval-20260914/dialog_tool_20260914-220619.json\n?? docs/evidence/dataset-eval-20260914/preference_20260914-211818.json\n?? docs/evidence/dataset-eval-20260914/preference_20260914-220414.json\n?? docs/evidence/dataset-eval-20260914/retrieval_20260914-214336.json\n?? docs/evidence/dataset-eval-20260914/retrieval_20260914-222937.json\n?? docs/evidence/dataset-eval-20260915/\n?? frontend/src/FlowPanel.js\n?? frontend/src/flow.css\n?? scripts/dump_contest_sample_io.py\n?? scripts/run_contest_git_sample.sh\n?? scripts/write_contest_repro_snapshot.py\n?? scripts/write_contest_sample_report.py\n?? sum_calculator.c",
+    "extractor_sha256": "99087e76fb6f82cb4642d5484f4edc8e5b481c9fca07ce69b46e1ca48ff0359a",
+    "store_sha256": "b954ac24ff5bdb7af3cc53b0346af521db61c347cd0e6cd2fe60e6e0ba88604b",
+    "prompts_sha256": "59e79942138b03bcfb1c8441141e477fb671a0ec23fbe8cf97273a064e65b377",
+    "eval_preference_sha256": "802043fcbe971a6d1d540978e47733565fa5525d6d4715c914cfbd1ce9f6e9ab",
+    "pref_eval_sha256": "38f962c40136d99be1ef30caa0c2f68f08634d57a2f505f06b77c096c6898a69"
+  },
+  "runtime": {
+    "python": "3.12.3 (main, Jul  9 2026, 05:49:06) [GCC 12.3.0]",
+    "executable": "/run/host/usr/bin/python3.12",
+    "platform": "Linux-6.6.0-63-generic-x86_64-with-glibc2.38",
+    "uname": {
+      "system": "Linux",
+      "node": "kare",
+      "release": "6.6.0-63-generic",
+      "version": "#63-KYLINOS SMP PREEMPT_DYNAMIC Sat Feb  7 12:39:56 UTC 2026",
+      "machine": "x86_64",
+      "processor": "x86_64"
+    }
+  },
+  "sampling": {
+    "seed": 42,
+    "n": 150,
+    "n_pos": 120,
+    "n_neg": 30,
+    "nq": 150,
+    "rc": 2000,
+    "floor_script_default_n": 50,
+    "floor_reporting_n": 100,
+    "this_run_multiplier_vs_50": 3.0,
+    "this_run_multiplier_vs_100": 1.5,
+    "band": "1.5x–5x of the reporting floor 100 → 150–500; n=150 = 1.5×",
+    "rng_implementation": "Python random.Random (CPython Mersenne Twister / MT19937)",
+    "preference_sampling_fn": "scripts.eval_preference_hf_dataset.sample_hf_rows",
+    "preference_algorithm": "independent Vitter reservoir: nonempty gold → n_pos, empty gold → n_neg",
+    "dialog_sampling_fn": "benchmarks.run_dataset_eval.sample_indices",
+    "dialog_algorithm": "sorted(rng.sample(range(total), n)) without replacement"
+  },
+  "llm": {
+    "ok": true,
+    "model_requested": "deepseek-ai/DeepSeek-V4-Flash",
+    "base_url": "https://api.siliconflow.cn/v1",
+    "env_file_model": "Pro/deepseek-ai/DeepSeek-V3.2",
+    "model_version": "deepseek-ai/DeepSeek-V4-Flash",
+    "system_fingerprint": "",
+    "id": "01a0a37a53022067824c303c342483b0",
+    "finish_reason": "stop",
+    "content_preview": "PING",
+    "usage": {
+      "prompt_tokens": 12,
+      "completion_tokens": 7
+    },
+    "temperature": 0.0,
+    "top_p": null,
+    "seed": null,
+    "seed_note": "chat.completions.create is not passed seed; temperature=0.0",
+    "provider": "SiliconFlow OpenAI-compatible",
+    "endpoint_flag": "remote",
+    "extract_temperature": 0.0,
+    "extract_max_tokens": 2000,
+    "judge_temperature": 0.0,
+    "judge_max_tokens": 200,
+    "top_p_note": "not passed; provider default",
+    "workers": 8,
+    "prompt_files": [
+      "src/preference/prompts.py",
+      "scripts/eval_preference_hf_dataset.py::_semantic_cover"
+    ]
+  },
+  "embedding": {
+    "OS_AGENT_EMBEDDING_BACKEND": "kylin",
+    "OS_AGENT_MEMORY_BACKEND": "memory",
+    "OS_AGENT_KYLIN_STRICT": "1",
+    "OS_AGENT_KYLIN_VECTOR_LIBRARY": "build/kylin-vector/libmokoa_kylin_vector_bridge.so",
+    "OS_AGENT_KYLIN_VECTOR_ENDPOINT": "unix:/tmp/kylin-ai-vector-engine-1000.sock",
+    "kylin_so_sha256": "ae1c8b447b18cbafadd01335570a18e0c2a8f2c9ede84bb4b40833e488729adb"
+  },
+  "contest_thresholds": {
+    "preference_acc": 0.85,
+    "recall": 0.85,
+    "latency_ms": 500,
+    "conflict_acc": 0.88
+  },
+  "trec_retry": {
+    "first_attempt": "retrieval_20260915-134740.json sampled_eval skipped: kylin embedding Timeout was reached on 9707 passages",
+    "retry_file": "retrieval_20260915-140209.json",
+    "merged_file": "retrieval_20260915-140210.json",
+    "retry_seed": 42,
+    "retry_rc": 2000,
+    "retry_trec_nq": 0,
+    "result": {
+      "n_queries": 97,
+      "corpus_size": 9707,
+      "embed_s": 679.11,
+      "orchestrator_recall_p95_ms": 478.893,
+      "recall_at_5": 0.158,
+      "ndcg_at_10_graded": 0.7295
+    }
+  }
+}

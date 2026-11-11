@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "generated_at": "2026-09-13T23:48:39",
+    "seed": 42,
+    "n": 50,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "7bbbfaf",
+    "query_strategy": "task_query_on_user_turns_v1",
+    "dialogbench_parse": "jsonl_skip_bad_lines"
+  },
+  "dailydialog": {
+    "sampled_indices": [
+      106,
+      409,
+      434,
+      488,
+      520,
+      711,
+      1424,
+      1519,
+      1535,
+      1584,
+      1674,
+      1679,
+      1824,
+      2045,
+      2286,
+      2547,
+      2615,
+      3257,
+      3527,
+      3582,
+      3611,
+      3657,
+      3811,
+      4012,
+      4333,
+      4506,
+      4552,
+      4557,
+      5514,
+      5574,
+      5635,
+      5881,
+      6224,
+      6873,
+      6912,
+      6924,
+      7359,
+      7527,
+      8279,
+      8785,
+      8928,
+      8935,
+      9195,
+      9654,
+      9674,
+      9863,
+      9891,
+      10476,
+      10647,
+      11087
+    ],
+    "classify": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 47,
+        "preference": 3
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 47,
+        "expressed_preference": 3
+      },
+      "knowledge_rate": 0.94,
+      "preference_rate": 0.06
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 50,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 49,
+        "preference": 1
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.5188,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "So the company decided to cancel your trip to Hong Kong ?\nMaybe it's a good things . If you don't have to go to Hong Kon"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.735,
+          "reasons": [],
+          "preview": "In my wedding ceremony , where do my parents sit in the church ?\nDo friends of the bride always sit on one side of the c"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Please do excuse me for a moment . I've got diarrhea .\nIt may have something to do with the food I had last night\nI will"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "David , why don't you clean your room ?\nOh , cheer up ! A girlfriend is not everything .\nThen forgive her mistake ."
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "I had a wonderful evening .\nI will ."
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 115.384,
+      "query_avg_ms": 39.126,
+      "query_p95_ms": 68.999,
+      "latency_passed": true
+    },
+    "last_user_control": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.88,
+      "ingest_avg_ms": 85.417,
+      "query_avg_ms": 23.026,
+      "query_p95_ms": 37.312,
+      "latency_passed": true
+    }
+  },
+  "dialogbench": {
+    "sampled_indices": [
+      525,
+      750,
+      916,
+      1084,
+      1139,
+      1169,
+      1291,
+      1307,
+      1654,
+      2287,
+      2340,
+      2664,
+      2677,
+      2803,
+      3150,
+      3432,
+      3456,
+      3483,
+      3598,
+      3733,
+      3752,
+      3814,
+      4010,
+      4040,
+      4339,
+      4374,
+      4386,
+      4422,
+      4554,
+      4741,
+      4803,
+      5155,
+      5168,
+      5313,
+      5820,
+      5925,
+      5977,
+      6065,
+      6201,
+      6216,
+      6227,
+      6482,
+      6572,
+      7428,
+      7517,
+      7573,
+      8179,
+      8751,
+      9044,
+      9125
+    ],
+    "classify_dialogue": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 48,
+        "preference": 2
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 48,
+        "expressed_preference": 2
+      },
+      "knowledge_rate": 0.96,
+      "preference_rate": 0.04
+    },
+    "classify_leaky_concat": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 48,
+        "preference": 2
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 48,
+        "expressed_preference": 2
+      },
+      "knowledge_rate": 0.96,
+      "preference_rate": 0.04
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 50,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 50
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.5142,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Surprising! I thought you'd say we'd start working in hell.\nSo, what's the plan for this week? More 'inspiring' meetings"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Hey there, I just moved to the neighborhood and was hoping if you could recommend any good parks around.\nSounds good! Do"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Did you know that the government is planning to increase taxes on luxurious goods?\nThat's one possible outcome, but reme"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "I can't believe you don't know the difference between prokaryotic and eukaryotic cells!\nFinally, a relevant question fro"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Oh wow, did you just catch that basketball game?\nI'll be sure to watch next time, just so I can keep up with such a thri"
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 23,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 299.348,
+      "query_avg_ms": 49.142,
+      "query_p95_ms": 77.612,
+      "latency_passed": true
+    },
+    "last_user_control": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 23,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.92,
+      "ingest_avg_ms": 279.437,
+      "query_avg_ms": 26.741,
+      "query_p95_ms": 33.669,
+      "latency_passed": true
+    }
+  }
+}

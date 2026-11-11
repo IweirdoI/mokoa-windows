@@ -1,0 +1,1 @@
+{"name":"mokoa-memory-workspace","private":true,"version":"0.1.0","type":"module","scripts":{"dev":"vite --configLoader runner","build":"vite build --configLoader runner","preview":"vite preview"},"dependencies":{"dompurify":"^3.4.15","marked":"^18.0.13","vue":"^3.5.13"},"devDependencies":{"vite":"^6.1.0"}}

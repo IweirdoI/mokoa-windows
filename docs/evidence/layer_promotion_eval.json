@@ -1,0 +1,52 @@
+{
+  "samples": 9,
+  "passed": 9,
+  "pass_rate": 1.0,
+  "details": [
+    {
+      "name": "完整晋级 SHORT->MID->LONG",
+      "passed": true,
+      "detail": "mid=1 long=1 retained=0"
+    },
+    {
+      "name": "仅到 MID 不长期(质量不足)",
+      "passed": true,
+      "detail": "long=0 retained=1"
+    },
+    {
+      "name": "滞留 SHORT(热度不足)",
+      "passed": true,
+      "detail": "promoted=0 short=1"
+    },
+    {
+      "name": "热度阈值边界(==3.0 晋级)",
+      "passed": true,
+      "detail": "promoted=1"
+    },
+    {
+      "name": "质量阈值边界(==0.5 长期)",
+      "passed": true,
+      "detail": "long=1 retained=0"
+    },
+    {
+      "name": "重复访问升温后晋级",
+      "passed": true,
+      "detail": "before=0 after=1"
+    },
+    {
+      "name": "跨对话同键固化合并",
+      "passed": true,
+      "detail": "short_before=2 mid=1 merged=True"
+    },
+    {
+      "name": "空晋级无操作",
+      "passed": true,
+      "detail": "ok"
+    },
+    {
+      "name": "偏好/知识混合晋级",
+      "passed": true,
+      "detail": "long=2 types=['preference', 'knowledge']"
+    }
+  ]
+}

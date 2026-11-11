@@ -1,0 +1,49 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+4 0 obj
+<< /Length 453 >>
+stream
+BT /F1 11 Tf 48 740 Td (Kylin Office Ops Guide) Tj ET
+BT /F1 11 Tf 48 724 Td (Topic: Meeting room booking and printer share) Tj ET
+BT /F1 11 Tf 48 708 Td (Printer share name: KYLIN-PRINT-01) Tj ET
+BT /F1 11 Tf 48 692 Td (Default paper: A4) Tj ET
+BT /F1 11 Tf 48 676 Td (Meeting room WiFi SSID: Kylin-Office-Guest) Tj ET
+BT /F1 11 Tf 48 660 Td (VPN profile: office-vpn.ovpn) Tj ET
+BT /F1 11 Tf 48 644 Td (File share: smb://files.office.local/teams) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+6 0 obj
+<< /Length 303 >>
+stream
+BT /F1 11 Tf 48 740 Td (FAQ) Tj ET
+BT /F1 11 Tf 48 724 Td (Q: How to export PDF from WPS?) Tj ET
+BT /F1 11 Tf 48 708 Td (A: File -> Export -> PDF) Tj ET
+BT /F1 11 Tf 48 692 Td (Q: Where are downloaded meeting minutes?) Tj ET
+BT /F1 11 Tf 48 676 Td (A: Follow habit.download_path preference if set) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000296 00000 n 
+0000000800 00000 n 
+0000000975 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1329
+%%EOF

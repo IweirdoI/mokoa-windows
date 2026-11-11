@@ -1,0 +1,14 @@
+[
+  {"id":"phone","text":"联系电话13812345678","secret":"13812345678"},
+  {"id":"email","text":"邮箱 demo@example.com","secret":"demo@example.com"},
+  {"id":"employee","text":"我的工号是NO.9527","secret":"NO.9527"},
+  {"id":"password","text":"我的密码是Abc!2345，请保密","secret":"Abc!2345"},
+  {"id":"private-key","text":"-----BEGIN PRIVATE KEY-----\nSYNTHETIC_SECRET_BODY\n-----END PRIVATE KEY-----","secret":"SYNTHETIC_SECRET_BODY"},
+  {"id":"git-credentials","text":"https://demo:synthetic-password@code.example.org/team/repo.git","secret":"synthetic-password"},
+  {"id":"env-spaces","text":"API_KEY = \"synthetic-secret-123\"","secret":"synthetic-secret-123"},
+  {"id":"port","text":"星河笔记端口是9090"},
+  {"id":"path","text":"下载保存到 E:/Downloads"},
+  {"id":"log-path","text":"日志路径 /var/log/xinghe/notes.log"},
+  {"id":"meeting","text":"会议定于2026-09-12下午三点"},
+  {"id":"ordinary","text":"以后请用中文简洁回答"}
+]

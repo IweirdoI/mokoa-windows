@@ -1,0 +1,52 @@
+// Browser acceptance against the isolated API through Vite's real proxy.
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const fs = require('node:fs');
+const path = require('node:path');
+const out = path.resolve(process.argv[2]);
+fs.mkdirSync(out, { recursive: true });
+(async () => {
+  const browser = await chromium.launch({channel:'msedge', headless:true});
+  const page = await browser.newPage({viewport:{width:1440,height:1000}});
+  const errors = [], requests = [];
+  page.on('pageerror', e => errors.push(e.message));
+  page.on('response', async r => {
+    if (r.url().includes('/api/')) requests.push({url:r.url(),status:r.status()});
+  });
+  await page.goto('http://127.0.0.1:5178');
+  await page.getByRole('button',{name:'实时 API 已连接'}).waitFor({timeout:30000});
+  const user = 'browser_'+Date.now();
+  await page.getByRole('textbox',{name:'用户 ID',exact:true}).fill(user);
+  await page.waitForTimeout(1200);
+  await page.getByRole('button',{name:'记忆',exact:true}).click();
+  const before = await page.locator('.memory-content').innerText();
+  await page.screenshot({path:path.join(out,'before.png'),fullPage:true});
+  await page.getByRole('textbox',{name:'对话输入',exact:true}).fill('以后回答请更加简洁');
+  await page.getByRole('button',{name:'发送 ↑',exact:true}).click();
+  await page.getByRole('button',{name:'发送 ↑',exact:true}).waitFor({timeout:120000});
+  await page.getByRole('button',{name:'偏好',exact:true}).click();
+  const preferences = await page.locator('.memory-content').innerText();
+  await page.getByRole('textbox',{name:'对话输入',exact:true}).fill('a');
+  await page.getByRole('button',{name:'发送 ↑',exact:true}).click();
+  await page.getByRole('button',{name:'发送 ↑',exact:true}).waitFor({timeout:120000});
+  await page.getByRole('button',{name:'总览',exact:true}).click();
+  const rejected = await page.locator('.memory-content').innerText();
+  const rejectionReply = await page.locator('.message-row.assistant .bubble').last().innerText();
+  await page.screenshot({path:path.join(out,'after.png'),fullPage:true});
+  await page.request.post('http://127.0.0.1:5178/api/preferences/extract', {data:{user_id:user,text:'下载默认放 D 盘'}});
+  await page.getByRole('button',{name:'↻ 同步',exact:true}).click();
+  await page.getByRole('button',{name:'↻ 同步',exact:true}).waitFor();
+  await page.getByRole('button',{name:'偏好',exact:true}).click();
+  await page.getByRole('button',{name:'准备遗忘',exact:true}).click();
+  await page.getByRole('button',{name:'执行遗忘',exact:true}).click();
+  await page.getByRole('button',{name:'执行遗忘',exact:true}).waitFor();
+  const forgotten = await page.locator('.forget-result').innerText();
+  await page.getByRole('textbox',{name:'用户 ID',exact:true}).fill(user+'_other');
+  await page.waitForTimeout(1200);
+  const clearedMessages = await page.locator('.chat-stream').innerText();
+  const report = {errors,requests,live_initial_memories:before,after_preference_message:preferences,after_low_quality_message:rejected,rejection_reply:rejectionReply,forget_result:forgotten,
+    checks:{no_demo_memories:!before.includes('tool-024'),rejection_displayed:rejected.includes('本次内容未写入记忆'),rejection_reply_truthful:rejectionReply.includes('未写入记忆'),no_demo_events:!rejected.includes('response_language · v2'),no_browser_errors:errors.length===0,ui_forget:forgotten.includes('删除数量：1'),user_switch_clears_chat:!clearedMessages.includes('以后回答请更加简洁')}};
+  fs.writeFileSync(path.join(out,'browser.json'),JSON.stringify(report,null,2));
+  console.log(JSON.stringify(report,null,2));
+  await browser.close();
+  if (Object.values(report.checks).some(v=>!v)) process.exitCode=1;
+})().catch(e=>{console.error(e);process.exit(1)});

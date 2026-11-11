@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+4 0 obj
+<< /Length 597 >>
+stream
+BT /F1 11 Tf 48 740 Td (XingHe Notes Project Manual v1.0) Tj ET
+BT /F1 11 Tf 48 724 Td (Project: XingHe Notes / XingHeBiji) Tj ET
+BT /F1 11 Tf 48 708 Td (Owner: Zhang San) Tj ET
+BT /F1 11 Tf 48 692 Td (Default HTTP port: 8080) Tj ET
+BT /F1 11 Tf 48 676 Td (Config file: /opt/xinghe/notes/config.yaml) Tj ET
+BT /F1 11 Tf 48 660 Td (Start: systemctl start xinghe-notes) Tj ET
+BT /F1 11 Tf 48 644 Td (Health: curl http://127.0.0.1:8080/health) Tj ET
+BT /F1 11 Tf 48 628 Td (Data dir: /var/lib/xinghe/notes) Tj ET
+BT /F1 11 Tf 48 612 Td (NOTE: This is the OLD manual. Port may be updated later.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >> >>
+endobj
+6 0 obj
+<< /Length 305 >>
+stream
+BT /F1 11 Tf 48 740 Td (Ops tips) Tj ET
+BT /F1 11 Tf 48 724 Td (1. Prefer systemd over nohup) Tj ET
+BT /F1 11 Tf 48 708 Td (2. Log path: /var/log/xinghe/notes.log) Tj ET
+BT /F1 11 Tf 48 692 Td (3. Backup before changing port) Tj ET
+BT /F1 11 Tf 48 676 Td (4. Course Assistant is a DIFFERENT project) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000296 00000 n 
+0000000944 00000 n 
+0000001119 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1475
+%%EOF

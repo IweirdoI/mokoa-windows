@@ -1,0 +1,206 @@
+{
+  "scope": "synthetic diagnostic corpus, Windows/Linux CPU candidate test; not Kylin acceptance",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "onnxruntime": "1.22.1",
+  "threads": 1,
+  "model_sha256": "80db3cf7b9edc7d1ba4cc20561a46efda957b1f07a27ac911d31304be8baf5f3",
+  "model_bytes": 12606755,
+  "corpus_sha256": "4594508f895f53404025dbae3805f63a345d5ac7c583d5fa2427de596a8e998d",
+  "case_count": 28,
+  "load_including_imports_ms": 706.5,
+  "rules_sha256": "534ccf6e005f518dc3b5fc30d8f9496b7d70ddbf3ccea60826c9376560ed3a43",
+  "rules_metric": "union of raw regex matches, not a full ingestion or API test",
+  "process_rss_mib": 108.61,
+  "rss_increase_mib": 86.36,
+  "sampled_end_rss_only": true,
+  "warm_calls": 140,
+  "median_ms": 1.104,
+  "p95_ms": 1.63,
+  "max_ms": 1.779,
+  "rules": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 8,
+    "full_span_recall": 0.47058823529411764,
+    "clean_cases": 12,
+    "clean_cases_altered": 0,
+    "extra_masked_chars": 11,
+    "failures": [
+      {
+        "id": "name-1",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "name-2",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "name-3",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-1",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-2",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-3",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "password",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 0,
+        "extra_masked_chars": 5
+      },
+      {
+        "id": "mixed",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      }
+    ]
+  },
+  "ner_per_loc": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 7,
+    "full_span_recall": 0.4117647058823529,
+    "clean_cases": 12,
+    "clean_cases_altered": 2,
+    "extra_masked_chars": 4,
+    "failures": [
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-spaces",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "email",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "employee",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "password",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "mixed",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "public-city",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      },
+      {
+        "id": "project",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      }
+    ]
+  },
+  "rules_plus_ner": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 15,
+    "full_span_recall": 0.8823529411764706,
+    "clean_cases": 12,
+    "clean_cases_altered": 2,
+    "extra_masked_chars": 15,
+    "failures": [
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "password",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 0,
+        "extra_masked_chars": 5
+      },
+      {
+        "id": "public-city",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      },
+      {
+        "id": "project",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      }
+    ]
+  }
+}

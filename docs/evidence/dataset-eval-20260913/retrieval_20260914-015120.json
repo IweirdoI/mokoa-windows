@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T01:51:20",
+    "seed": 42,
+    "nq": 50,
+    "rc": 1200,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "21967f0"
+  },
+  "trec": {
+    "path": "<repo>/git/TREC",
+    "exists": true,
+    "n_queries": 400,
+    "n_judged_queries_2019": 43,
+    "n_judged_queries_2020": 54,
+    "n_positive_passage_ids": 7707,
+    "official_eval": "skipped",
+    "reason": "TREC DL qrels reference MS MARCO passage IDs from the 8.8M ranking collection; git/MS_MARCO is HuggingFace v1.1 QA (query + 10 candidates, no passage_id). Queries also do not match v1.1 query text.",
+    "overlap_with_msmarco_val": {
+      "trec_queries": 400,
+      "msmarco_val_queries": 10047,
+      "exact_text_overlap": 0,
+      "query_id_overlap": 2
+    }
+  },
+  "msmarco": {
+    "sampled_indices": [
+      106,
+      409,
+      434,
+      488,
+      520,
+      711,
+      1291,
+      1424,
+      1519,
+      1535,
+      1584,
+      1674,
+      1679,
+      1824,
+      2045,
+      2286,
+      2547,
+      2615,
+      3257,
+      3527,
+      3582,
+      3611,
+      3657,
+      3811,
+      4012,
+      4333,
+      4506,
+      4552,
+      4557,
+      5514,
+      5574,
+      5635,
+      5881,
+      6201,
+      6224,
+      6873,
+      6912,
+      6924,
+      7359,
+      7527,
+      8279,
+      8785,
+      8928,
+      8935,
+      9044,
+      9195,
+      9654,
+      9674,
+      9863,
+      9891
+    ],
+    "corpus_size": 1200,
+    "corpus_embed_seconds": 96.64,
+    "gold": {
+      "skipped_no_positive": 2,
+      "gold_already_in_corpus_from_other_query": 0,
+      "n_eval_queries": 48,
+      "mean_gold": 1.0833,
+      "corpus_target_exceeded": false
+    },
+    "query_memory": {
+      "n_queries_evaluated": 48,
+      "n_queries_skipped_no_positive": 2,
+      "n_empty": 0,
+      "recall_at_5": 0.8646,
+      "recall_at_5_inflated": 0.8646,
+      "mrr_at_10": 0.6173,
+      "ndcg_at_10": 0.7065,
+      "hit_at_1": 0.4583,
+      "query_avg_ms": 68.22,
+      "query_p95_ms": 71.014,
+      "latency_passed": true,
+      "strategies": {
+        "query_memory": 48
+      }
+    },
+    "orchestrator_recall": {
+      "n_queries_evaluated": 48,
+      "n_queries_skipped_no_positive": 2,
+      "n_empty": 0,
+      "recall_at_5": 0.8646,
+      "recall_at_5_inflated": 0.8646,
+      "mrr_at_10": 0.6156,
+      "ndcg_at_10": 0.705,
+      "hit_at_1": 0.4583,
+      "query_avg_ms": 84.406,
+      "query_p95_ms": 149.911,
+      "latency_passed": true,
+      "strategies": {
+        "query_memory": 37,
+        "query_memory+lexical": 11
+      }
+    },
+    "orchestrator_semantic": {
+      "n_queries_evaluated": 48,
+      "n_queries_skipped_no_positive": 2,
+      "n_empty": 0,
+      "recall_at_5": 0.8646,
+      "recall_at_5_inflated": 0.8646,
+      "mrr_at_10": 0.6173,
+      "ndcg_at_10": 0.7065,
+      "hit_at_1": 0.4583,
+      "query_avg_ms": 67.655,
+      "query_p95_ms": 71.507,
+      "latency_passed": true,
+      "strategies": {
+        "query_memory:semantic": 48
+      }
+    },
+    "scope": "in-memory cosine over sampled candidates+distractors; not MS MARCO 8.8M or TREC official"
+  }
+}

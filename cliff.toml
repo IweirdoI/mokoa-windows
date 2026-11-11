@@ -1,0 +1,122 @@
+# git-cliff configuration for MOKOA project
+# Generates CHANGELOG.md following Keep a Changelog format
+
+[changelog]
+# template for the changelog header
+header = """
+# 更新日志
+
+该文件记录了 MOKOA 项目的所有值得注意的变更。
+
+格式遵循 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)，
+本项目遵循 [语义化版本 2.0.0](https://semver.org/spec/v2.0.0.html)。
+
+---
+
+## 规范约束（后续 项目成员与 Agent 修改本文件时必须遵守）
+
+> 本节提取自 [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) 与 [SemVer 2.0.0](https://semver.org/spec/v2.0.0.html) 的核心规范，不过为方便项目成员阅读，审核与修改，统一使用中文记录，所有变更此文件的项目成员与 Agent 必须严格遵循该规范。
+
+### Keep a Changelog 规范
+
+1. **文件格式**：文件名为 `CHANGELOG.md`（大写），置于项目根目录。
+2. **章节顺序**：最新版本在前（倒序），`[Unreleased]` 始终位于最顶部。
+3. **日期格式**：使用 ISO 8601 格式 `YYYY-MM-DD`，禁止使用其他区域化格式。
+4. **合法分类**（共 6 类，**不存在 `Updated`**）：
+   - `Added`：新增功能
+   - `Changed`：已有功能的变更
+   - `Deprecated`：即将移除的功能
+   - `Removed`：已移除的功能
+   - `Fixed`：Bug 修复
+   - `Security`：安全漏洞修复
+5. **条目粒度**：同一模块/功能域的变更合并为一条条目，不得跨分类重复出现在同一版本中。
+6. **空分类处理**：如果某个分类下没有条目，该分类整段省略（不要保留空分类标题）。
+7. **Yanked 版本**：被撤回的版本在版本标题后加 `[YANKED]` 标签。
+8. **建议行为**：
+   - 建议使用 git log diff 结果作为 changelog 内容的基础，加以详细说明
+9. **禁止行为**：
+   - 禁止遗漏任何对用户有影响的变更
+   - 禁止遗漏用户可感知的变更
+
+### 语义化版本规范
+
+版本号格式为 `MAJOR.MINOR.PATCH`（如 `1.2.3`），无前导零。
+
+| 变更类型 | 规则 | 版本号递增方式 |
+|---|---|---|
+| `PATCH` | 向后兼容的 bug 修复 | `x.y.Z` |
+| `MINOR` | 向后兼容的新功能 | `x.Y.z`（`z` 重置为 0） |
+| `MAJOR` | 不兼容的 API 变更 | `X.y.z`（`y` 和 `z` 重置为 0） |
+
+- `0.y.z` 为初始开发阶段，任何变更都可能发生
+- `1.0.0` 标志着公共 API 稳定
+- 版本号一旦发布，**不得修改**
+- 预发布版本格式：`1.0.0-alpha`、`1.0.0-beta.1` 等
+- 构建元数据格式：`1.0.0+build.123`
+
+### 本项目的约定
+
+- 本项目当前处于 `0.x.x` 开发阶段
+- 所有分类条目使用中文书写
+- 条目优先描述**影响**，其次标注涉及的文件
+- 每个版本条目之间用空行分隔
+- **每个 commit 变更独立记录**，便于追溯
+- 涉及文档变更（`.md` 文件）的条目以 `docs:` 或 `文档：` 开头，便于识别
+
+### 追踪格式
+
+每个 commit 变更标注完整哈希（7 位短哈希 + 分支/HEAD 标记），方便与 `git log` 交叉对照。
+
+---
+"""
+# template for each commit in the changelog
+body = """
+{% if version %}
+## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+{% else %}
+## [Unreleased]
+{% endif %}
+{% for group, commits in commits | group_by(attribute="group") %}
+### {{ group | upper_first }}
+{% for commit in commits %}
+- {{ commit.message | split(pat="\n") | first | trim }}{% if commit.remote.username %} by @{{ commit.remote.username }}{% endif %}{% if commit.remote.pr_number %} in #{{ commit.remote.pr_number }}{% endif %}
+{% endfor %}
+{% endfor %}
+"""
+# remove the leading and trailing whitespace from the template
+trim = true
+
+[git]
+# parse the commits based on https://www.conventionalcommits.org
+conventional_commits = true
+# filter out the commits that are not conventional
+filter_unconventional = true
+# regex for preprocessing the commit messages
+commit_preprocessors = [
+  # remove issue numbers from commits
+  { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "" },
+]
+# regex for parsing and grouping commits
+commit_parsers = [
+  { message = "^feat", group = "Added" },
+  { message = "^fix", group = "Fixed" },
+  { message = "^doc", group = "Added" },
+  { message = "^docs", group = "Added" },
+  { message = "^refactor", group = "Changed" },
+  { message = "^perf", group = "Changed" },
+  { message = "^test", group = "Added" },
+  { message = "^tests", group = "Added" },
+  { message = "^chore", group = "Changed", skip = true },
+  { message = "^style", group = "Changed", skip = true },
+  { message = "^ci", group = "Changed", skip = true },
+  { message = "^build", group = "Changed", skip = true },
+]
+# filter out the commits that are not matched
+filter_commits = true
+# glob pattern for matching files to exclude
+# sort the commits inside sections by oldest/newest order
+sort_commits = "newest"
+
+[remote.github]
+owner = "not_used"
+repo = "not_used"

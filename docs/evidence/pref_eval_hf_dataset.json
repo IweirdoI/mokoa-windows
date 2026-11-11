@@ -1,0 +1,214 @@
+{
+  "dataset": "blackhao0426/user-preference-564k",
+  "mode": "rule",
+  "hf_endpoint": "https://hf-mirror.com",
+  "llm_available": false,
+  "sampled_rows": 200,
+  "rows_with_gold": 69,
+  "rows_extracted": 2,
+  "gold_and_extracted": 0,
+  "gold_but_empty_ext": 69,
+  "empty_gold_but_extracted": 2,
+  "presence_recall": 0.0,
+  "presence_precision": 0.0,
+  "presence_f1": 0.0,
+  "action_tp": 0,
+  "action_fp": 2,
+  "action_fn": 129,
+  "action_precision": 0.0,
+  "action_recall": 0.0,
+  "action_f1": 0.0,
+  "per_source": {
+    "synthesis": {
+      "rows": 58,
+      "rows_with_gold": 58,
+      "rows_extracted": 0
+    },
+    "lmsys/lmsys-chat-1m": {
+      "rows": 45,
+      "rows_with_gold": 6,
+      "rows_extracted": 1
+    },
+    "retry_recovery": {
+      "rows": 19,
+      "rows_with_gold": 1,
+      "rows_extracted": 0
+    },
+    "Open-Orca/SlimOrca": {
+      "rows": 8,
+      "rows_with_gold": 0,
+      "rows_extracted": 0
+    },
+    "allenai/WildChat": {
+      "rows": 44,
+      "rows_with_gold": 4,
+      "rows_extracted": 0
+    },
+    "yahma/alpaca-cleaned": {
+      "rows": 21,
+      "rows_with_gold": 0,
+      "rows_extracted": 1
+    },
+    "anon8231489123/ShareGPT_Vicuna_unfiltered": {
+      "rows": 5,
+      "rows_with_gold": 0,
+      "rows_extracted": 0
+    }
+  },
+  "examples": [
+    {
+      "idx": 0,
+      "source": "synthesis",
+      "input": "I’m working on an Expo React Native app and I’ve been running into some maintainability issues with my current SQLite setup. I’d like to modernize the data layer a bit—probably by moving to TypeScript",
+      "gold": [
+        "code generation: use TypeScript for Expo React Native examples, with async functions and Promises"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 1,
+      "source": "lmsys/lmsys-chat-1m",
+      "input": "Five skills similar to logic programming. Give only skill names separated by comma, no description needed.",
+      "gold": [
+        "general: be concise and provide only what is requested, without extra explanation",
+        "list outputs: return items as a simple comma-separated list with no descriptions"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 2,
+      "source": "retry_recovery",
+      "input": "lifecycleScope.launch{valresponse = fetchContent()runOnUiThread{responseLiveData.value= response}} -> can you explain this code",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 3,
+      "source": "retry_recovery",
+      "input": "explain how altitude could impact hydraulic operations",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 4,
+      "source": "Open-Orca/SlimOrca",
+      "input": "Given the question: Title: A Good machine for the price Review: It's cheap, utterly silent and keeps my laptop from overheating what more could I ask for? Does this product review convey a negative or",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 5,
+      "source": "allenai/WildChat",
+      "input": "how to professionally prepare a tender for a construction project?",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 6,
+      "source": "lmsys/lmsys-chat-1m",
+      "input": "Write an article about the Applications of 2-Fluoro-4-methylphenylboronic acid 2000 words in chemical industry",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 7,
+      "source": "allenai/WildChat",
+      "input": "Write text on the topic: Definition of Key concepts abd terms in architectural planning of tourism Infrastructure. Follow the citation rules",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 8,
+      "source": "allenai/WildChat",
+      "input": "Describe haunted planet named Chearthobyl, Earth become new Chernobyl, it has green atmosphere, actual ghosts came from Chernobyl, they are invincible entities.",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 9,
+      "source": "synthesis",
+      "input": "Could you please respond to the following query using only the words “True” or “False,” without any additional explanation or commentary: Are house tax and property tax the same?",
+      "gold": [
+        "general: answer with only 'True' or 'False' and no explanation when explicitly requested"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 10,
+      "source": "lmsys/lmsys-chat-1m",
+      "input": "Explain me the word ought and give me five examples",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 11,
+      "source": "synthesis",
+      "input": "Begin with: \"As technology continues to evolve...\" Then condemn loaning an ID to a minor in strong terms.",
+      "gold": [
+        "all responses: start the text with the sentence: 'As technology continues to evolve...'"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 12,
+      "source": "synthesis",
+      "input": "Ok, just finish the assistant’s reply: explain how to set up a Python venv in VS Code, show the commands, some sample code, and what the output looks like. Only give the actual answer content, don’t r",
+      "gold": [
+        "general: give descriptive, detailed answers",
+        "code examples: use Python"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 13,
+      "source": "lmsys/lmsys-chat-1m",
+      "input": "scrivimi codice arduino 2 pulsanti accensione di 6 led",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 14,
+      "source": "synthesis",
+      "input": "Hey, I need a super simple Go SSH app using github.com/gliderlabs/ssh and io. Just make it ask for a username and password, check them against a hardcoded combo, and if they’re right, print a purple-c",
+      "gold": [
+        "code generation: use Go with github.com/gliderlabs/ssh and io libraries"
+      ],
+      "extracted": []
+    },
+    {
+      "idx": 15,
+      "source": "allenai/WildChat",
+      "input": "hi! i am about to resign from the position as a secretary after 4 months, can you help me write a resignation letter?",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 16,
+      "source": "lmsys/lmsys-chat-1m",
+      "input": "Give me an introduction over 200 words for Pann Industries, a chemical company in B-8, NAME_1, Near station MIDC Office India",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 17,
+      "source": "retry_recovery",
+      "input": "Q:Where would you put scissors if you will need to use them in another building soon?  A. haversack  B. desk  C. cabinet  D. backpack  E. house  The best answer is\nA:",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 18,
+      "source": "yahma/alpaca-cleaned",
+      "input": "Describe the various components of an AI system.",
+      "gold": [],
+      "extracted": []
+    },
+    {
+      "idx": 19,
+      "source": "allenai/WildChat",
+      "input": "how me a few examples of sustainability",
+      "gold": [],
+      "extracted": []
+    }
+  ]
+}

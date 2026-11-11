@@ -1,0 +1,224 @@
+{
+  "scope": "synthetic diagnostic corpus, Windows/Linux CPU candidate test; not Kylin acceptance",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7",
+  "onnxruntime": "1.22.1",
+  "threads": 2,
+  "model_sha256": "80db3cf7b9edc7d1ba4cc20561a46efda957b1f07a27ac911d31304be8baf5f3",
+  "model_bytes": 12606755,
+  "corpus_sha256": "ac53c76d59ec8e2dfbc97fa2798f0d47cf7535cb6bf83aa62df71dc14c6b6cc8",
+  "case_count": 28,
+  "load_including_imports_ms": 881.99,
+  "process_rss_mib": 109.52,
+  "rss_increase_mib": 87.45,
+  "sampled_end_rss_only": true,
+  "warm_calls": 140,
+  "median_ms": 1.015,
+  "p95_ms": 1.408,
+  "max_ms": 9.285,
+  "rules": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 5,
+    "full_span_recall": 0.29411764705882354,
+    "clean_cases": 12,
+    "clean_cases_altered": 1,
+    "extra_masked_chars": 14,
+    "failures": [
+      {
+        "id": "name-1",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "name-2",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "name-3",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-1",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-2",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-3",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-spaces",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "password",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "mixed",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "meeting-date",
+        "missed_spans": 0,
+        "extra_masked_chars": 11
+      }
+    ]
+  },
+  "ner_per_loc": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 7,
+    "full_span_recall": 0.4117647058823529,
+    "clean_cases": 12,
+    "clean_cases_altered": 2,
+    "extra_masked_chars": 4,
+    "failures": [
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-spaces",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "email",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "employee",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "password",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "mixed",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "public-city",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      },
+      {
+        "id": "project",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      }
+    ]
+  },
+  "rules_plus_ner": {
+    "sensitive_spans": 17,
+    "fully_covered_spans": 12,
+    "full_span_recall": 0.7058823529411765,
+    "clean_cases": 12,
+    "clean_cases_altered": 3,
+    "extra_masked_chars": 18,
+    "failures": [
+      {
+        "id": "alias",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "address-implicit",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-spaces",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "phone-chinese",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "password",
+        "missed_spans": 0,
+        "extra_masked_chars": 3
+      },
+      {
+        "id": "birthday",
+        "missed_spans": 1,
+        "extra_masked_chars": 0
+      },
+      {
+        "id": "public-city",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      },
+      {
+        "id": "meeting-date",
+        "missed_spans": 0,
+        "extra_masked_chars": 11
+      },
+      {
+        "id": "project",
+        "missed_spans": 0,
+        "extra_masked_chars": 2
+      }
+    ]
+  }
+}

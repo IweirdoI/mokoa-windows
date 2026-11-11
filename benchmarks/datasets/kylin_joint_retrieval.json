@@ -1,0 +1,34 @@
+{
+  "description": "人工编写的小规模诊断集，12条知识、15个查询，含多相关答案；非官方或独立盲测集，不得当作泛化成绩。修改标签后须重新留存版本与哈希。",
+  "documents": [
+    {"id":"pip", "text":"pip安装Python依赖超时时，可以切换清华镜像源重试。"},
+    {"id":"ssh", "text":"SSH免密登录需要把客户端公钥加入服务器的authorized_keys文件。"},
+    {"id":"venv", "text":"使用conda create创建独立Python环境，再用conda activate激活环境。"},
+    {"id":"docker", "text":"Docker通过-p参数把容器内服务端口映射到宿主机端口。"},
+    {"id":"git", "text":"切换分支前可用git stash暂存未提交改动，随后用git stash pop恢复。"},
+    {"id":"excel", "text":"Excel数据透视表可以按部门汇总销售额，并统计分组总计。"},
+    {"id":"word", "text":"Word长文档先设置章节标题样式，再插入自动目录并更新页码。"},
+    {"id":"ppt", "text":"PowerPoint演讲者视图可在演讲者屏幕显示备注，观众屏幕只显示幻灯片。"},
+    {"id":"csv", "text":"CSV导入后中文乱码，应检查文本编码并尝试按UTF-8重新导入。"},
+    {"id":"minutes", "text":"会议纪要模板包括会议主题、参会人员、决策事项、责任人和截止日期。"},
+    {"id":"weekly", "text":"项目周报模板包括本周进展、风险问题、下周计划和所需支持。"},
+    {"id":"bug", "text":"软件故障工单需要记录复现步骤、预期结果、实际结果和环境版本。"}
+  ],
+  "queries": [
+    {"id":"q01", "text":"Python包下载一直超时，应该换什么源？", "relevant_ids":["pip"]},
+    {"id":"q02", "text":"怎样登录远程服务器而不用反复输密码？", "relevant_ids":["ssh"]},
+    {"id":"q03", "text":"如何创建并启用隔离的Python运行环境？", "relevant_ids":["venv"]},
+    {"id":"q04", "text":"怎么从宿主机访问容器里面的服务？", "relevant_ids":["docker"]},
+    {"id":"q05", "text":"还没提交的代码要先收起来，切换分支后再恢复，怎么做？", "relevant_ids":["git"]},
+    {"id":"q06", "text":"销售表如何按部门自动求和？", "relevant_ids":["excel"]},
+    {"id":"q07", "text":"长文档的章节目录和页码如何自动生成？", "relevant_ids":["word"]},
+    {"id":"q08", "text":"放幻灯片时，怎么只让自己看到讲稿？", "relevant_ids":["ppt"]},
+    {"id":"q09", "text":"逗号分隔文件导入后汉字变成乱码怎么办？", "relevant_ids":["csv"]},
+    {"id":"q10", "text":"会后记录要包含哪些内容才能明确任务归属？", "relevant_ids":["minutes"]},
+    {"id":"q11", "text":"每周向项目组汇报应该写哪些栏目？", "relevant_ids":["weekly"]},
+    {"id":"q12", "text":"给开发人员反馈程序问题，需要提供什么信息？", "relevant_ids":["bug"]},
+    {"id":"q13", "text":"请找出会议纪要和项目周报这两种模板的内容要求。", "relevant_ids":["minutes","weekly"]},
+    {"id":"q14", "text":"想改善Python开发环境：下载包总超时，也需要隔离依赖环境。", "relevant_ids":["pip","venv"]},
+    {"id":"q15", "text":"办公汇报前，如何自动生成Word目录，并让PPT讲稿仅自己可见？", "relevant_ids":["word","ppt"]}
+  ]
+}

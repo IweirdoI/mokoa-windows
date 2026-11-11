@@ -1,0 +1,421 @@
+{
+  "mode": "rule",
+  "llm_calls": {
+    "succeeded": 0,
+    "failed": 0
+  },
+  "samples": 35,
+  "tp": 46,
+  "fp": 0,
+  "fn": 2,
+  "precision": 1.0,
+  "recall": 0.9583,
+  "f1": 0.9787,
+  "sample_exact_match_rate": 0.9429,
+  "negative_samples_with_any_extract": 0,
+  "details": [
+    {
+      "id": "pref_001",
+      "expected": [
+        "habit.download_path=D:/Downloads",
+        "habit.file_naming_rule=project_prefix"
+      ],
+      "got": [
+        "habit.download_path=D:/Downloads",
+        "habit.file_naming_rule=project_prefix"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_002",
+      "expected": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "got": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_003",
+      "expected": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "got": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_004",
+      "expected": [
+        "tool_selection.file_search_tool=everything"
+      ],
+      "got": [
+        "tool_selection.file_search_tool=everything"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_005",
+      "expected": [
+        "style.reply_language=en-US",
+        "style.report_format=docx"
+      ],
+      "got": [
+        "style.reply_language=en-US",
+        "style.report_format=docx"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_006",
+      "expected": [
+        "habit.file_organize_rule=by_type",
+        "workflow.backup_before_modify=true"
+      ],
+      "got": [
+        "habit.file_organize_rule=by_type",
+        "workflow.backup_before_modify=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_007",
+      "expected": [
+        "habit.archive_format=zip",
+        "security.confirm_before_highrisk=true"
+      ],
+      "got": [
+        "habit.archive_format=zip",
+        "security.confirm_before_highrisk=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_008",
+      "expected": [
+        "style.report_format=pdf",
+        "workflow.auto_complete_steps=true"
+      ],
+      "got": [
+        "style.report_format=pdf",
+        "workflow.auto_complete_steps=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_009",
+      "expected": [
+        "habit.file_naming_rule=date_prefix",
+        "tool_selection.batch_operation_tool=bash"
+      ],
+      "got": [
+        "habit.file_naming_rule=date_prefix",
+        "tool_selection.batch_operation_tool=bash"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_010",
+      "expected": [
+        "tool_selection.text_processing_tool=python",
+        "workflow.backup_before_modify=true"
+      ],
+      "got": [
+        "tool_selection.text_processing_tool=python",
+        "workflow.backup_before_modify=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_011",
+      "expected": [
+        "habit.download_path=D:/Downloads",
+        "habit.file_naming_rule=project_prefix"
+      ],
+      "got": [
+        "habit.download_path=D:/Downloads"
+      ],
+      "fp": [],
+      "fn": [
+        "habit.file_naming_rule=project_prefix"
+      ]
+    },
+    {
+      "id": "pref_012",
+      "expected": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "got": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_013",
+      "expected": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "got": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_014",
+      "expected": [
+        "tool_selection.file_search_tool=everything"
+      ],
+      "got": [
+        "tool_selection.file_search_tool=everything"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_015",
+      "expected": [
+        "style.reply_language=en-US",
+        "style.report_format=docx"
+      ],
+      "got": [
+        "style.reply_language=en-US",
+        "style.report_format=docx"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_016",
+      "expected": [
+        "habit.download_path=D:/Downloads",
+        "habit.file_naming_rule=project_prefix"
+      ],
+      "got": [
+        "habit.file_naming_rule=project_prefix"
+      ],
+      "fp": [],
+      "fn": [
+        "habit.download_path=D:/Downloads"
+      ]
+    },
+    {
+      "id": "pref_017",
+      "expected": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "got": [
+        "security.confirm_before_rm=false",
+        "workflow.preview_before_execute=false"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_018",
+      "expected": [
+        "habit.file_organize_rule=by_type",
+        "workflow.backup_before_modify=true"
+      ],
+      "got": [
+        "habit.file_organize_rule=by_type",
+        "workflow.backup_before_modify=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_019",
+      "expected": [
+        "style.report_format=pdf",
+        "workflow.auto_complete_steps=true"
+      ],
+      "got": [
+        "style.report_format=pdf",
+        "workflow.auto_complete_steps=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_020",
+      "expected": [
+        "habit.file_naming_rule=date_prefix",
+        "tool_selection.batch_operation_tool=bash"
+      ],
+      "got": [
+        "habit.file_naming_rule=date_prefix",
+        "tool_selection.batch_operation_tool=bash"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_021",
+      "expected": [
+        "habit.download_path=D:/Downloads"
+      ],
+      "got": [
+        "habit.download_path=D:/Downloads"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_022",
+      "expected": [
+        "habit.download_path=E:/Downloads"
+      ],
+      "got": [
+        "habit.download_path=E:/Downloads"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_023",
+      "expected": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "got": [
+        "tool_selection.data_processing_tool=excel"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_024",
+      "expected": [
+        "tool_selection.data_processing_tool=python"
+      ],
+      "got": [
+        "tool_selection.data_processing_tool=python"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_025",
+      "expected": [
+        "style.code_runnable=true",
+        "style.reply_language=zh-CN"
+      ],
+      "got": [
+        "style.code_runnable=true",
+        "style.reply_language=zh-CN"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_026",
+      "expected": [],
+      "got": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_027",
+      "expected": [],
+      "got": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_028",
+      "expected": [],
+      "got": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_029",
+      "expected": [],
+      "got": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_030",
+      "expected": [],
+      "got": [],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_031",
+      "expected": [
+        "habit.archive_format=zip",
+        "security.confirm_before_highrisk=true"
+      ],
+      "got": [
+        "habit.archive_format=zip",
+        "security.confirm_before_highrisk=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_032",
+      "expected": [
+        "tool_selection.web_scraping_tool=playwright"
+      ],
+      "got": [
+        "tool_selection.web_scraping_tool=playwright"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_033",
+      "expected": [
+        "style.reply_language=zh-CN"
+      ],
+      "got": [
+        "style.reply_language=zh-CN"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_034",
+      "expected": [
+        "workflow.backup_before_modify=true"
+      ],
+      "got": [
+        "workflow.backup_before_modify=true"
+      ],
+      "fp": [],
+      "fn": []
+    },
+    {
+      "id": "pref_035",
+      "expected": [
+        "style.report_format=pdf"
+      ],
+      "got": [
+        "style.report_format=pdf"
+      ],
+      "fp": [],
+      "fn": []
+    }
+  ]
+}

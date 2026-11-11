@@ -1,0 +1,185 @@
+{
+  "target": 0.88,
+  "samples": 22,
+  "correct": 22,
+  "correctness": 1.0,
+  "pass": true,
+  "details": [
+    {
+      "id": "C001",
+      "category": "偏好漂移-同来源更新",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "用户改口：Java -> Python（均为对话，新更近）"
+    },
+    {
+      "id": "C002",
+      "category": "手动配置优先于对话",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "已配暗色主题(manual)，对话说浅色不应覆盖权威配置"
+    },
+    {
+      "id": "C003",
+      "category": "陈旧行为被新对话覆盖",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "60天前行为观测 VSCode，今天对话改口 IntelliJ"
+    },
+    {
+      "id": "C004",
+      "category": "手动配置优先于对话",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "已配下载到 D 盘(manual)，对话说 E 盘不应覆盖"
+    },
+    {
+      "id": "C005",
+      "category": "内容相同不冲突",
+      "expected": "no_conflict",
+      "got": "no_conflict",
+      "correct": true,
+      "notes": "两次都说暗色主题，不构成冲突"
+    },
+    {
+      "id": "C006",
+      "category": "低信任不覆盖高信任",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "对话说英文不应覆盖已配中文(manual)"
+    },
+    {
+      "id": "C007",
+      "category": "偏好漂移-同来源更新",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "同对话来源，新更近 -> 覆盖"
+    },
+    {
+      "id": "C008",
+      "category": "跨场景不算同一主题",
+      "expected": "no_conflict",
+      "got": "no_conflict",
+      "correct": true,
+      "notes": "office 的 download_path 与 global 的 download_path 是不同身份，不构成冲突"
+    },
+    {
+      "id": "C009",
+      "category": "新手动配置覆盖旧对话",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "manual 新说 E 盘覆盖旧对话 D 盘"
+    },
+    {
+      "id": "C010",
+      "category": "陈旧行为被新行为覆盖",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "40天前行为 Chrome，今天行为 Edge -> 覆盖"
+    },
+    {
+      "id": "C011",
+      "category": "手动配置优先于对话",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "已配暗色(manual,1天前)，对话说浅色不覆盖"
+    },
+    {
+      "id": "C012",
+      "category": "行为不覆盖手动配置",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "manual 暗色，行为观测浅色(更近)也不覆盖权威配置"
+    },
+    {
+      "id": "K001",
+      "category": "手动配置覆盖旧对话",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "端口 8080(对话) -> 9090(manual,更新)"
+    },
+    {
+      "id": "K002",
+      "category": "最新事实胜出",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "地址旧对话40天前，新对话今天 -> 覆盖"
+    },
+    {
+      "id": "K003",
+      "category": "最新事实胜出",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "高质 manual 旧事实，但对话给出更新事实 -> 取最新"
+    },
+    {
+      "id": "K004",
+      "category": "内容相同不冲突",
+      "expected": "no_conflict",
+      "got": "no_conflict",
+      "correct": true,
+      "notes": "同一事实重复 -> 不冲突"
+    },
+    {
+      "id": "K005",
+      "category": "手动配置覆盖旧行为",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "行为观测 foo，manual 给出 bar(更新) -> 覆盖"
+    },
+    {
+      "id": "K006",
+      "category": "低信任不覆盖高信任",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "对话旧事实，tool_result 新事实不应覆盖权威知识"
+    },
+    {
+      "id": "K007",
+      "category": "陈旧手动配置被新事实覆盖",
+      "expected": "replace",
+      "got": "replace",
+      "correct": true,
+      "notes": "manual 端口 8080(60天前)被对话 9090(今天)覆盖——修复点"
+    },
+    {
+      "id": "K008",
+      "category": "低信任不覆盖高信任",
+      "expected": "keep_old",
+      "got": "keep_old",
+      "correct": true,
+      "notes": "manual 旧事实，行为观测新事实不覆盖"
+    },
+    {
+      "id": "K009",
+      "category": "无稳定键不冲突",
+      "expected": "no_conflict",
+      "got": "no_conflict",
+      "correct": true,
+      "notes": "都没有 knowledge_key，靠内容区分 -> 不误判冲突"
+    },
+    {
+      "id": "K010",
+      "category": "不同类型不冲突",
+      "expected": "no_conflict",
+      "got": "no_conflict",
+      "correct": true,
+      "notes": "旧偏好 lang 与 新知识 lang 不同类型 -> 不冲突"
+    }
+  ]
+}

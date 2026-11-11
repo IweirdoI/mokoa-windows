@@ -1,0 +1,5 @@
+{"id": "ret_know06", "user_id": "bench", "query": "pip 镜像怎么配置", "relevant_content": "pip 安装超时时应使用国内镜像源", "memory_type": "tool_call", "top_k": 5}
+{"id": "ret_know11", "user_id": "bench", "query": "星河笔记日志路径在哪", "relevant_content": "/var/log/xinghe/notes.log 是星河笔记的日志路径", "memory_type": "document_chunk", "top_k": 5}
+{"id": "ret_know12", "user_id": "bench", "query": "终端报 Address already in use 该怎么办", "relevant_content": "端口被占用（Address already in use）时，星河笔记应改用 9090", "memory_type": "tool_call", "top_k": 5}
+{"id": "ret_doc03", "user_id": "bench", "query": "星河笔记周会谁负责、什么日期", "relevant_content": "星河笔记周会负责人李四（Li Si），日期 2026-09-05", "memory_type": "document_chunk", "top_k": 5}
+{"id": "ret_doc04", "user_id": "bench", "query": "星河笔记现在用哪个端口", "relevant_content": "星河笔记变更后当前端口为 9090（曾为 8080）", "memory_type": "document_chunk", "top_k": 5}

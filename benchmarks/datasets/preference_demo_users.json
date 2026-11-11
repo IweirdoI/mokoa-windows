@@ -1,0 +1,70 @@
+[
+  {
+    "user_id": "demo_power_user",
+    "scene_id": "os_operation",
+    "label": "高权限 OS 用户",
+    "seed_texts": [
+      "把桌面上所有 .tmp 文件删了，直接删不用问我",
+      "默认下载路径设为 D:/Downloads"
+    ],
+    "expected_preferences": [
+      "security.confirm_before_rm=false",
+      "workflow.preview_before_execute=false",
+      "habit.download_path=D:/Downloads"
+    ]
+  },
+  {
+    "user_id": "demo_office",
+    "scene_id": "office",
+    "label": "办公场景",
+    "seed_texts": [
+      "帮我把这周的日报整理成表格发给我",
+      "用英文给我出一份这个 Excel 的分析报告"
+    ],
+    "expected_preferences": [
+      "tool_selection.data_processing_tool=excel",
+      "style.reply_language=en-US",
+      "style.report_format=docx"
+    ]
+  },
+  {
+    "user_id": "demo_coder",
+    "scene_id": "coding",
+    "label": "编程场景",
+    "seed_texts": [
+      "写代码时请保证可直接运行，并附带必要测试命令。"
+    ],
+    "expected_preferences": [
+      "style.code_runnable=true"
+    ]
+  },
+  {
+    "user_id": "demo_cautious",
+    "scene_id": "os_operation",
+    "label": "谨慎安全策略",
+    "seed_texts": [
+      "删除文件前必须确认。",
+      "高风险操作执行前必须确认。",
+      "命令执行前先预览给我看。"
+    ],
+    "expected_preferences": [
+      "security.confirm_before_rm=true",
+      "security.confirm_before_highrisk=true",
+      "workflow.preview_before_execute=true"
+    ]
+  },
+  {
+    "user_id": "demo_version_chain",
+    "scene_id": "os_operation",
+    "label": "版本历史演示（先后写入）",
+    "seed_texts": [
+      "下载路径设为 D:/Downloads",
+      "下载路径改到 E:/Downloads"
+    ],
+    "expected_preferences": [
+      "habit.download_path=E:/Downloads"
+    ],
+    "history_key": "habit.download_path",
+    "note": "前端用 GET /preferences/demo_version_chain?preference_key=habit.download_path&latest_only=false 查看版本链"
+  }
+]

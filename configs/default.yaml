@@ -1,0 +1,228 @@
+# 麒忆智脑 - Default Configuration
+# 全项目默认值的单一事实来源。环境变量（OS_AGENT_* / LM_STUDIO_* / SILICONFLOW_* / AGENT_*）可覆盖对应键，优先级高于本文件。
+# 密钥（api_key 等）一律经 .env / 环境变量注入，禁止写入本文件。
+
+project:
+  name: qiyi-zhineng-os-agent-memory
+  display_name: 麒忆智脑
+  version: "0.1.0"
+
+# ---------------------------------------------------------------------------
+# API 服务（api/server.py，FastAPI + uvicorn）
+# ---------------------------------------------------------------------------
+api:
+  host: 127.0.0.1
+  port: 8000                 # 开发默认；真机验收常用 18080（命令行/环境变量覆盖）
+  title: Kylin OS Agent Memory API
+  version: "0.3.0"
+  cors_allow_origins: ["*"]  # 前后端分离部署时由编排核心添加 CORSMiddleware
+
+memory:
+  short_term_capacity: 10
+  mid_term_capacity: 50
+  mid_term_heat_threshold: 3.0
+  mid_term_similarity_threshold: 0.7  # mid 写入时文本/身份相似合并阈值
+  # 中期语义合并：embedding 余弦 + 关键词 Jaccard，参考 MemoryOS mid_term.py
+  mid_term_keyword_alpha: 0.3  # 关键词 Jaccard 在相似度中的权重
+  # 近因衰减：effective_heat = base_heat * exp(-Δt/τ)，支持跨对话偏好漂移
+  mid_term_recency_tau_hours: 168.0  # 时间常数（小时），越大遗忘越慢
+  mid_term_recency_gamma: 1.0  # 近因增益系数
+  # 中期→长期 LLM 抽象（固化）：true 时跨对话同主题碎片由硅基流动抽象为稳定记忆；
+  # 默认关闭，避免每次 consolidate 高频调模型（需 preference.llm 的 API key 就绪）。
+  mid_term_llm_abstraction: false
+  quality_threshold: 0.46  # 全局兜底阈值：未列入 quality_type_thresholds 的类型走这里
+
+  # ---- 按类型分阈值 (QualityEvaluator.type_thresholds) ----
+  # 不同来源 (record.type) 的自然分数分布不同，单一全局阈值必然系统性地：
+  #   * 定高 -> 误杀天然低分但合法的来源（如 behavior 行为日志）
+  #   * 定低 -> 让高分来源的噪声漏进来
+  # 因此每类按「该类真实底分 / 噪声顶分」取中点各自设定。
+  # 未在此列出的类型自动回落上面的全局 quality_threshold。
+  #
+  # 【测量口径（务必先读，否则会得出错误结论）】
+  #   conversation / document / tool_result：
+  #       其 recurrence 与 reuse_value 与频次弱相关，按 occurrence_count=1
+  #       （单条入库的真实常态）测量即可。
+  #   behavior：
+  #       区分维度恰好就是频次（recurrence 与 reuse_value 均由 occurrence_count 驱动），
+  #       必须以「累计出现次数」口径测量。若把真实行为模式也按 occ=1 计，
+  #       真实与噪声会几乎重合（实测间隔退化到 ~0.002），得到伪结论。
+  #
+  # 【各类型实测分布与安全取值范围】阈值必须落在「噪声顶 < 阈值 ≤ 真实底」才有效；
+  # 超出下界会漏放噪声，超出上界会误杀真实语料。
+  #   conversation  真实底 0.4750 / 噪声顶 0.4000 -> 安全区间 (0.400, 0.475]  建议 0.44
+  #   document      真实底 0.5164 / 噪声顶 0.5041 -> 安全区间 (0.504, 0.516]  建议 0.51
+  #                 注意：该区间极窄（宽约 0.012）。短噪声「这是一份文档。」与短真实文档
+  #                 在确定性规则下几乎同分，这是规则法的天花板。不建议再往上压，
+  #                 否则会开始误杀真实短文档；要进一步拉开需引入语义级判别。
+  #   tool_result   真实底 0.5737 / 噪声顶 0.5000 -> 安全区间 (0.500, 0.574]  建议 0.54
+  #   behavior      真实底 0.4524 (occ>=2 重复模式) / 噪声顶 0.3616 (occ=1 一次性事件)
+  #                 -> 安全区间 (0.362, 0.452]  建议 0.41
+  #   manual_config 不列入本映射 -> 回落全局 0.46。
+  #                 该类为人工/系统显式配置，explicitness 恒为 1.0，实测真实约 0.76，
+  #                 用全局阈值足够安全；如需更严格可在此为其单独加一行。
+  #
+  # ★ 关于「一次性事件是否保留」的建议（仅 behavior 涉及）
+  #   当前 behavior=0.41 的语义：拒绝一次性琐碎事件（mouse_move / hover / page_view 等
+  #   occ=1，实测 0.358~0.362），接受重复出现的行为模式（occ>=2，实测 >=0.452）。
+  #   推荐保持该设定 —— 行为记忆应记「模式」而非「单次鼠标移动」；
+  #   若每个 mouse_move 都入库会快速淹没高价值记忆并放大检索噪声。
+  #   副作用：某行为的首次出现不落库，需重复出现才被记住（以重复确认）。
+  #     如需全量留痕/审计（连一次性事件也要保留）：设 behavior=0.35，
+  #       即低于噪声顶 0.362 全收，代价是不再有分离，琐碎事件也会进记忆库。
+  #     如需更严格（要求更多次重复才入库）：可向 0.45 上调，
+  #       但超过 0.4524 会开始误杀 occ=2 的真实重复模式。
+  #
+  # 说明：若此处缺省或读不到，代码将回落到 QualityEvaluator 内置的
+  # _DEFAULT_TYPE_THRESHOLDS（与本配置给出的数值一致），行为不受影响。
+  quality_type_thresholds:
+    conversation: 0.44
+    document: 0.51
+    tool_result: 0.54
+    behavior: 0.41
+    # manual_config: 0.46   # 不配置 -> 自动回落上面的全局 quality_threshold
+
+  # ingestion 质量维度权重；修改后无需改代码，可用验收脚本对照分布
+  quality_weights:
+    source_reliability: 0.25
+    explicitness: 0.20
+    recurrence: 0.20
+    informativeness: 0.15
+    reuse_value: 0.10
+    input_confidence: 0.10
+
+retrieval:
+  top_k: 5
+  latency_budget_ms: 500
+
+embedding:
+  backend: auto  # auto | kylin | local | hash（hash 仅测试）
+  local_model: BAAI/bge-m3
+  normalize: true
+  allow_stub_fallback: true  # 未安装 sentence-transformers 时回退零向量，便于 CI
+  # auto：仅在可加载 V11 系统 SDK 的用户态选择 kylin，并默认严格模式。
+  # device: cpu  # 可选；省略则 sentence-transformers 自动选择
+  # kylin: libkylin-coreai-embedding-dev (see docs/KYLIN_SDK.md)
+
+storage:
+  # auto：麒麟 V11 宿主 + 已编译桥接库 → 系统向量 SDK；pytest/开发机 → memory。
+  # 禁止在真机验收时静默落到 memory / pymilvus / BGE。
+  memory_backend: auto       # auto | memory | milvus | kylin
+  milvus_uri: http://localhost:19530
+  collection_name: os_agent_memory
+  # Ingestion staging (3fba60e1) — 详见 3fba60e1-ingestion-SQLite建库说明.md
+  staging_backend: sqlite          # sqlite | memory
+  staging_sqlite: ./data/ingestion_staging.db
+  staging_jsonl: ./data/staging.jsonl  # export_jsonl 推荐路径；当前不自动 mirror
+  staging_raw_archive_mode: redacted   # redacted | off | plaintext（仅 dev）
+  staging_allow_plaintext_raw_archive: false  # plaintext 模式必须显式二次确认
+  staging_raw_retention_days: 7
+  staging_audit_retention_days: 90
+  staging_auto_purge_interval_seconds: 3600  # 0 关闭后台自动清理
+  dedup_ttl_seconds: 300
+
+# ---------------------------------------------------------------------------
+# 麒麟运行时（src/common/kylin_runtime.py、embedding/kylin_adapter.py、knowledge/memory_service/kylin_vector_client.py）
+# 这些默认值原散落在 factory.py / embedding/* 等处的 os.getenv，现统一收口于此。
+# 环境变量 OS_AGENT_KYLIN_* 可覆盖对应键。
+# ---------------------------------------------------------------------------
+kylin:
+  acceptance: false           # OS_AGENT_KYLIN_ACCEPTANCE=1 进入正式验收（禁止降级）
+  strict: false               # OS_AGENT_KYLIN_STRICT=1 严格模式，禁止 fallback
+  vector_dim: 1024           # MEMORY_VECTOR_DIM 真实维度（真机探测后覆盖）
+  milvus_collection: mokoa_kylin_sdk   # 真机验收集合名（OS_AGENT_MILVUS_COLLECTION）
+  vector_library: ""          # OS_AGENT_KYLIN_VECTOR_LIBRARY 桥接库 .so 路径
+  vector_endpoint: ""         # OS_AGENT_KYLIN_VECTOR_ENDPOINT 系统向量引擎 socket
+  vector_timeout_ms: 5000
+
+# ---------------------------------------------------------------------------
+# 知识记忆库（src/knowledge/memory_service）：策略与长度约束
+# 这些值对齐 memory_policy.py / config.py 中的常量，便于集中调参（当前模块仍各自读常量，后续可改为读取此处）。
+# ---------------------------------------------------------------------------
+knowledge:
+  memory_service:
+    save_threshold: 0.46              # MemoryPolicy.SAVE_THRESHOLD 入库质量门控 (真实底0.505/噪声顶0.415均值)
+    similarity_threshold: 0.7        # 向量召回相似度下限
+    conflict:
+      enabled: true
+      near_recency_decay: true       # 近因降权，支持偏好漂移覆盖（参考 Graphiti）
+    text_max_length: 4096
+    short_text_max_length: 512
+    id_max_length: 128
+
+# 文件摄取（3fba60e1）：图片在当前 llm.model 具备视觉能力时走多模态描述。
+ingestion:
+  vision: auto   # auto | on | off ；auto 按模型名判断（含 -vl / gpt-4o / gemini 等）
+  vision_probe: false  # true 时再查 /v1/models 的 capabilities
+
+# ---------------------------------------------------------------------------
+# Agent 对话服务（src/agent/service.py，LangGraph 单智能体）
+# 云端聊天优先硅基流动；AGENT_* 环境变量可覆盖对应键。
+# ---------------------------------------------------------------------------
+agent:
+  provider: siliconflow        # siliconflow | lm-studio | openai
+  base_url: ""                 # 留空则回退 SILICONFLOW_BASE_URL / 顶层 llm.base_url
+  model: ""                    # 留空则回退 SILICONFLOW_LLM_MODEL / 顶层 llm.model
+  # api_key 仅经 SILICONFLOW_API_KEY / AGENT_API_KEY 注入，勿写入文件
+  timeout_seconds: 60.0
+  tools_enabled: false         # AGENT_ENABLE_TOOLS=1 开启固定召回图工具
+  save_memory_default: true    # /agent/chat 默认保存本轮记忆
+  use_memory_default: true     # /agent/chat 默认召回历史记忆
+  proxy_ignore_schemes:        # httpx 不支持的代理协议，自动忽略
+    - socks://
+
+adapters:
+  # Reference only — do not enable all at runtime
+  memoryos: true
+  mem0: true
+  cognee: true
+
+# 全局 LLM 服务配置（2abac5a6）：所有调用本地/云端模型的模块统一从这里读取，
+# 禁止在代码中硬编码端点、密钥与模型名。
+llm:
+  provider: lm-studio          # lm-studio | ollama | openai
+  base_url: http://127.0.0.1:1234   # LM Studio 服务根地址（原生端点 /api/v1/chat）
+  # api_key: 通过 LM_STUDIO_API_KEY 或 OPENAI_API_KEY 环境变量注入，勿提交
+  model: phi-3.1-mini-128k-instruct  # 本地 LM Studio 已加载的非思考模型，content 有值；勿用 qwen3.5-0.8b
+  timeout_seconds: 60.0        # 单次请求超时（首次加载模型可能较慢）
+  max_tokens: 1024             # 回答 token 预算
+  # 注意：qwen3.5-0.8b 为强制思考模型，API 层无法关闭 thinking，content 恒为空，不可用；
+  #       本地抽取/语义识别请使用 qwen2.5-* / phi-3.1 / gemma-3 等非思考模型。
+
+security:
+  enable_pii_filter: true
+  enable_nl_forget: true
+  # 语义级敏感识别（可选增强，2abac5a6）：依赖本地 LLM（默认 LM Studio，OpenAI 兼容接口），
+  # 识别正则遗漏的敏感信息（如工号、昵称、隐式地址等）。
+  # 默认关闭；开启后入库与聊天出站均检测，失败会阻止本次处理，需保证本地服务可用。
+  # 端点/密钥/模型名等继承顶层 llm 段，此处仅保留模块自身开关与阈值。
+  semantic_detection:
+    enabled: false            # 开发期默认关闭，需配合本地 LM Studio 开启
+    min_confidence: 0.6       # 语义匹配置信度阈值
+
+# 偏好提取（26a9835a）：与顶层 llm（安全语义）分离，避免互相覆盖。
+# 默认 fusion = use_llm + allow_rules；无密钥或 LLM 失败时降级到规则。
+preference:
+  storage_dir: ./data/preferences
+  use_llm: true
+  allow_rules: true
+  llm:
+    # 本地 LM Studio（OpenAI 兼容；base_url 须带 /v1 才能命中 /v1/chat/completions）
+    base_url: http://127.0.0.1:1234/v1
+    model: phi-3.1-mini-128k-instruct  # 非思考模型；勿用 qwen3.5-0.8b（强制思考，content 恒空）
+    # api_key: 通过 LM_STUDIO_API_KEY / SILICONFLOW_API_KEY / OPENAI_API_KEY 环境变量注入，勿提交
+
+# ---------------------------------------------------------------------------
+# 日志（统一日志级别与格式）
+# ---------------------------------------------------------------------------
+logging:
+  level: INFO                  # DEBUG | INFO | WARNING | ERROR
+  format: "%(asctime)s %(levelname)s %(name)s %(message)s"
+
+# ---------------------------------------------------------------------------
+# 评测 / 基准（tests/、benchmarks/）
+# ---------------------------------------------------------------------------
+benchmark:
+  dataset_dir: ./benchmarks/datasets
+  results_dir: ./data/reports
+  seed: 42

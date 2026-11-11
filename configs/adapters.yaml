@@ -1,0 +1,33 @@
+# 开源参考 Adapter 注册表（精简版）
+# 原则：仅设计参考，不并行运行多套记忆系统
+
+adapters:
+  memoryos:
+    repo: https://github.com/BAI-LAB/MemoryOS
+    role: memory_lifecycle_reference
+    borrows: [short_mid_long_flow, heat_promotion, updater]
+    owner: efca9634
+    modules: [core/layer_manager]
+    status: reference
+
+  mem0:
+    repo: https://github.com/mem0ai/mem0
+    role: preference_extraction_reference
+    borrows: [fact_extraction, hybrid_retrieval]
+    owner: 26a9835a
+    modules: [preference, adapters/mem0_adapter]
+    status: reference
+
+  cognee:
+    repo: https://github.com/topoteretes/cognee
+    role: knowledge_graph_reference
+    borrows: [entity_relation, structured_storage, forget_api]
+    owner: cb0aeabe
+    modules: [knowledge, adapters/cognee_adapter]
+    status: reference
+
+# 以下仅作调研记录，不实现 adapter
+deprecated_references:
+  supermemory: user_profile_ideas_only
+  zep: ingestion_pattern_ideas_only
+  langmem: background_consolidation_ideas_only

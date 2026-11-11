@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "generated_at": "2026-09-13T22:15:21",
+    "seed": 42,
+    "n": 50,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "66aeaf9"
+  },
+  "multiwoz": {
+    "sampled_indices": [
+      106,
+      409,
+      434,
+      488,
+      520,
+      711,
+      750,
+      1139,
+      1291,
+      1307,
+      1424,
+      1519,
+      1535,
+      1584,
+      1674,
+      1679,
+      1824,
+      2045,
+      2286,
+      2547,
+      2615,
+      3150,
+      3257,
+      3527,
+      3582,
+      3611,
+      3657,
+      3733,
+      3811,
+      3814,
+      4012,
+      4333,
+      4506,
+      4552,
+      4557,
+      4741,
+      4803,
+      5514,
+      5574,
+      5635,
+      5881,
+      5925,
+      6201,
+      6224,
+      6873,
+      6912,
+      6924,
+      7359,
+      7527,
+      8279
+    ],
+    "classify": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 45,
+        "preference": 5
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 45,
+        "expressed_preference": 5
+      },
+      "knowledge_rate": 0.9,
+      "preference_rate": 0.1
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 49,
+      "accept_rate": 0.98,
+      "memory_type_distribution": {
+        "knowledge": 49
+      },
+      "reject_reasons": {
+        "同一来源事件在去重窗口内已被接收": 1
+      },
+      "quality_avg": 0.5096,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "No, that's all I need."
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Thank you so much for your help."
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "Thank you. That's all I need."
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "thank you for all your help. Have a good day!"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.505,
+          "reasons": [],
+          "preview": "No, that's all. Thank you."
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "hit_at_5": 0.18,
+      "ingest_avg_ms": 216.532,
+      "query_avg_ms": 21.476,
+      "query_p95_ms": 26.819,
+      "latency_passed": true
+    }
+  },
+  "toolbench": {
+    "sampled_indices": [
+      18118,
+      22725,
+      29483,
+      59629,
+      55379,
+      53358,
+      50374,
+      79838,
+      81309,
+      95273,
+      93991,
+      21919,
+      6926,
+      106010,
+      41341,
+      73702,
+      110736,
+      60796,
+      27856,
+      81241,
+      96769,
+      40543,
+      110277,
+      16772,
+      227,
+      67283,
+      107551,
+      58698,
+      6792,
+      43134,
+      59630,
+      49203,
+      102222,
+      123724,
+      70843,
+      96236,
+      38141,
+      79309,
+      62301,
+      48793,
+      120698,
+      109785,
+      1610,
+      32881,
+      61057,
+      40868,
+      47409,
+      99495,
+      28929,
+      95588
+    ],
+    "classify": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "tool_result",
+      "type_distribution": {
+        "knowledge": 50
+      },
+      "reason_distribution": {
+        "knowledge_source": 50
+      },
+      "knowledge_rate": 1.0,
+      "preference_rate": 0.0
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 48,
+      "accept_rate": 0.96,
+      "memory_type_distribution": {
+        "knowledge": 48
+      },
+      "reject_reasons": {
+        "内容存在隐私风险，等待安全模块处理": 2
+      },
+      "quality_avg": 0.577,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.605,
+          "reasons": [],
+          "preview": "[TASK] My company is expanding globally, and we need to convert our budget from USD to multiple currencies. Can you help"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.605,
+          "reasons": [],
+          "preview": "[TASK] My friends are planning to launch their own online store using Shopify, and they need assistance in gathering inf"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.605,
+          "reasons": [],
+          "preview": "[TASK] I am organizing a sports event and I need to find players who weigh between 80 and 90 kilograms. Can you provide "
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.575,
+          "reasons": [],
+          "preview": "[TASK] I'm researching a company for a potential collaboration. Can you fetch the company details, such as its name, des"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.605,
+          "reasons": [],
+          "preview": "[TASK] I'm developing a content filtering system and I need an API that can replace profane words in user-generated cont"
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 113.921,
+      "query_avg_ms": 40.375,
+      "query_p95_ms": 46.278,
+      "latency_passed": true
+    }
+  }
+}

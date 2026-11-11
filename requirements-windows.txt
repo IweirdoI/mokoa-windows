@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+# Windows 日常开发依赖。版本与 requirements.txt 相同，但不安装 sentence-transformers / torch。
+# 麒麟真机和 Windows 语义检索（BGE-M3）仍使用 requirements.txt，不要用本文件代替真机环境。
+# hash 向量没有语义，不能拿来写召回率。
+
+pydantic==2.13.5
+pyyaml==6.0.3
+fastapi==0.141.1
+uvicorn==0.52.4
+langgraph==1.2.11       # single-agent workflow; Windows/Python 3.12 verified
+httpx==0.28.1
+python-multipart==0.0.32
+pypdf==6.18.1
+python-docx==1.2.0
+Pillow==12.3.0
+cryptography==50.0.1  # 敏感索引加密（AES-GCM）
+pymilvus==2.6.17   # Milvus 2.x client + Milvus Lite; use OS_AGENT_MILVUS_URI for project configuration
+openai==3.13.0           # SiliconFlow OpenAI-compatible client（preference extract）
+python-dotenv==1.2.3      # 从 .env 加载密钥等敏感配置，避免写死/误提交
+
+# Dev & test
+pytest==9.1.1
+pytest-asyncio==1.4.0
+pyarrow==26.0.1  # 数据集评测读写 parquet；完整环境由 sentence-transformers 依赖链带入

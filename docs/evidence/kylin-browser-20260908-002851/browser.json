@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "user_id": "browser_20260908002851",
+  "base": "http://127.0.0.1:5173",
+  "steps": [
+    {
+      "name": "connected",
+      "status": "实时 API 已连接"
+    },
+    {
+      "name": "user",
+      "user_id": "browser_20260908002851"
+    },
+    {
+      "name": "preference_write",
+      "reply": "暂时没有检索到相关长期记忆。本轮内容已写入记忆，后续可以继续补充。",
+      "panel": "当前生效偏好\n2 项\nstyle.reply_language\nv1\n\nzh-CN\n\nos_operation · 置信度 92%\n准备遗忘\nhabit.download_path\nv1\n\nE:/Downloads\n\nos_operation · 置信度 92%\n准备遗忘\n版本历史\n2 条\nv1\nstyle.reply_language\n当前版本 · zh-CN\nv1\nhabit.download_path\n当前版本 · E:/Downloads"
+    },
+    {
+      "name": "preference_recall",
+      "reply": "我从记忆中找到了 2 条相关信息：\n\n1. [preference] habit.download_path=E:/Downloads | 下载默认放 E 盘\n2. [preference] style.reply_language=zh-CN | 中文回复偏好\n\n右侧“记忆”页可以查看来源和记忆编号。",
+      "memory_ids": [
+        "fedf2bad-bd60-412c-9c7f-f94ecbb0d1e4",
+        "234a490a-d296-497f-ae63-207a9ea6e196"
+      ]
+    },
+    {
+      "name": "knowledge_write",
+      "reply": "我从记忆中找到了 2 条相关信息：\n\n1. [preference] habit.download_path=E:/Downloads | 下载默认放 E 盘\n2. [preference] style.reply_language=zh-CN | 中文回复偏好\n\n右侧“记忆”页可以查看来源和记忆编号。"
+    },
+    {
+      "name": "knowledge_recall",
+      "reply": "我从记忆中找到了 5 条相关信息：\n\n1. 请记住这个配置方法:pip 安装依赖超时时可以换清华镜像。\n2. [preference] habit.download_path=E:/Downloads | 下载默认放 E 盘\n3. 你记得我的下载路径偏好吗?\n\n右侧“记忆”页可以查看来源和记忆编号。",
+      "panel": "本轮召回记忆\n55 ms · 5 条\nknowledge\nlong\n8a0613fb-35fd-4cec-8e0a-3247a20716d6\n\n请记住这个配置方法:pip 安装依赖超时时可以换清华镜像。\n\nglobal · chat\n准备遗忘\npreference\nlong\nfedf2bad-bd60-412c-9c7f-f94ecbb0d1e4\n\n[preference] habit.download_path=E:/Downloads | 下载默认放 E 盘\n\nos_operation · chat\n准备遗忘\npreference\nlong\nd1378c30-e2fe-467b-915d-7b912f1d0350\n\n你记得我的下载路径偏好吗?\n\nglobal · chat\n准备遗忘\npreference\nlong\n3e3c7033-2dfd-43bb-ae79-62c11c5984cc\n\n以后请用中文回答,下载文件默认保存到 E 盘。\n\nglobal · chat\n准备遗忘\npreference\nlong\n234a490a-d296-497f-ae63-207a9ea6e196\n\n[preference] style.reply_language=zh-CN | 中文回复偏好\n\nos_operation · chat\n准备遗忘"
+    },
+    {
+      "name": "forget",
+      "result": "已处理：忘掉下载路径偏好\n删除数量：2\n删除 ID：d1378c30-e2fe-467b-915d-7b912f1d0350, fedf2bad-bd60-412c-9c7f-f94ecbb0d1e4"
+    },
+    {
+      "name": "preference_after_forget",
+      "active_cards": [
+        "style.reply_language\nv1\n\nzh-CN\n\nglobal · 置信度 70%\n准备遗忘"
+      ],
+      "panel": "style.reply_language\nv1\n\nzh-CN\n\nglobal · 置信度 70%\n准备遗忘"
+    }
+  ],
+  "screenshots": [
+    "01-connected.png",
+    "02-user.png",
+    "03-preference-written.png",
+    "04-preference-recall.png",
+    "05-knowledge-recall.png",
+    "06-forget.png",
+    "07-preference-after-forget.png"
+  ],
+  "health": {
+    "status": "ok",
+    "memory_backend": "kylin",
+    "embedding_backend": "kylin",
+    "kylin_strict": "1",
+    "using_fallback": false,
+    "vector_dim": 768,
+    "vector_sdk": {
+      "app_id": "mokoa",
+      "backend": "kylin-vector-sdk",
+      "endpoint": "unix:/tmp/kylin-ai-vector-engine-1000.sock"
+    },
+    "collection": "mokoa_kylin_sdk",
+    "pid": 208862,
+    "run_id": ""
+  }
+}

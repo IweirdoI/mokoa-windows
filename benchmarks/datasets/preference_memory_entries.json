@@ -1,0 +1,65 @@
+[
+  {
+    "content": "[preference] style.code_runnable=true | 编程任务中希望代码可以直接运行，并附带必要测试命令",
+    "memory_type": "preference",
+    "task_type": "coding",
+    "source": "chat",
+    "user_id": "demo_user",
+    "scene_id": "coding",
+    "confidence": 0.92,
+    "metadata": {
+      "preference_key": "style.code_runnable",
+      "preference_value": "true",
+      "category": "style",
+      "version": 1,
+      "is_latest": true,
+      "scope": "scene",
+      "scene_id": "coding",
+      "confidence_source": "explicit_statement",
+      "n_observations": 1,
+      "embed_canonical": true
+    }
+  },
+  {
+    "content": "[preference] habit.download_path=D:/Downloads | 用户习惯将下载文件保存到 D:/Downloads 目录",
+    "memory_type": "preference",
+    "task_type": "os_operation",
+    "source": "manual",
+    "user_id": "demo_user",
+    "scene_id": "os_operation",
+    "confidence": 1.0,
+    "metadata": {
+      "preference_key": "habit.download_path",
+      "preference_value": "D:/Downloads",
+      "category": "habit",
+      "version": 1,
+      "is_latest": true,
+      "scope": "scene",
+      "scene_id": "os_operation",
+      "confidence_source": "manual_config",
+      "n_observations": 1,
+      "embed_canonical": true
+    }
+  },
+  {
+    "content": "[preference] workflow.preview_before_execute=true | 批量删除、文件整理等高风险操作前希望先预览计划并确认",
+    "memory_type": "preference",
+    "task_type": "os_operation",
+    "source": "chat",
+    "user_id": "demo_user",
+    "scene_id": "os_operation",
+    "confidence": 0.92,
+    "metadata": {
+      "preference_key": "workflow.preview_before_execute",
+      "preference_value": "true",
+      "category": "workflow",
+      "version": 1,
+      "is_latest": true,
+      "scope": "scene",
+      "scene_id": "os_operation",
+      "confidence_source": "explicit_statement",
+      "n_observations": 1,
+      "embed_canonical": true
+    }
+  }
+]

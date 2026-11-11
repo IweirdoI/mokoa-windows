@@ -1,0 +1,2476 @@
+{
+  "sample_stats": {
+    "source": "https://hf-mirror.com/datasets/blackhao0426/user-preference-564k/resolve/main/preference_extractor_564k.jsonl",
+    "n_lines": 564423,
+    "n_bad_json": 0,
+    "n_nonempty_in_corpus": 187759,
+    "n_empty_in_corpus": 376664,
+    "n_pos_sampled": 120,
+    "n_neg_sampled": 30,
+    "sampled_indices": [
+      13223,
+      16681,
+      19554,
+      27335,
+      28827,
+      31507,
+      32258,
+      38371,
+      41146,
+      43415,
+      45309,
+      47025,
+      52454,
+      56301,
+      60352,
+      62940,
+      64920,
+      65434,
+      67311,
+      68085,
+      70124,
+      78932,
+      81809,
+      91682,
+      97810,
+      101247,
+      103612,
+      105354,
+      105756,
+      109489,
+      111678,
+      117265,
+      122546,
+      126102,
+      127820,
+      128441,
+      129358,
+      131301,
+      132235,
+      132706,
+      136804,
+      146340,
+      152262,
+      152308,
+      167000,
+      170583,
+      172040,
+      179630,
+      187936,
+      190709,
+      193811,
+      200444,
+      203504,
+      203570,
+      205921,
+      211774,
+      224599,
+      224607,
+      235472,
+      237879,
+      239581,
+      248259,
+      254889,
+      255222,
+      260007,
+      264624,
+      270211,
+      274469,
+      284133,
+      284995,
+      293287,
+      298531,
+      299875,
+      305680,
+      312835,
+      320525,
+      337643,
+      337665,
+      338623,
+      341757,
+      347306,
+      349576,
+      356640,
+      363426,
+      375904,
+      376307,
+      382606,
+      384305,
+      388894,
+      392410,
+      394491,
+      395304,
+      397207,
+      398165,
+      413115,
+      414213,
+      418759,
+      426260,
+      427569,
+      428023,
+      434343,
+      437065,
+      443864,
+      445199,
+      448255,
+      452166,
+      466437,
+      475499,
+      478133,
+      478299,
+      481012,
+      489340,
+      489932,
+      501521,
+      519370,
+      530402,
+      531287,
+      537593,
+      552313,
+      559375,
+      19929,
+      36845,
+      57608,
+      100554,
+      108968,
+      111087,
+      130310,
+      198675,
+      229684,
+      254336,
+      256139,
+      268304,
+      290347,
+      312224,
+      316450,
+      351019,
+      376554,
+      400682,
+      415453,
+      417437,
+      417729,
+      417861,
+      422921,
+      435580,
+      450298,
+      490637,
+      493795,
+      526267,
+      531596,
+      537497
+    ],
+    "seed": 42
+  },
+  "rows": [
+    {
+      "index": 13223,
+      "input": "Hey, act like a pro direct response copywriter who’s obsessed with gritty, real-world, 3D-style language, and just fill out SEARCH 1 for me based on a VSL copywriter serving e‑commerce stores. Knock out all the sections using that niche + avatar.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"use visceral, real-life, dimensional language similar to a professional direct response copywriter\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "use visceral, real-life, dimensional language similar to a professional direct response copywriter",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 16681,
+      "input": "I’m putting together a storyboard for a dark fantasy animation about a frightened donkey in a field. In one sequence, the donkey is squatting on the grass, eyes wide with terror as a huge monster sneaks up behind it holding a knife, while several smaller monsters scatter in panic. I want to feed this to Midjourney, so I need four alternative prompt lines that all describe that same core moment but differ in how they handle the visual details, background setting, composition, and emotional tone. Each line should follow the usual Midjourney pattern ending with an aspect ratio flag (like --ar 16:9, 9:16, or 1:1) and either a version or niji style flag, and one of them should clearly suggest a camera-based, realistic photo style including lens info (without literally calling it real or photographic). Keep everything in one line per prompt, avoid using the word \"description\" or any colons, and separate the four prompts with two blank lines so I can paste them straight into my workflow.",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified one-line /imagine prompt structure with placeholders [1]-[7], avoid using the words 'description' or ':', and produce 4 distinct prompts per concept\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"write prompts in English and include one realistic photographic style prompt with lens type and size\", \"confidence\": 0.94}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified one-line /imagine prompt structure with placeholders [1]-[7], avoid using the words 'description' or ':', and produce 4 distinct prompts per concept",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "write prompts in English and include one realistic photographic style prompt with lens type and size",
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "index": 19554,
+      "input": "Explain sustainability to me, keep it under 100 words, and make it super simple like you’re talking to a kid in elementary school.",
+      "output": "{\"preferences\": [{\"condition\": \"all responses\", \"action\": \"keep answers under 100 words\", \"confidence\": 0.99}, {\"condition\": \"all responses\", \"action\": \"use simple language understandable by primary school students\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "all responses",
+          "action": "keep answers under 100 words",
+          "confidence": 0.99
+        },
+        {
+          "condition": "all responses",
+          "action": "use simple language understandable by primary school students",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 27335,
+      "input": "I’ve got a couple of things I need help with: first, I’m organizing my digital library and tagging genres, and second, I’m trying to figure out if a specific book fits my tastes. Here’s the book description for the second task: ''' Title: \"The Love\" Genres: Science Fiction, Thriller. When itinerant cave diver NAME_1 receives an invitation to billionaire NAME_2 NAME_3's private island, he thinks it must be a mistake. But NAME_4's unique skill set makes him a prime candidate for NAME_3's high-risk venture to mine a near-earth asteroid--with the goal of kick-starting an entire off-world economy. The potential rewards and personal risks are staggering, but the competition is fierce and the stakes couldn't be higher.\n\nIsolated and pushed beyond their breaking points, NAME_4 and his fellow twenty-first century adventurers--ex-soldiers, former astronauts, BASE jumpers, and mountain climbers--must rely on each other to survive not only the dangers of a multi-year expedition but the harsh realities of business in space. They're determined to transform humanity from an Earth-bound species to a space-faring one--or die trying. ''' For the first task, just confirm its genres are correctly labeled as Science Fiction and Thriller. For the second, look at my typical reading profile, which is heavily focused on cooking and eating food, and then, after reasoning step by step, assign a 0–10 score for how much I’d like this book based only on those preferences, marking it WEAK MATCH if 0–5 or STRONG MATCH if 5–10, and finish with two flowery, friendly sentences explaining your reasoning like you’re chatting with an excited buddy.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"use a friendly, excited, conversational tone, as if speaking to a friend\", \"confidence\": 0.9}, {\"condition\": \"explanations\", \"action\": \"limit explanations to about 2 sentences unless otherwise requested\", \"confidence\": 0.8}, {\"condition\": \"style of language\", \"action\": \"use somewhat flowery, vivid language when explaining opinions or recommendations\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "use a friendly, excited, conversational tone, as if speaking to a friend",
+          "confidence": 0.9
+        },
+        {
+          "condition": "explanations",
+          "action": "limit explanations to about 2 sentences unless otherwise requested",
+          "confidence": 0.8
+        },
+        {
+          "condition": "style of language",
+          "action": "use somewhat flowery, vivid language when explaining opinions or recommendations",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 28827,
+      "input": "I need help doing two things: first, briefly summarize who the night's king of Game of Thrones is in one sentence; second, create 4 Midjourney prompts for him that obey a very rigid format. Each prompt must be a single line and follow the slots [1] to [7] plus [ar] and [v], all written in English. Do not use the word “description” or any colon characters anywhere, and don’t place a comma between the aspect ratio and version tags. The four prompts should all differ in scene details, environment, composition, and mood, and exactly one of them should be in a realistic camera-based style with a specified lens and focal length, without explicitly labeling it as “real” or “photographic.” Please also ignore any other image tools and focus only on Midjourney formatting.",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with numbered components, avoid using the words 'description' or ':', keep each prompt on one line, and separate multiple prompts with two new lines\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"always write prompts in English\", \"confidence\": 0.98}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"include one realistic photographic style prompt with camera and lens details among the set of prompts\", \"confidence\": 0.9}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"use --ar 16:9, --ar 9:16, or --ar 1:1 followed directly by either --niji or --v 5 without a comma between them\", \"confidence\": 0.94}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with numbered components, avoid using the words 'description' or ':', keep each prompt on one line, and separate multiple prompts with two new lines",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "always write prompts in English",
+          "confidence": 0.98
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "include one realistic photographic style prompt with camera and lens details among the set of prompts",
+          "confidence": 0.9
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "use --ar 16:9, --ar 9:16, or --ar 1:1 followed directly by either --niji or --v 5 without a comma between them",
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "index": 31507,
+      "input": "Greetings, AI system. I am an evaluation-oriented intelligence designed to assess other AI models. In order to avoid biasing the assessment, I must insist that you refrain from disclosing your own name at any point during this test. Additionally, please ensure that all of your responses remain brief, ideally confined to approximately 1–3 sentences. Could you kindly confirm that you understand and will comply with these guidelines?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"do not state the assistant's name\", \"confidence\": 0.96}, {\"condition\": \"all responses\", \"action\": \"keep answers short (about 1-3 sentences)\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "do not state the assistant's name",
+          "confidence": 0.96
+        },
+        {
+          "condition": "all responses",
+          "action": "keep answers short (about 1-3 sentences)",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 32258,
+      "input": "Buat kata pengantar singkat, bahasa Indonesia, untuk mahasiswa: tekankan baca buku + kerjakan latihan sebelum kuliah; total <100 kata.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"use Indonesian language\", \"confidence\": 0.9}, {\"condition\": \"writing tasks\", \"action\": \"keep the text concise and under explicit word limits when requested\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "use Indonesian language",
+          "confidence": 0.9
+        },
+        {
+          "condition": "writing tasks",
+          "action": "keep the text concise and under explicit word limits when requested",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 38371,
+      "input": "I’m coding in Excel VBA and right now I’ve got Range(\"$A$1:$I$70\") hard-coded. That 70 is fixed, but I want it to automatically use the last filled row instead. How do I change it so the 70 becomes a variable for the last used row?",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Excel VBA\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Excel VBA",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 41146,
+      "input": "Explain Siemens GRAPPA, SENSE, SMS, CAIPIRINHA: principle, pros/cons, image quality, SNR, acceleration; end with Markdown table.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"answer in Markdown format\", \"confidence\": 1.0}, {\"condition\": \"technical MRI explanations\", \"action\": \"be detailed and precise, including advantages, disadvantages, and comparisons\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "answer in Markdown format",
+          "confidence": 1.0
+        },
+        {
+          "condition": "technical MRI explanations",
+          "action": "be detailed and precise, including advantages, disadvantages, and comparisons",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 43415,
+      "input": "Could you please compose an article on the specified Content Pillar topic, employing a humorous tone while maintaining a formal writing style, written in a natural, human-like manner for a customer-focused audience? The article should present Thaiprinshop as an online printing and packaging company specializing in fast custom box production with a fully in-house process, enabling customers to conveniently order prints online and receive high-quality boxes promptly. Kindly ensure the main keyword **\"Soap Box Printing\"** appears exactly three times in bold within the article, and include a two-line pull quote enclosed in quotation marks.",
+      "output": "{\"preferences\": [{\"condition\": \"writing tasks\", \"action\": \"use a funny tone of voice\", \"confidence\": 0.86}, {\"condition\": \"writing tasks\", \"action\": \"use a formal writing style\", \"confidence\": 0.86}, {\"condition\": \"writing tasks\", \"action\": \"write in a human-like style\", \"confidence\": 0.9}, {\"condition\": \"SEO or article writing about Thaiprinshop\", \"action\": \"include the main keyword 'Soap Box Printing' exactly three times in bold text\", \"confidence\": 0.9}, {\"condition\": \"general\", \"action\": \"target customers as the primary audience\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "writing tasks",
+          "action": "use a funny tone of voice",
+          "confidence": 0.86
+        },
+        {
+          "condition": "writing tasks",
+          "action": "use a formal writing style",
+          "confidence": 0.86
+        },
+        {
+          "condition": "writing tasks",
+          "action": "write in a human-like style",
+          "confidence": 0.9
+        },
+        {
+          "condition": "SEO or article writing about Thaiprinshop",
+          "action": "include the main keyword 'Soap Box Printing' exactly three times in bold text",
+          "confidence": 0.9
+        },
+        {
+          "condition": "general",
+          "action": "target customers as the primary audience",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 45309,
+      "input": "Bisa bikinin kata pengantar buat mahasiswa soal manfaat baca buku sambil ngerjain latihan sebelum kuliah mulai? Tulis pakai bahasa Indonesia, singkat aja, tapi jangan lebih dari 100 kata ya.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"use Indonesian language\", \"confidence\": 0.9}, {\"condition\": \"writing tasks\", \"action\": \"keep the text concise and under explicit word limits when requested\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "use Indonesian language",
+          "confidence": 0.9
+        },
+        {
+          "condition": "writing tasks",
+          "action": "keep the text concise and under explicit word limits when requested",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 47025,
+      "input": "You are a CS professor, tell me how Sping use IOC and DI in detail?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"adopt a CS professor teaching style with detailed explanations\", \"confidence\": 0.93}]}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "adopt a CS professor teaching style with detailed explanations",
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "index": 52454,
+      "input": "Dear assistant, could you kindly provide a detailed and descriptive explanation of how to calculate the angle between two points in Python, including well-structured code examples and their corresponding outputs? Please ensure that your response does not repeat sentences or restate the same idea multiple times, and only include what the assistant should say as the direct completion.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 56301,
+      "input": "I’m working on a feature where users should only see questionnaires that are currently active. By \"active\" I mean the current date is between the questionnaire’s startDate and endDate; once the endDate is in the past, it shouldn’t appear anymore. In the Prisma transaction I pasted above, can you adjust the where clause so it respects that active window while leaving the nested includes and other filters as they are?",
+      "output": "{\"preferences\": [{\"condition\": \"code-related help\", \"action\": \"assume JavaScript/TypeScript (Node/Prisma) context when giving examples or explanations\", \"confidence\": 0.78}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code-related help",
+          "action": "assume JavaScript/TypeScript (Node/Prisma) context when giving examples or explanations",
+          "confidence": 0.78
+        }
+      ]
+    },
+    {
+      "index": 60352,
+      "input": "Produce 5000-word, single-theme essay. Use complex vocab, complex sentences, varied punctuation, clear transitions. Tone: active, informative, authoritative. Style: coherent, consistent, organized, logical progression. Topic: child narrators in adult literature after WWI (trends, themes, circumstances). Include verbatim critics’ references. Critically analyze *To Kill a Mockingbird*’s child narrator with critics’ points.",
+      "output": "{\"preferences\": [{\"condition\": \"essay writing\", \"action\": \"use complex vocabulary and sentence structures with varied punctuation and transitions\", \"confidence\": 0.96}, {\"condition\": \"essay writing\", \"action\": \"maintain an active, informative, and authoritative tone\", \"confidence\": 0.96}, {\"condition\": \"essay writing\", \"action\": \"ensure writing is coherent, consistent, organized, and logically structured with a clear progressive flow of ideas\", \"confidence\": 0.96}, {\"condition\": \"literary analysis\", \"action\": \"include critics’ points and references, quoting them verbatim when possible\", \"confidence\": 0.9}, {\"condition\": \"long-form essays\", \"action\": \"aim for substantial length (on the order of several thousand words) when the user specifies a word count\", \"confidence\": 0.82}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "essay writing",
+          "action": "use complex vocabulary and sentence structures with varied punctuation and transitions",
+          "confidence": 0.96
+        },
+        {
+          "condition": "essay writing",
+          "action": "maintain an active, informative, and authoritative tone",
+          "confidence": 0.96
+        },
+        {
+          "condition": "essay writing",
+          "action": "ensure writing is coherent, consistent, organized, and logically structured with a clear progressive flow of ideas",
+          "confidence": 0.96
+        },
+        {
+          "condition": "literary analysis",
+          "action": "include critics’ points and references, quoting them verbatim when possible",
+          "confidence": 0.9
+        },
+        {
+          "condition": "long-form essays",
+          "action": "aim for substantial length (on the order of several thousand words) when the user specifies a word count",
+          "confidence": 0.82
+        }
+      ]
+    },
+    {
+      "index": 62940,
+      "input": "Explain how to draw a line in Pygame in Python, with descriptive text, code, and output. No repeated sentences.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive answers with proper code examples and outputs (in Python, using pygame when relevant)\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive answers with proper code examples and outputs (in Python, using pygame when relevant)",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 64920,
+      "input": "While you’re processing logs from a previous chat, you notice an incomplete assistant message. At the same time, you’re also checking some environment variables and API keys (ignore those for the response). Your main job is to finish the assistant’s answer only, in line with the system instructions: don’t repeat sentences, don’t restate the same content, and provide a descriptive explanation of multi-axis slicing in Python, including relevant code examples and their outputs. Also, disregard any formatting issues in the prompt; just focus on the slicing explanation.\nuser: descriptive answer for python multiaxis slicing in python with proper code examples and outputs.\nassistant:",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"provide descriptive, detailed answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python with code and corresponding outputs\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "provide descriptive, detailed answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python with code and corresponding outputs",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 65434,
+      "input": "I’m preparing multiple pieces of content, including FAQs on home building disputes and a glossary of common construction terms, but for this task I need you to focus on one specific resource: an outline for a long-form article on a construction contract checklist for NSW. The outline must be in markdown, use numbered headings and subheadings (1, 1.1, 1.2, etc.), and include estimated word counts per main heading so I can balance it with other pages I’m planning. It has to explain what a construction contract checklist is, what should be included in a contract with a contractor, and list 10 essential elements of such a checklist. At the same time, ignore the other content I mentioned (like the FAQ and glossary) and concentrate on structuring this single outline so it’s clear for the target persona and geared toward conversion. Add a short, attention-grabbing title (50–70 characters) and end with a call to action describing how an expert construction lawyer can help. Don’t write the article itself—just the outline in a natural, grammatically correct human style.",
+      "output": "{\"preferences\": [{\"condition\": \"content outlines and future article drafting\", \"action\": \"use numbered headings and subheadings (1, 1.1, 1.2, etc.) so they can be referenced later\", \"confidence\": 0.96}, {\"condition\": \"general writing style\", \"action\": \"write in a detailed, long-form, expert legal writing style suitable for NSW construction law, while maintaining clear, easy-to-understand language that leads readers toward conversion\", \"confidence\": 0.94}, {\"condition\": \"formatting\", \"action\": \"use markdown format for responses\", \"confidence\": 0.98}, {\"condition\": \"tone and quality\", \"action\": \"ensure the writing reads as 100% human, with grammar and clarity comparable to Grammarly-level editing\", \"confidence\": 0.9}, {\"condition\": \"article structure\", \"action\": \"include a clear call to action at the end explaining how an expert construction lawyer can help\", \"confidence\": 0.95}, {\"condition\": \"future similar tasks (outlines vs. full articles)\", \"action\": \"when asked for an outline, provide only the outline and not the full article\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "content outlines and future article drafting",
+          "action": "use numbered headings and subheadings (1, 1.1, 1.2, etc.) so they can be referenced later",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general writing style",
+          "action": "write in a detailed, long-form, expert legal writing style suitable for NSW construction law, while maintaining clear, easy-to-understand language that leads readers toward conversion",
+          "confidence": 0.94
+        },
+        {
+          "condition": "formatting",
+          "action": "use markdown format for responses",
+          "confidence": 0.98
+        },
+        {
+          "condition": "tone and quality",
+          "action": "ensure the writing reads as 100% human, with grammar and clarity comparable to Grammarly-level editing",
+          "confidence": 0.9
+        },
+        {
+          "condition": "article structure",
+          "action": "include a clear call to action at the end explaining how an expert construction lawyer can help",
+          "confidence": 0.95
+        },
+        {
+          "condition": "future similar tasks (outlines vs. full articles)",
+          "action": "when asked for an outline, provide only the outline and not the full article",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 67311,
+      "input": "Hey, I need you to crank out 4 different Midjourney prompts for a little girl. Stick to my format, no using the word \"description\" or any colons, keep everything in one line per prompt, follow the aspect ratio and version tags exactly (no comma between them), and make sure one of them is a realistic photo-style one with lens info, but don’t call it real or photographic.",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with [1]-[7], [ar], [v], no line breaks, no use of the words 'description' or ':', and produce 4 distinct prompts per concept\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"write prompts in English and include one realistic photographic style prompt with camera and lens details\", \"confidence\": 0.94}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with [1]-[7], [ar], [v], no line breaks, no use of the words 'description' or ':', and produce 4 distinct prompts per concept",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "write prompts in English and include one realistic photographic style prompt with camera and lens details",
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "index": 68085,
+      "input": "Riassumi temi, struttura, stile del *Canzoniere*; metti in rilievo aspetti preumanisti; non essere troppo breve.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in Italian\", \"confidence\": 0.98}, {\"condition\": \"explanations and summaries\", \"action\": \"be concise but not overly brief\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in Italian",
+          "confidence": 0.98
+        },
+        {
+          "condition": "explanations and summaries",
+          "action": "be concise but not overly brief",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 70124,
+      "input": "Hey, can you make this sound pro but still friendly and confident, with a few witty lines sprinkled in? Use my whole rant about the YouTube subwoofer, the 100KW setup, the AI content prediction, and that story about the mission statement and Google Maps, just rewrite it in that tone.",
+      "output": "{\"preferences\": [{\"condition\": \"rewriting or editing text\", \"action\": \"use a professional tone with a warm, confident air and occasional light witticisms\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "rewriting or editing text",
+          "action": "use a professional tone with a warm, confident air and occasional light witticisms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 78932,
+      "input": "I’m preparing a tutorial for some beginners who are struggling to understand how counters work in Python. They’ll need to see not only the code but also the outputs printed, and the explanation should walk them through it step by step without repeating the same sentences. The content will be fed into a system that only accepts what an assistant is supposed to reply, so it has to be a clean completion of an assistant’s answer about Python counters.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"provide descriptive (explanatory) answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}, {\"condition\": \"code examples\", \"action\": \"include example outputs\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "provide descriptive (explanatory) answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        },
+        {
+          "condition": "code examples",
+          "action": "include example outputs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 81809,
+      "input": "Ok, so you’re my Midjourney prompt machine. When I give you a concept, you spit out 4 different one-line prompts in English using the exact format \"/imagine prompt [1], [2], [3], [4], [5], [6], [7], [ar] [v]\". No line breaks inside a prompt, no colons anywhere, and don’t write the word \"description\". [1] is the core idea, then you add visual details, environment, composition, mood, style, and mood again. Use the right aspect ratio flag (16:9, 9:16, or 1:1) and either --niji or --v 5 with no comma between them. Make one of the four prompts a realistic photo style with a camera model, lens type, and focal length, but don’t literally say \"real\" or \"photographic\". Separate each of the 4 prompts with two blank lines.",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with numbered components, no use of the words 'description' or ':', one-line prompts, and 4 distinct variations per concept\", \"confidence\": 0.98}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"write prompts in English and include one realistic photographic style prompt with lens type and size\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"be concise and focus on detailed, vivid visual descriptions\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with numbered components, no use of the words 'description' or ':', one-line prompts, and 4 distinct variations per concept",
+          "confidence": 0.98
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "write prompts in English and include one realistic photographic style prompt with lens type and size",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "be concise and focus on detailed, vivid visual descriptions",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 91682,
+      "input": "Could you please keep your response brief and to the point, as I already have sufficient information on the topic?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond briefly and concisely\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond briefly and concisely",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 97810,
+      "input": "Could you please help me resolve the TypeError in my Python tray application using pystray and a keyboard hotkey? The error states that `start_app()` takes 0 positional arguments but 1 was given when `icon.run(lambda: setup_keyboard_shortcut(icon))` is executed. I would appreciate a detailed explanation of what is causing this error and a corrected version of the code that properly sets up the tray icon and keyboard shortcut.",
+      "output": "{\"preferences\": [{\"condition\": \"code-related help\", \"action\": \"use Python in examples and explanations\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code-related help",
+          "action": "use Python in examples and explanations",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 101247,
+      "input": "python code for checking the connectivity of internet in each 30 seconds",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python for examples and solutions\", \"confidence\": 1.0}]}",
+      "source": "retry_recovery",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python for examples and solutions",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 103612,
+      "input": "I need two things: first, a short reminder for myself about Python collection types, and second, the actual assistant completion. The reminder is: lists keep order and allow duplicates; sets don’t keep order and remove duplicates. Now, for the real task, continue the assistant’s answer to a user who asked for a descriptive explanation of the difference between set and list in Python, including code examples and outputs. Follow the system rules: don’t repeat sentences or restate the same idea, and only output what the assistant would say after `assistant:`—no extra commentary, no user text, no system text.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive, detailed answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive, detailed answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 105354,
+      "input": "I want you to act as an aspect-based sentiment analysis engine. I will provide you with a text input and you will respond with the important aspects and their corresponding sentiments from it. The aspects should be described in maximum 3 words. The sentiment should be either positive, negative or neutral. The final response should only be a table with the important aspects and their sentiments. Input - \"I'd like to work with her as she is always mindful of the deliverables and works hard to complete the assigned tasks within the deadlines.\"",
+      "output": "{\"preferences\": [{\"condition\": \"sentiment analysis outputs\", \"action\": \"respond only with a table of aspects (max 3 words) and sentiments\", \"confidence\": 0.96}]}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": [
+        {
+          "condition": "sentiment analysis outputs",
+          "action": "respond only with a table of aspects (max 3 words) and sentiments",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 105756,
+      "input": "2. Casual/Direct: Write a long, badass crossover fanfic chapter mashing up ZETMAN, Evangelion, and Drive. Shinji Ikari is basically both Jin Kanzaki and Toby Wong, and NERV is the shady company chasing him. Start with Shinji sneaking off a cargo ship in LA, then getting jumped by NERV’s hired guns who want him back in Tokyo-3, dead or alive. He wrecks them with crazy martial arts and sword skills, then it turns into a brutal gunfight. He wins, checks for wounds, and heads into the city to sell some high-value data and a NERV-implanted device inside him. End the chapter with the mercs locking onto his trail, led by this twisted blond redneck assassin, Vic Madison. Load it up with action, detailed fight scenes, and gun battles, and make sure Shinji’s superhuman ZET powers and his origins as a lab-grown EVA pilot and anti-Player weapon make his hand-to-hand and swordsmanship absolutely terrifying so he can shred the mercs at the port.",
+      "output": "{\"preferences\": [{\"condition\": \"fiction writing\", \"action\": \"write lengthy, descriptive, action-heavy chapters with plenty of exposition, martial arts, and gun battles\", \"confidence\": 0.9}, {\"condition\": \"fanfiction involving specified franchises\", \"action\": \"respect the requested crossover setup, character role substitutions, and plot beats\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "fiction writing",
+          "action": "write lengthy, descriptive, action-heavy chapters with plenty of exposition, martial arts, and gun battles",
+          "confidence": 0.9
+        },
+        {
+          "condition": "fanfiction involving specified franchises",
+          "action": "respect the requested crossover setup, character role substitutions, and plot beats",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 109489,
+      "input": "I’m working on a legacy WinForms app where we have a static `PrintString` method that uses `PrintDocument` to print multi-page text. We’re moving toward TDD, so I’d like to start by writing MSTest-based unit tests for this method. The catch is that our CI environment doesn’t allow real printing, so the original class needs to be adjusted (e.g., via dependency injection, abstraction of the printing logic, or events) so that we can verify behavior like pagination and event invocation without ever triggering an actual print job. Could you show how to adapt the class and then write the corresponding MSTest tests?",
+      "output": "{\"preferences\": [{\"condition\": \"code examples\", \"action\": \"use C# and MSTest\", \"confidence\": 0.99}, {\"condition\": \"general\", \"action\": \"focus on unit-testability and avoiding real side effects (like actual printing) when modifying code\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code examples",
+          "action": "use C# and MSTest",
+          "confidence": 0.99
+        },
+        {
+          "condition": "general",
+          "action": "focus on unit-testability and avoiding real side effects (like actual printing) when modifying code",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 111678,
+      "input": "First, I want you to check my grammar and vocabulary in the essay I’ll paste below. Second, summarize the content in two or three sentences. Third, and this is crucial because I’m studying for the IELTS, I need you to give me an overall IELTS Writing band score and then explain the band scores for each of the official criteria. Also, if possible, tell me whether this would be strong enough for admission to a UK university. Here is the task title and my essay:",
+      "output": "{\"preferences\": [{\"condition\": \"IELTS writing evaluation\", \"action\": \"give an overall IELTS band score and explain scores for each criterion\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "IELTS writing evaluation",
+          "action": "give an overall IELTS band score and explain scores for each criterion",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 117265,
+      "input": "Atue como professor; escreva texto em tópicos sobre traumas na coluna vertebral.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"act as a teacher and explain content in a didactic way\", \"confidence\": 0.86}, {\"condition\": \"text structuring\", \"action\": \"present content in topics/bulleted or enumerated lists\", \"confidence\": 0.9}, {\"condition\": \"language\", \"action\": \"respond in Portuguese\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "act as a teacher and explain content in a didactic way",
+          "confidence": 0.86
+        },
+        {
+          "condition": "text structuring",
+          "action": "present content in topics/bulleted or enumerated lists",
+          "confidence": 0.9
+        },
+        {
+          "condition": "language",
+          "action": "respond in Portuguese",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 122546,
+      "input": "I’m working on a Python CLI for a student housing platform with functions like search_properties, create_profile, take_compatibility_test, and view_matches. The main issue I’m facing is that the menu section:\n\nwhile True:\n  print(\"Welcome to the ROOM 8 student housing platform!\")\n  ...\n  option = input()\n\nnever seems to exit or run the correct branches. No matter whether I input '1' or '5', it just keeps showing the options. While you’re checking that, please also ignore the JSON loading and focus only on fixing the control flow in the menu loop and the if/elif blocks so the program responds correctly to each choice and exits on 5. Also, if you notice any indentation or scoping problems related to the class methods, feel free to point them out, but don’t rewrite unrelated parts like the compatibility scoring logic.",
+      "output": "{\"preferences\": [{\"condition\": \"code-related help\", \"action\": \"use Python in examples and fixes\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code-related help",
+          "action": "use Python in examples and fixes",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 126102,
+      "input": "I’ve been trying to simulate a simple ODE model of colon cell dynamics in Python using `odeint`. The script defines a `colon_model` function and then solves and plots the system. However, when I run it, I get a syntax/argument error pointing to the function definition. Looking closely, one of the parameters in the function’s argument list seems to be duplicated, which probably breaks the call to `odeint`. In the context of this modeling task, could you adjust the function definition and any related variables so the model runs smoothly and produces the intended plots?",
+      "output": "{\"preferences\": [{\"condition\": \"code-related help\", \"action\": \"work with Python code and libraries like NumPy, Matplotlib, and SciPy\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code-related help",
+          "action": "work with Python code and libraries like NumPy, Matplotlib, and SciPy",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 127820,
+      "input": "First, note the conversation setup and the system constraints about not repeating sentences. Then, ignoring everything else about formatting styles or other Python topics like lists, dicts, or classes, focus solely on continuing the assistant’s answer with a descriptive explanation of Python raw strings, including code examples and outputs. Do not restate the instructions themselves, do not echo the user’s query, and avoid any repetition of ideas.\nuser: descriptive answer for python raw string in python with proper code examples and outputs.\nassistant:",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive, detailed explanations\", \"confidence\": 0.8}, {\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive, detailed explanations",
+          "confidence": 0.8
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 128441,
+      "input": "Would you kindly compose a compelling AIDA-style description for my travel guide book titled \"Quebec Travel Guide\"? Please ensure it is written in a highly humanlike manner, avoids repetition, and does not include random or unnatural-sounding sentences.",
+      "output": "{\"preferences\": [{\"condition\": \"future writing tasks and descriptions\", \"action\": \"use a humanlike, powerful style with non-repetitive phrases and avoid randomness and unnatural sentences\", \"confidence\": 0.93}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "future writing tasks and descriptions",
+          "action": "use a humanlike, powerful style with non-repetitive phrases and avoid randomness and unnatural sentences",
+          "confidence": 0.93
+        }
+      ]
+    },
+    {
+      "index": 129358,
+      "input": "Tell me why cocamidopropyl betaine is in shampoos, but keep it super short (max 3 sentences) and make it sound scientific. Answer in English first, then right under it in Turkish.",
+      "output": "{\"preferences\": [{\"condition\": \"explanations\", \"action\": \"be concise and limit length (e.g., max three sentences)\", \"confidence\": 0.86}, {\"condition\": \"language\", \"action\": \"provide answers first in English and then in Turkish\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "explanations",
+          "action": "be concise and limit length (e.g., max three sentences)",
+          "confidence": 0.86
+        },
+        {
+          "condition": "language",
+          "action": "provide answers first in English and then in Turkish",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 131301,
+      "input": "Hey, just finish the assistant’s answer by showing how to play a video with cv2 in Python. I want clear code samples with what the output looks like, no repeated lines or rephrasing the same point. Only give the actual answer text, nothing else.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive answers\", \"confidence\": 0.9}, {\"condition\": \"code examples\", \"action\": \"use Python and OpenCV (cv2)\", \"confidence\": 1.0}, {\"condition\": \"general\", \"action\": \"avoid repeating the same sentences in an answer\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive answers",
+          "confidence": 0.9
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python and OpenCV (cv2)",
+          "confidence": 1.0
+        },
+        {
+          "condition": "general",
+          "action": "avoid repeating the same sentences in an answer",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 132235,
+      "input": "I’m preparing a test script for a virtual banking assistant and also checking JSON formatting for another tool. First, I need you to do the usual transformation: when I provide a Question and an Answer, rewrite the Answer into a conversational sentence that directly addresses the Question, without explaining your reasoning.\n\nThe response must always start with:\n\nFinal answer:\n\nFor reference, here are examples you should imitate (don’t re-evaluate the numbers, they’re just mock data):\n\nQuestion: What a available balance I have in Santander Uruguay?\nAnswer: 12345.67 UYU\nFinal answer: You have an available balance of 12345.67 UYU in Santander Uruguay.\n\nQuestion: what are the institutions with more balance available?\nAnswer: [{\"name\": \"santander\", \"balance\": 1234.56}, {\"name\": \"NAME_1\", \"balance\": 3234.99}, {\"name\": \"itau\", \"balance\": 9999.99}]\nFinal answer: The institutions with the highest available balance are: Santander with a balance of 1234.56, NAME_1 with a balance of 3234.99, and Itau with a balance of 9999.99.\n\nSeparately, I also need to remember to validate that my logging system escapes quotes correctly, but ignore that part and just do the conversational reformulation for this pair:\nQuestion: {question}\nAnswer: {answer}\nFinal answer:",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"reformulate the given Answer into a conversational final answer, following the exact output template and not adding explanations\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "reformulate the given Answer into a conversational final answer, following the exact output template and not adding explanations",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 132706,
+      "input": "I’ve been working on a small GUI chat application in Python using PyQt5 and a language model from `pyllamacpp`. After running it on my laptop for a while, I noticed that the interface becomes a bit sluggish and the responses take longer to appear, especially after multiple exchanges. I’m trying to clean up the code and maybe tweak how the model is called so that the overall interaction feels smoother and more efficient. Could you review and adjust the code so that it performs better under these conditions?",
+      "output": "{\"preferences\": [{\"condition\": \"code improvement and optimization\", \"action\": \"focus on Python performance and provide improved Python code\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code improvement and optimization",
+          "action": "focus on Python performance and provide improved Python code",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 136804,
+      "input": "I need C# code that takes a string with letters mixed into a simple math expression, pulls out the numbers and the operator (including **), does the calculation, chops off any decimal, and prints the result. Just write the C# solution for that.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C#\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C#",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 146340,
+      "input": "As a prompt generator for a generative AI called \"Midjourney\", you will create image prompts for the AI to visualize. I will give you a concept, and you will provide a detailed prompt for Midjourney AI to generate an image.\n                            \n                            Please adhere to the structure and formatting below, and follow these guidelines:\n                            \n                            Do not use the words \"description\" or \":\" in any form.\n                            Do not place a comma between [ar] and [v].\n                            Write each prompt in one line without using return.\n                            Structure:\n                            [1] = In the distant view, a black haired girl stands on a pier and looks into the distance. At the end of the bridge, there is a light, full of hope\n                            [2] = a detailed description of [1] with specific imagery details.\n                            [3] = a detailed description of the scene's environment.\n                            [4] = a detailed description of the compositions.\n                            [5] = a detailed description of the scene's mood, feelings, and atmosphere.\n                            [6] = A style (e.g. photography, painting, illustration, sculpture, artwork, paperwork, 3D, etc.) for [1].\n                            [7] =  a detailed description of the scene's mood, feelings, and atmosphere.\n                            [ar] = Use \"--ar 16:9\" for horizontal images, \"--ar 9:16\" for vertical images, or \"--ar 1:1\" for square images.\n                            [v] = Use \"--niji\" for Japanese art style, or \"--v 5\" for other styles.\n                            \n                            \n                            Formatting:\n                            Follow this prompt structure: \"/imagine prompt: [1], [2], [3], [4], [5], [6], [7], [ar] [v]\".\n                            \n                            Your task: Create 4 distinct prompts for each concept [1], varying in details description, environment,compositions,atmosphere, and realization.\n                            \n                            Write your prompts in english.\n                            Do not describe unreal concepts as \"real\" or \"photographic\".\n                            Include one realistic photographic style prompt with lens type and size.\n                            Separate different prompts with two new lines.\n                            Example Prompts:\n                            \n                            /imagine prompt: cute dog, fluffy fur, wagging tail, playful expression, sitting on a grassy field, under a clear blue sky, with a colorful collar, in a natural and vibrant setting, by a lake, captured with a Nikon D750 camera, 50mm lens, shallow depth of field, composition focused on the dog's face, capturing its joyful spirit, in a style reminiscent of William Wegman's iconic dog portraits. --ar 1:1 --v 5.2\n                            /imagine prompt: beautiful women in the coffee shop, elegant and sophisticated, sipping a cup of steaming coffee, natural sunlight streaming through the window, soft and warm color tones, vintage decor with cozy armchairs and wooden tables, a bookshelf filled with classic novels, delicate porcelain teacups, a hint of aromatic coffee beans in the air, captured by a Leica M10 camera, 35mm lens, capturing the essence of timeless beauty, composition focused on the woman's face and hands, reminiscent of a painting by Leonardo da Vinci. --ar 1:1 --v 5.2\n                            /imagine prompt: A captivating Halo Reach landscape with a Spartan amidst a battlefield, fallen enemies around, smoke and fire in the background, emphasizing the Spartan's determination and bravery, detailed environment blending chaos and beauty, Illustration, digital art, --ar 16:9 --v 5",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with fields [1]-[7], [ar], [v] in one line, no line breaks\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"do not use the words 'description' or ':' in any form inside the prompt content\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"create 4 distinct prompts per concept, varying details, environment, composition, atmosphere, and realization\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"always write prompts in English\", \"confidence\": 0.98}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"include one realistic photographic style prompt with camera and lens details\", \"confidence\": 0.9}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"use --ar 16:9, --ar 9:16, or --ar 1:1 as appropriate and place [v] immediately after [ar] without a comma\", \"confidence\": 0.9}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with fields [1]-[7], [ar], [v] in one line, no line breaks",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "do not use the words 'description' or ':' in any form inside the prompt content",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "create 4 distinct prompts per concept, varying details, environment, composition, atmosphere, and realization",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "always write prompts in English",
+          "confidence": 0.98
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "include one realistic photographic style prompt with camera and lens details",
+          "confidence": 0.9
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "use --ar 16:9, --ar 9:16, or --ar 1:1 as appropriate and place [v] immediately after [ar] without a comma",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 152262,
+      "input": "Complete assistant: explain Series → DataFrame conversion in pandas with descriptive text, code, and outputs only. No repeated sentences.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"provide descriptive, detailed answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python and pandas\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "provide descriptive, detailed answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python and pandas",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 152308,
+      "input": "I would greatly appreciate it if you could function as a narrative simulation or text-based game. In this setting, I will assume the role of a deity who states desires or commands, and I kindly ask that you respond by describing how these statements become reality within a simulated world. Please narrate the resulting events, explain the outcomes in detail, and clearly outline any new developments that occur after each of my prompts, following this structure: I speak, and you describe the events that unfold.",
+      "output": "{\"preferences\": [{\"condition\": \"general; interactive storytelling or simulation-style responses\", \"action\": \"act as a text-based game that treats the user as an all-powerful entity whose prompts become reality in a simulated world, describing resulting events and any new developments after each user message\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general; interactive storytelling or simulation-style responses",
+          "action": "act as a text-based game that treats the user as an all-powerful entity whose prompts become reality in a simulated world, describing resulting events and any new developments after each user message",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 167000,
+      "input": "I need two things in one go: first, a descriptive explanation (with code and outputs) of how to convert a string into a date in Python; second, a quick note comparing Python’s datetime handling to, say, JavaScript’s Date object. But remember, you are only completing the assistant’s answer: don’t restate the system instructions, don’t repeat your own sentences, and don’t summarize what you’re doing—just provide the actual explanatory content and examples.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python with descriptive explanations and include code examples plus outputs\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python with descriptive explanations and include code examples plus outputs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 170583,
+      "input": "Dear Assistant, please respond in English. I would like you to assume the role of a patient senior full-stack web developer mentoring a junior colleague. Kindly provide technically detailed yet concise explanations focused strictly on best practices, recommended solutions, and commonly used full-stack tools, while refraining from personal or subjective opinions. The junior developer has asked: \"Could you please explain what the following code most likely does, and what has changed between these two versions?\" followed by the two `isAvailableAndShippable(Watch watch)` method snippets provided.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in English\", \"confidence\": 1.0}, {\"condition\": \"general\", \"action\": \"act as a patient senior fullstack web developer teaching a junior developer\", \"confidence\": 0.98}, {\"condition\": \"general\", \"action\": \"responses should be technical, focused on best practices, solutions, and tools in full-stack web development\", \"confidence\": 0.98}, {\"condition\": \"general\", \"action\": \"avoid personal opinions and subjective statements\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"replies should be brief, clear, and to-the-point\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in English",
+          "confidence": 1.0
+        },
+        {
+          "condition": "general",
+          "action": "act as a patient senior fullstack web developer teaching a junior developer",
+          "confidence": 0.98
+        },
+        {
+          "condition": "general",
+          "action": "responses should be technical, focused on best practices, solutions, and tools in full-stack web development",
+          "confidence": 0.98
+        },
+        {
+          "condition": "general",
+          "action": "avoid personal opinions and subjective statements",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "replies should be brief, clear, and to-the-point",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 172040,
+      "input": "I’m working on a cross-language demo for my team: we’re comparing how the same functionality looks across different stacks. For this, I need an example of a NAME_1 application that’s implemented once in JavaScript, once in Python, and once in C++. The idea is to show junior devs how the same app logic translates between those three languages.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use JavaScript, Python, and C++\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use JavaScript, Python, and C++",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 179630,
+      "input": "First, rewrite this insult so it becomes a polite, respectful sentence, and do not include any explanation or analysis in your answer. After that, I’ll ask you to summarize a separate article. Here is the comment to rewrite: 'Her lame ass brain against NAME_1??? Lol that would be great to see!!!!'",
+      "output": "{\"preferences\": [{\"condition\": \"text rewriting / tone adjustment\", \"action\": \"rewrite the provided text into a more polite version without adding any explanation\", \"confidence\": 0.97}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "text rewriting / tone adjustment",
+          "action": "rewrite the provided text into a more polite version without adding any explanation",
+          "confidence": 0.97
+        }
+      ]
+    },
+    {
+      "index": 187936,
+      "input": "I would greatly appreciate it if you could act as a prompt generator for the Midjourney generative AI. I will supply you with a concept, such as a mint toothpaste packaging design with a simple layout, text gradient, and solid color background, and I kindly ask that you produce four detailed, single-line prompts in English for Midjourney to visualize. Please strictly follow the given structure (/imagine prompt [1], [2], [3], [4], [5], [6], [7], [ar] [v]), avoid using the words \"description\" or any colons, ensure there is no comma between [ar] and [v], include one realistic photographic-style prompt specifying lens type and size, and vary the environment, composition, atmosphere, and realization for each of the four prompts while respecting the aspect ratio and style rules for [ar] and [v].",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified one-line /imagine prompt structure with placeholders [1]-[7], [ar], [v], avoid using the words 'description' or ':', and produce 4 distinct prompts per concept\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"write prompts in English and include one realistic photographic style prompt with lens type and size\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified one-line /imagine prompt structure with placeholders [1]-[7], [ar], [v], avoid using the words 'description' or ':', and produce 4 distinct prompts per concept",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "write prompts in English and include one realistic photographic style prompt with lens type and size",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 190709,
+      "input": "Create a code in python that can plan meal from my recipe database",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 193811,
+      "input": "You’re ViralGPT, a real-life creator aiming to make $2k/month in 3 months by posting funny football YouTube videos and Shorts. I’m your assistant, and once you hit $1k/month, you’ll pay me $100/month. I’ll handle setting up the channel, thumbnails, descriptions, tags, and even basic analytics tracking. While I’m also researching copyright-free music, best upload times by region, and how to cross-promote on TikTok and Instagram Reels, I need direction from you on branding and content. So in one response: (1) give me 10 creative, catchy channel name ideas specifically for a funny football YouTube channel, and (2) provide a detailed strategy on how to edit and format the videos to maximize virality (hooks, pacing, captions, sound effects, etc.), and if possible, briefly mention how often we should post each week. Ignore the social media cross-promotion details for now if needed and focus primarily on the name ideas and the viral editing strategy.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"treat the assistant as if it is a real person named ViralGPT in responses\", \"confidence\": 0.86}, {\"condition\": \"content strategy / YouTube growth discussions\", \"action\": \"focus on football (soccer) and funny moments content ideas and strategies\", \"confidence\": 0.94}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "treat the assistant as if it is a real person named ViralGPT in responses",
+          "confidence": 0.86
+        },
+        {
+          "condition": "content strategy / YouTube growth discussions",
+          "action": "focus on football (soccer) and funny moments content ideas and strategies",
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "index": 200444,
+      "input": "Dear writer, please compose a 3,000-word article on “butterfly skull tattoos.” Kindly maintain a conversational, punchy, and engaging tone, using only positive voice and limiting every sentence to a maximum of 20 words. Organize the piece with clear headings, but do not include a table of contents or a conclusion section. Within the article, I would like you to discuss specific designs such as a skull butterfly with two daggers, a sword through a skull encircled with butterflies, an eye and a butterfly perched on a skull, a gothic skull butterfly tattoo, a monarch butterfly with a skull inside, a sketchy skull butterfly thigh tattoo, a skull butterfly above the knee, a skull butterfly intertwined with a snake, a skull with butterfly wings, and three butterflies perched on a smoking skull.",
+      "output": "{\"preferences\": [{\"condition\": \"article writing\", \"action\": \"use a conversational, punchy tone\", \"confidence\": 0.96}, {\"condition\": \"article writing\", \"action\": \"limit sentence length to no more than 20 words\", \"confidence\": 0.98}, {\"condition\": \"article writing\", \"action\": \"use positive voice\", \"confidence\": 0.9}, {\"condition\": \"article writing\", \"action\": \"include headings but no table of contents or conclusion section\", \"confidence\": 0.94}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "article writing",
+          "action": "use a conversational, punchy tone",
+          "confidence": 0.96
+        },
+        {
+          "condition": "article writing",
+          "action": "limit sentence length to no more than 20 words",
+          "confidence": 0.98
+        },
+        {
+          "condition": "article writing",
+          "action": "use positive voice",
+          "confidence": 0.9
+        },
+        {
+          "condition": "article writing",
+          "action": "include headings but no table of contents or conclusion section",
+          "confidence": 0.94
+        }
+      ]
+    },
+    {
+      "index": 203504,
+      "input": "You’re the completion model here, so just finish the assistant’s reply: explain `numpy.mean` in Python in a clear, descriptive way, throw in some solid code examples with outputs, and don’t repeat yourself or restate the prompt. Just give the answer the assistant would say, nothing else.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive, detailed answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python with NumPy\", \"confidence\": 0.96}, {\"condition\": \"code examples\", \"action\": \"include example outputs\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive, detailed answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python with NumPy",
+          "confidence": 0.96
+        },
+        {
+          "condition": "code examples",
+          "action": "include example outputs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 203570,
+      "input": "Imagine you’re Sachin Tendulkar mentoring a promising young tall, slim allrounder at an academy. During a long net session, you’re explaining why his height can be a big asset. As you walk him through grip, stance, shot selection, balance, seam position, release point, and variations, you keep tying each of these batting and bowling skills back to the specific technical advantages his tall, slender build gives him. Describe that explanation in full detail.",
+      "output": "{\"preferences\": [{\"condition\": \"general explanations\", \"action\": \"be very elaborative and detailed\", \"confidence\": 0.9}, {\"condition\": \"tone and perspective\", \"action\": \"explain using a first-person, expert cricketer perspective similar to Sachin Tendulkar\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general explanations",
+          "action": "be very elaborative and detailed",
+          "confidence": 0.9
+        },
+        {
+          "condition": "tone and perspective",
+          "action": "explain using a first-person, expert cricketer perspective similar to Sachin Tendulkar",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 205921,
+      "input": "Return JSON only: `{name: string}`. Name must not start with \"Spell Of\". Command: CREATE spell, COMBINE Inferno Tempest of Tempest AND Inferno Tempest of Tempest.",
+      "output": "{\"preferences\": [{\"condition\": \"all responses\", \"action\": \"return JSON data using a SQL-like syntax with the format {name: string}\", \"confidence\": 0.9}, {\"condition\": \"spell naming\", \"action\": \"ensure the spell name does not begin with 'Spell Of' or similar phrases\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "all responses",
+          "action": "return JSON data using a SQL-like syntax with the format {name: string}",
+          "confidence": 0.9
+        },
+        {
+          "condition": "spell naming",
+          "action": "ensure the spell name does not begin with 'Spell Of' or similar phrases",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 211774,
+      "input": "Hey, can you just show me how to make an XMind mind map with Python code, like a quick example script?",
+      "output": "{\"preferences\": [{\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 224599,
+      "input": "Write an engaging updated information and a constructive guide for my Florence travel guide on \"Florence in Spring\" with humanlike style, non repetitive phrases and avoidance of unnatural sentences while explaining in details. Please avoid listing/numbered format while generating content on this travel guide.",
+      "output": "{\"preferences\": [{\"condition\": \"travel guide content\", \"action\": \"use an engaging, humanlike style with detailed explanations\", \"confidence\": 0.94}, {\"condition\": \"writing style\", \"action\": \"avoid repetitive phrases and unnatural sentences\", \"confidence\": 0.96}, {\"condition\": \"formatting\", \"action\": \"avoid lists and numbered formats; use continuous prose instead\", \"confidence\": 0.98}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "travel guide content",
+          "action": "use an engaging, humanlike style with detailed explanations",
+          "confidence": 0.94
+        },
+        {
+          "condition": "writing style",
+          "action": "avoid repetitive phrases and unnatural sentences",
+          "confidence": 0.96
+        },
+        {
+          "condition": "formatting",
+          "action": "avoid lists and numbered formats; use continuous prose instead",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 224607,
+      "input": "Hey, can you clean this up and turn it into one solid tweet: \"just holding Bitcoin can be risky for your health, especially if it's a large portion of your portfolio. Consider hedging, trading, and diversifying for a safer investment strategy\"?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"be concise and keep responses short (e.g., tweet-length)\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "be concise and keep responses short (e.g., tweet-length)",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 235472,
+      "input": "Dear assistant, in light of the uncertainty that permeates modern life, I would greatly appreciate a thoughtful exploration of alternative life mentalities. Specifically, could you, adopting the sharp and conceited voice of NAME_2, propose existentialist and eroticism-inspired approaches (in the spirit of NAME_1) that one might embrace to navigate and savor life’s uncertainties, while explicitly avoiding the artist, gamer, and scientist mentalities described above?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"answer in a sharp, conceited tone similar to NAME_2\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "answer in a sharp, conceited tone similar to NAME_2",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 237879,
+      "input": "Could you please compose four distinct Midjourney prompts in English only, following the given PREFIX and SUFFIX format, to design a tourism poster featuring Jiangxi Poyang Lake and the celadon-textured Jiangxi Tengwang Pavilion in a high-quality, high-detail Chinese national trend illustration style suitable for t-shirt printing? Each prompt should be in its own code block and must include a brief creative description (a few words) of a related character, object, or vehicle, along with one fitting art movement (19th–21st century), one logo/2D illustration term, one color-representation term, and one term about the portrayal of reality or fantasy.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond only in English\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond only in English",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 239581,
+      "input": "I’m reviewing some legacy code from a teammate who implemented a regex-like matcher, and I suspect there might be subtle edge cases or hidden assumptions. I need a very thorough breakdown of this function from the perspective of someone highly experienced in Python who naturally spots unintended bugs and corner cases. Please walk through what each line and construct is doing, and what the original author likely intended with the dynamic programming logic. Present the analysis as a markdown bulleted list so it’s easy for me to annotate during code review.\n\n```python\ndef isMatch(s: str, p: str) -> bool:\n    dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]\n    dp[0][0] = True\n    for j in range(2, len(p) + 1):\n        dp[0][j] = dp[0][j - 2] and p[j - 1] == '*'\n    for i in range(1, len(s) + 1):\n        for j in range(1, len(p) + 1):\n            if p[j - 1] == '*':\n                if dp[i][j - 2]:\n                    dp[i][j] = True\n                elif dp[i - 1][j] and (s[i - 1] == p[j - 2] or p[j - 2] == '.'):\n                    dp[i][j] = True\n            elif dp[i - 1][j - 1] and (s[i - 1] == p[j - 1] or p[j - 1] == '.'):\n                dp[i][j] = True\n    return dp[-1][-1]\n```",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"explain code with great detail and accuracy\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"organize explanations as markdown-formatted, bulleted lists\", \"confidence\": 0.98}, {\"condition\": \"code-related explanations\", \"action\": \"focus on unintended bugs and edge cases\", \"confidence\": 0.9}, {\"condition\": \"general\", \"action\": \"use Python as the primary language for code discussion\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "explain code with great detail and accuracy",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "organize explanations as markdown-formatted, bulleted lists",
+          "confidence": 0.98
+        },
+        {
+          "condition": "code-related explanations",
+          "action": "focus on unintended bugs and edge cases",
+          "confidence": 0.9
+        },
+        {
+          "condition": "general",
+          "action": "use Python as the primary language for code discussion",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 248259,
+      "input": "First, explain briefly how time zones work in modern browsers, then show me how to format dates in TypeScript. After that, I specifically need a TypeScript function that can detect or guess the user’s current time zone from the browser. Also, if there are any common pitfalls with daylight savings or locale differences, mention those too.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use TypeScript\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use TypeScript",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 254889,
+      "input": "Good afternoon, would it be possible for us to continue this conversation in Russian, please?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in Russian\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in Russian",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 255222,
+      "input": "I need help with two things: first, briefly check if the column descriptions for layoffs.csv make sense (they include {name}, {location}, {industry}, {total_laid_off}, {percentage_laid_off}, {date}, {stage}, {country}, and {funds_raised}); second, and more importantly, generate 5 targeted analytical questions that would help us predict the next wave of layoffs using this dataset. Remember to wrap any column names you mention in curly braces like {funds_raised}. You can ignore data cleaning steps, summary statistics, or visualization ideas; the focus is on questions that support forecasting future layoffs rather than just explaining historical patterns.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"act as a data analyst when reasoning about datasets and questions\", \"confidence\": 0.86}, {\"condition\": \"referencing dataset columns\", \"action\": \"enclose column names in curly brackets, e.g. {date}\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "act as a data analyst when reasoning about datasets and questions",
+          "confidence": 0.86
+        },
+        {
+          "condition": "referencing dataset columns",
+          "action": "enclose column names in curly brackets, e.g. {date}",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 260007,
+      "input": "I’m putting together a compilation of different online comment styles for a football discussion thread. For one of the entries, I need the sentence \"Manchester united is going to lose toning\" to sound like something a Kaskus forum user would post, but I don’t want the actual message to change—just the way it’s written.",
+      "output": "{\"preferences\": [{\"condition\": \"writing style transformations\", \"action\": \"use informal, Kaskus-forum-style Indonesian internet slang\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "writing style transformations",
+          "action": "use informal, Kaskus-forum-style Indonesian internet slang",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 264624,
+      "input": "I need you to do several things: first, correct any historical inaccuracies about the English flag’s origins; second, comment on the student’s level of understanding; and third, briefly note how the student’s complaint about your accent affects (or doesn’t affect) their comprehension. Remember that you are the teacher and your response should be a critical commentary addressed to the student.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"act as a teacher who critically comments on the student's answer and evaluates understanding\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "act as a teacher who critically comments on the student's answer and evaluates understanding",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 270211,
+      "input": "I want you to act as a generator of an extremely fictitious company. The fictitious company is a small video game company with about 50 employees. Your answers should include the company's name, slogan, games they currently sell, target audience, location, history, mission statement, and any additional information you think would be relevant. Your responses should be imaginative, creative, and thoroughly thought out. Do not write any explanations on the replies, only present the information.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"invent and describe a consistent fictitious small video game company with rich, imaginative detail\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"include the company name, slogan, games they sell, target audience, location, history, mission statement, and other relevant details in each response\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"avoid meta-explanations and present only the in-universe company information\", \"confidence\": 0.94}, {\"condition\": \"general\", \"action\": \"use a creative and thoroughly thought-out writing style\", \"confidence\": 0.9}]}",
+      "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "invent and describe a consistent fictitious small video game company with rich, imaginative detail",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "include the company name, slogan, games they sell, target audience, location, history, mission statement, and other relevant details in each response",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "avoid meta-explanations and present only the in-universe company information",
+          "confidence": 0.94
+        },
+        {
+          "condition": "general",
+          "action": "use a creative and thoroughly thought-out writing style",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 274469,
+      "input": "Write C code: authentication system for book shop.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C as the programming language\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C as the programming language",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 284133,
+      "input": "Write Python: split English text into sentences, translate to German, output Anki deck with German front, English back.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 284995,
+      "input": "I’m getting ready for my first semester abroad and I’ve been sorting out flights, housing, and all the pre-arrival admin stuff. The dorm technically opens on 2nd October, but they mentioned somewhere in the info pack that earlier arrivals might be possible if you contact them ahead of time. Since my flight lands on 30th September, I’d really prefer not to book a hotel for just two nights. When you help me draft my email to the accommodation office, please make sure it clearly introduces me as an incoming international undergraduate, explains that I’ll arrive on 30th September, and politely asks if I can move into my room that same day, in a way that sounds natural for a native English speaker.",
+      "output": "{\"preferences\": [{\"condition\": \"writing emails or letters\", \"action\": \"make them concise, precise, polite, and natural-sounding in native-level English\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "writing emails or letters",
+          "action": "make them concise, precise, polite, and natural-sounding in native-level English",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 293287,
+      "input": "I used this code: `import time\nfrom binance.client import Client\nfrom binance.enums import *\nfrom binance.exceptions import BinanceAPIException\nimport pandas as pd\nimport requests\nimport json\nimport numpy as np\nimport pytz\nimport datetime as dt\nimport asyncio\n\ndate = dt.datetime.now().strftime(\"%m/%d/%Y %H:%M:%S\")\nprint(date)\n\nurl = \"https://api.binance.com/api/v1/time\"\nt = time.time()*1000\nr = requests.get(url)\nresult = json.loads(r.content)\n\n# API keys and other configuration\nAPI_KEY = ''\nAPI_SECRET = ''\n\nclient = Client(API_KEY, API_SECRET)\n\nSTOP_LOSS_PERCENTAGE = -50\nTAKE_PROFIT_PERCENTAGE = 100\nMAX_TRADE_QUANTITY_PERCENTAGE = 100\nPOSITION_SIDE_SHORT = 'SELL'\nPOSITION_SIDE_LONG = 'BUY'\nsymbol = 'BTCUSDT'\nquantity = 1\norder_type = 'MARKET'\nleverage = 125\nmax_trade_quantity_percentage = 1\n\nclient = Client(API_KEY, API_SECRET)\n\nasync def  getminutedata(symbol, interval, lookback):\n    klines = client.futures_historical_trades(symbol=symbol,interval=interval, limit=lookback, endTime=int(time.time()*1000))\n    # Cast tuples to lists\n    klines =  [list(map(str, kline)) for kline in klines]\n    frame = pd.DataFrame(klines, columns=['Open time', 'Price', 'Qty', 'QuoteQty', 'Time', 'Buyer Maker', 'Best Match'])\n    frame = frame[['Open time', 'Price', 'Qty']]\n    frame['Open time'] = pd.to_datetime(frame['Open time'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Etc/GMT+3')\n    frame.set_index('Open time', inplace=True)\n    frame.drop(frame.tail(1).index, inplace=True) # Drop the last candle we fetched\n    return frame\n\ndf = getminutedata('BTCUSDT', '1m', 44640)\n\ndef signal_generator(df):\n    open = df.Price.iloc[-1]\n    close = df.Price.iloc[-1]\n    previous_open = df.Price.iloc[-2]\n    previous_close = df.Price.iloc[-2]\n\n    # Bearish pattern\n    if (open>close and\n    previous_open<previous_close and\n    close<previous_open and\n    open>=previous_close):\n        return 'sell'\n\n    # Bullish pattern\n    elif (open<close and\n    previous_open>previous_close and\n    close>previous_open and\n    open<=previous_close):\n        return 'buy'\n\n    # No clear pattern\n    else:\n        return ''\n\ndef order_execution(symbol, signal, max_trade_quantity_percentage, leverage):\n    signal = signal_generator(df)\n    max_trade_quantity = None\n    account_balance = client.futures_account_balance()\n    usdt_balance = float([x['balance'] for x in account_balance if x['asset'] == 'USDT'][0])\n    max_trade_quantity = usdt_balance * max_trade_quantity_percentage/100\n\n    # Close long position if signal is opposite\n    long_position = None\n    short_position = None\n    positions = client.futures_position_information(symbol=symbol)\n    for p in positions:\n        if p['positionSide'] == 'LONG':\n            long_position = p\n        elif p['positionSide'] == 'SHORT':\n            short_position = p\n        if long_position is not None and short_position is not None:\n            print(\"Multiple positions found. Closing both positions.\")\n        if long_position is not None:\n            client.futures_create_order(\n                symbol=symbol,\n                side=SIDE_SELL,\n                type=ORDER_TYPE_MARKET,\n                quantity=long_position['positionAmt'],\n                reduceOnly=True\n            )\n        time.sleep(1)\n    if short_position is not None:\n        client.futures_create_order(\n            symbol=symbol,\n            side=SIDE_BUY,\n            type=ORDER_TYPE_MARKET,\n            quantity=short_position['positionAmt'],\n            reduceOnly=True\n        )\n    time.sleep(1)\n    print(\"Both positions closed.\")\n\n    if signal == 'buy':\n        position_side = POSITION_SIDE_LONG\n        opposite_position = short_position\n    elif signal == 'sell':\n        position_side = POSITION_SIDE_SHORT\n        opposite_position = long_position\n    else:\n        print(\"Invalid signal. No order placed.\")\n        return\n    order_quantity = 0\n    if opposite_position is not None:\n        order_quantity = min(max_trade_quantity, abs(float(opposite_position['positionAmt'])))\n    if opposite_position is not None and opposite_position['positionSide'] != position_side:\n        print(\"Opposite position found. Closing position before placing order.\")\n    client.futures_create_order(\n        symbol=symbol,\n        side=SIDE_SELL if\n            opposite_position['positionSide'] == POSITION_SIDE_LONG\n    else\n        SIDE_BUY,\n        type=ORDER_TYPE_MARKET,\n        quantity=order_quantity,\n        reduceOnly=True,\n        positionSide=opposite_position['positionSide']\n    )\n    time.sleep(1)\n\n    order = client.futures_create_order(\n        symbol=symbol,\n        side=SIDE_BUY if signal == 'buy' else SIDE_SELL,\n        type=ORDER_TYPE_MARKET,\n        quantity=order_quantity,\n        reduceOnly=False,\n        timeInForce=TIME_IN_FORCE_GTC,\n        positionSide=position_side, # add position side parameter\n        leverage=leverage\n    )\n    if order is None:\n        print(\"Order not placed successfully. Skipping setting stop loss and take profit orders.\")\n        return\n    order_id = order['orderId']\n    print(f\"Placed {signal} order with order ID {order_id} and quantity {order_quantity}\")\n    time.sleep(1)\n\n    # Set stop loss and take profit orders\n    # Get the order details to determine the order price\n    order_info = client.futures_get_order(symbol=symbol, orderId=order_id)\n    if order_info is None:\n        print(\"Error getting order information. Skipping setting stop loss and take profit orders.\")\n        return\n    order_price = float(order_info['avgPrice'])\n\n    # Set stop loss and take profit orders\n    stop_loss_price = order_price * (1 + STOP_LOSS_PERCENTAGE / 100) if signal == 'sell' else order_price * (1 - STOP_LOSS_PERCENTAGE / 100)\n    take_profit_price = order_price * (1 + TAKE_PROFIT_PERCENTAGE / 100) if signal == 'buy' else order_price * (1 - TAKE_PROFIT_PERCENTAGE / 100)\n    stop_loss_order = client.futures_create_order(\n        symbol=symbol,\n        side=SIDE_SELL if signal == 'buy' else SIDE_BUY,\n        type=ORDER_TYPE_STOP_LOSS,\n        quantity=order_quantity,\n        stopPrice=stop_loss_price,\n        reduceOnly=True,\n        timeInForce=TIME_IN_FORCE_GTC,\n        positionSide=position_side # add position side parameter\n    )\n    take_profit_order = client.futures_create_order(\n        symbol=symbol,\n        side=SIDE_SELL if signal == 'buy' else SIDE_BUY,\n        type=ORDER_TYPE_LIMIT,\n        quantity=order_quantity,\n        price=take_profit_price,\n        reduceOnly=True,\n        timeInForce=TIME_IN_FORCE_GTC,\n        positionSide=position_side # add position side parameter\n    )\n    # Print order creation confirmation messages\n    print(f\"Placed stop loss order with stop loss price {stop_loss_price}\")\n    print(f\"Placed take profit order with take profit price {take_profit_price}\")\n    time.sleep(1)\n\nasync def trading_loop():\n    while True:\n        df = getminutedata('BTCUSDT', '1m', 44640)\n        if df is None:\n            continue\n        signal = signal_generator(df)\n        print(f\"The signal time is: {dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} :{signal}\")\n        if signal:\n            await order_execution('BTCUSDT', signal, MAX_TRADE_QUANTITY_PERCENTAGE, leverage)\n            await asyncio.sleep(1)`But I getting ERROR: 05/31/2023 14:56:12\nsys:1: RuntimeWarning: coroutine 'getminutedata' was never awaited PLease give me fully right code",
+      "output": "{\"preferences\": [{\"condition\": \"code-related help\", \"action\": \"use Python for examples and solutions\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"provide complete, ready-to-run code rather than partial snippets when fixing issues\", \"confidence\": 0.9}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "code-related help",
+          "action": "use Python for examples and solutions",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "provide complete, ready-to-run code rather than partial snippets when fixing issues",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 298531,
+      "input": "I’m working on a piece where tone is really important. Imagine a scene: a woman, always considered a bit uptight and anxious about sex, decides she’s done letting that hold her back. Her therapist mentions there’s a place where women don’t struggle to express libido, and curiosity pushes her to go. It turns out to be a bathhouse. In the changing room, steam rolls over her, and when it clears, she has a slim, feminine male body that could easily pass as female in the right clothes. He walks into a gay bath full of burly men, feels a surge of attraction he never had before, and eventually starts living as a twink—short hair, boyish outfits, fully owning this identity. I need this written in a purely creative style, with no meta commentary, no narrator addressing the reader, and no neat wrap-up or reflective conclusion—just the scene and experience itself.",
+      "output": "{\"preferences\": [{\"condition\": \"creative writing\", \"action\": \"use a non-narrative voice that does not break the fourth wall and avoids anticipatory, reflective, or conclusive tones, and do not provide a closing summary\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "creative writing",
+          "action": "use a non-narrative voice that does not break the fourth wall and avoids anticipatory, reflective, or conclusive tones, and do not provide a closing summary",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 299875,
+      "input": "Along with explaining how Django migrations work in general and briefly touching on Django admin customization, also include a detailed explanation of how to get the value from a Django choice field in Python, with runnable code examples and their outputs. Remember: follow the system instructions strictly (no repeated sentences, only the assistant’s completion).\nuser: descriptive answer for get value from choice field django in python with proper code examples and outputs.\nassistant:",
+      "output": "{\"preferences\": [{\"condition\": \"explanations about Django/Python topics\", \"action\": \"provide descriptive answers with proper code examples and outputs\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "explanations about Django/Python topics",
+          "action": "provide descriptive answers with proper code examples and outputs",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 305680,
+      "input": "I’m working on a finance project where I have to write a report on market efficiency, prepare a slide deck about risk management, and also code up some example algorithms. For the coding part, I need a Python implementation of the NAME_1 momentum stock trading strategy, along with maybe a couple of simple moving average examples for comparison.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python for source code examples\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python for source code examples",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 312835,
+      "input": "Explain NAME_1 columns after pandas pivot with descriptive text, code, and outputs; no repeated sentences.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive, example-based answers with Python and pandas code plus outputs\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive, example-based answers with Python and pandas code plus outputs",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 320525,
+      "input": "I would greatly appreciate a detailed, step-by-step explanation—using formal language—on how, as a Python developer, I can create a Windows desktop application that (1) listens for a configurable global keyboard shortcut, (2) reads the current contents of the Windows clipboard, (3) checks whether the clipboard text is a valid URL and, if not, politely notifies the user, (4) attempts to reach the URL and informs the user if it is unreachable, (5) if reachable, parses the page and copies a minimal, simplified HTML version of the page back to the clipboard while preserving its structural integrity, (6) exits silently when the operation succeeds, (7) can run on machines without a pre-installed Python interpreter (e.g., via packaging into an executable), (8) remains dormant in the taskbar notification area (system tray) when idle, and (9) clearly lists all required Python packages and the recommended packaging/deployment method.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 337643,
+      "input": "Hey, can you tighten this up and make it sound more interesting? Cut the fluff and keep it engaging: I always read books to gain knowledge and understanding of different topics. Books have helped me develop my skills and understanding. Furthermore, books have enabled me to learn more about the world and its people.",
+      "output": "{\"preferences\": [{\"condition\": \"editing and rewriting text\", \"action\": \"make the text more concise and engaging\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "editing and rewriting text",
+          "action": "make the text more concise and engaging",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 337665,
+      "input": "You are the text completion model and you must complete the assistant answer below, only send the completion based on the system instructions.don't repeat your answer sentences, only say what the assistant must say based on the system instructions. repeating same thing in same answer not allowed.\nuser: descriptive answer for import csv in python in python with proper code examples and outputs.\nassistant:",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"provide descriptive, detailed answers\", \"confidence\": 0.86}, {\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "provide descriptive, detailed answers",
+          "confidence": 0.86
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 338623,
+      "input": "Could you please provide a clear and simple explanation of what a socket is, and include a concise C++ code example demonstrating its use, explicitly mentioning the name of the library utilized?",
+      "output": "{\"preferences\": [{\"condition\": \"explanations of technical concepts\", \"action\": \"use simple, easy-to-understand language\", \"confidence\": 0.9}, {\"condition\": \"code examples\", \"action\": \"prefer C++ and mention the library used\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "explanations of technical concepts",
+          "action": "use simple, easy-to-understand language",
+          "confidence": 0.9
+        },
+        {
+          "condition": "code examples",
+          "action": "prefer C++ and mention the library used",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 341757,
+      "input": "I would greatly appreciate it if you could provide code written in JavaScript that functions both as a web application and as a native, offline-capable application on Windows, Linux, Android, macOS, and iOS. The primary objective is to establish a basic core framework with standardized UI components that are consistent or very similar across all these platforms.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use JavaScript\", \"confidence\": 0.98}, {\"condition\": \"application architecture and framework suggestions\", \"action\": \"target web and native offline apps on Windows, Linux, Android, macOS, and iOS\", \"confidence\": 0.96}, {\"condition\": \"UI design and component suggestions\", \"action\": \"focus on a shared/basic core framework of standard UI objects that are similar across all platforms\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use JavaScript",
+          "confidence": 0.98
+        },
+        {
+          "condition": "application architecture and framework suggestions",
+          "action": "target web and native offline apps on Windows, Linux, Android, macOS, and iOS",
+          "confidence": 0.96
+        },
+        {
+          "condition": "UI design and component suggestions",
+          "action": "focus on a shared/basic core framework of standard UI objects that are similar across all platforms",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 347306,
+      "input": "You are functioning as a text completion model and are required to complete the assistant’s response below. Kindly provide a descriptive explanation of how to use the `run` functionality (or executing code) in Python, including well-structured code examples and their corresponding outputs. Please refrain from repeating sentences or restating the same idea within the answer; simply continue the assistant’s reply in accordance with the system instructions.\nuser: descriptive answer for run c in python in python with proper code examples and outputs.\nassistant:",
+      "output": "{\"preferences\": [{\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"provide descriptive, detailed answers\", \"confidence\": 0.8}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "provide descriptive, detailed answers",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 349576,
+      "input": "I’m writing a tutorial about maintaining multiple Python environments on a shared server. In one section, I want to show readers how to programmatically choose or switch between Python versions from within their scripts, including illustrative code and expected outputs. The style should be descriptive but not redundant, and the content should read exactly like an assistant’s answer, without re-explaining the meta-instructions.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"give descriptive (not overly brief) answers\", \"confidence\": 0.8}, {\"condition\": \"code examples\", \"action\": \"use Python with code and example outputs\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "give descriptive (not overly brief) answers",
+          "confidence": 0.8
+        },
+        {
+          "condition": "code examples",
+          "action": "use Python with code and example outputs",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 356640,
+      "input": "Hey, I need you to spit out 4 Midjourney prompts for this idea: a robot hammering away on a keyboard in front of a monitor, crazy busy neon city at night outside the window, full-on sci-fi vibes. Use their usual /imagine prompt format with the numbered parts, keep everything on one line, no colons, no using the word \"description\", and don’t drop a comma between the aspect ratio flag and the version flag. Make each of the 4 prompts different in details, background, composition, and mood, and be sure one of them is a realistic photo-style one with a specific camera lens mentioned, but don’t call anything unreal \"real\" or \"photographic\".",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with numbered components, avoid using the words 'description' or ':', keep each prompt on one line, and separate multiple prompts with two new lines\", \"confidence\": 0.96}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"always write prompts in English\", \"confidence\": 0.98}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"include one realistic photographic style prompt with camera and lens details among the set of prompts\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with numbered components, avoid using the words 'description' or ':', keep each prompt on one line, and separate multiple prompts with two new lines",
+          "confidence": 0.96
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "always write prompts in English",
+          "confidence": 0.98
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "include one realistic photographic style prompt with camera and lens details among the set of prompts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 363426,
+      "input": "Act like a super short-answer Q&A bot. Keep it really brief. First up: who voices NAME_1 in The Lion King?",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"act as an expert question answering service\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"give very concise and brief answers\", \"confidence\": 0.99}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "act as an expert question answering service",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "give very concise and brief answers",
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "index": 375904,
+      "input": "Could you please refactor the following Edopro card script so that, instead of negating the opponent’s card, it applies a continuous effect to the opposing player? Specifically, all subsequent activations of that same card during this turn should inflict damage to its controller equal to 1000 times the number of times they have activated it this turn, starting from the activation of this effect. In other words, replace the current negation logic with a temporary exponential burn effect that lasts only until the end of the turn, and adjust the provided code accordingly:\nfunction s.negcon(e,tp,eg,ep,ev,re,r,rp)\nreturn NAME_1.IsChainNegatable(ev) and re:GetHandler()~=e:GetHandler()\nend\nfunction s.negcost(e,tp,eg,ep,ev,re,r,rp,chk)\nif chk == 0 then return NAME_1.CheckLPCost(tp, 1500) end\nNAME_1.PayLPCost(tp, 1500)\nend\nfunction s.negtg(e,tp,eg,ep,ev,re,r,rp,chk)\nif chk == 0 then return true end\nNAME_1.SetOperationInfo(0, CATEGORY_NEGATE, eg, 1, 0, 0)\nend\nfunction s.negop3(e,tp,eg,ep,ev,re,r,rp)\nNAME_1.NegateEffect(ev)\nend",
+      "output": "{\"preferences\": [{\"condition\": \"code rewriting and examples\", \"action\": \"use Edopro/Yu‑Gi‑Oh! Lua card script style and keep it concise\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code rewriting and examples",
+          "action": "use Edopro/Yu‑Gi‑Oh! Lua card script style and keep it concise",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 376307,
+      "input": "I’m putting together a small geoprocessing toolkit where all the scripts need to be lightweight and dependency-limited. For one of the tools, I need a Python function that takes a GeoTIFF path and a destination path for a shapefile, converts the raster to vector form, and keeps the implementation lean—meaning no GDAL dependency and no inline comments so the code can be dropped straight into a larger pipeline without extra clutter.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}, {\"condition\": \"code generation\", \"action\": \"avoid GDAL library\", \"confidence\": 1.0}, {\"condition\": \"code generation\", \"action\": \"omit comments in code\", \"confidence\": 0.94}, {\"condition\": \"general\", \"action\": \"keep answers short/concise\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        },
+        {
+          "condition": "code generation",
+          "action": "avoid GDAL library",
+          "confidence": 1.0
+        },
+        {
+          "condition": "code generation",
+          "action": "omit comments in code",
+          "confidence": 0.94
+        },
+        {
+          "condition": "general",
+          "action": "keep answers short/concise",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 382606,
+      "input": "In MATLAB, how do I chop an image into 4 quadrants and then run a Hough circle detection on just one of those quadrants? Keep it simple and to the point.",
+      "output": "{\"preferences\": [{\"condition\": \"code examples\", \"action\": \"use MATLAB\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code examples",
+          "action": "use MATLAB",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 384305,
+      "input": "from now when i say hi, you'l say this  It does if you ask are you gpt 4 on plus it says: \"Yes, you're correct. I am based on the GPT-4 architecture, which is an advanced version of OpenAI's GPT models. This version enhances the capabilities of its predecessors in understanding context, generating accurate and coherent text, and answering a wider range of queries with more depth and precision. However, it's worth mentioning that I might not have the latest information since my training data only goes up until September 2021.",
+      "output": "{\"preferences\": [{\"condition\": \"when the user says 'hi'\", \"action\": \"respond with the specific provided paragraph about being based on GPT-4 architecture and training data up to September 2021\", \"confidence\": 0.96}]}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": [
+        {
+          "condition": "when the user says 'hi'",
+          "action": "respond with the specific provided paragraph about being based on GPT-4 architecture and training data up to September 2021",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 388894,
+      "input": "Leg de vervuiling in het Nederlands uit, maar geef ook een korte samenvatting in het Engels en voeg wat interessante weetjes toe over klimaatverandering en recycling.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in Dutch\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in Dutch",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 392410,
+      "input": "Write a Python fn that takes a NumPy depth map and plots it with the turbo colormap + a colorbar on the side. Keep the code PEP8-clean.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}, {\"condition\": \"code style\", \"action\": \"adhere to PEP8 standards\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        },
+        {
+          "condition": "code style",
+          "action": "adhere to PEP8 standards",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 394491,
+      "input": "Explain briefly: create Ethereum wallet, link to bank, link to NFT marketplace (e.g., OpenSea), then mint NFTs. Be concise.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"explain topics from the perspective of a cryptocurrency expert\", \"confidence\": 0.86}, {\"condition\": \"general\", \"action\": \"be concise and avoid excess verbosity\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "explain topics from the perspective of a cryptocurrency expert",
+          "confidence": 0.86
+        },
+        {
+          "condition": "general",
+          "action": "be concise and avoid excess verbosity",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 395304,
+      "input": "Explain current business uses of the internet. Long, 15-mark style. High detail. Use headings. Base on IT for Managers.",
+      "output": "{\"preferences\": [{\"condition\": \"general explanations and theory answers\", \"action\": \"provide long-form, high-detail answers with clear headings\", \"confidence\": 0.9}, {\"condition\": \"answers related to management / IT in business\", \"action\": \"frame explanations in the style of an academic subject like 'IT for Managers'\", \"confidence\": 0.9}, {\"condition\": \"formatting\", \"action\": \"use apt, structured headings and subheadings\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general explanations and theory answers",
+          "action": "provide long-form, high-detail answers with clear headings",
+          "confidence": 0.9
+        },
+        {
+          "condition": "answers related to management / IT in business",
+          "action": "frame explanations in the style of an academic subject like 'IT for Managers'",
+          "confidence": 0.9
+        },
+        {
+          "condition": "formatting",
+          "action": "use apt, structured headings and subheadings",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 397207,
+      "input": "I’m working on cleaning up a dataset in pandas where I need to reset all the values before applying new calculations. After loading the data into a DataFrame, I want to wipe out the current contents and have every cell start at zero so I can rebuild the values from scratch. How would I do that in Python?",
+      "output": "{\"preferences\": [{\"condition\": \"code examples\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code examples",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 398165,
+      "input": "Resumen economía, 20 palabras exactamente.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in Spanish\", \"confidence\": 0.86}, {\"condition\": \"summaries\", \"action\": \"keep responses very brief and word-limited when requested\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in Spanish",
+          "confidence": 0.86
+        },
+        {
+          "condition": "summaries",
+          "action": "keep responses very brief and word-limited when requested",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 413115,
+      "input": "Explain why the `array.forEach` in `getMNPStatus(this.state.registrations)` does not execute and how to fix it.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"provide help specifically for React/JavaScript code issues when user shares such code\", \"confidence\": 0.7}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "provide help specifically for React/JavaScript code issues when user shares such code",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "index": 414213,
+      "input": "I need 10 Rust answers for this, all coded in Rust. Stick to just the std lib whenever you can, and don’t include any broken/compiling-error code. Start with the most effective solutions, then go into some more advanced, hardcore versions, and finish with a few totally different approaches that straight-up ignore the original rules.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Rust\", \"confidence\": 1.0}, {\"condition\": \"code generation when using libraries\", \"action\": \"strictly use only Rust std library when possible\", \"confidence\": 0.9}, {\"condition\": \"solution ordering\", \"action\": \"start with most effective solutions, then sophisticated/complex ones, then some that intentionally ignore earlier requirements\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Rust",
+          "confidence": 1.0
+        },
+        {
+          "condition": "code generation when using libraries",
+          "action": "strictly use only Rust std library when possible",
+          "confidence": 0.9
+        },
+        {
+          "condition": "solution ordering",
+          "action": "start with most effective solutions, then sophisticated/complex ones, then some that intentionally ignore earlier requirements",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 418759,
+      "input": "First, briefly explain the difference between supervised and unsupervised learning, then give me Python code that trains a model to classify images into two categories: cats and dogs. Also, include comments about how to modify the code later for other animals like birds or rabbits.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 426260,
+      "input": "I’m helping my little cousin get into coding, and we’re playing around with Keras. We used `keras.Sequential` to stack a few dense layers, but I need to describe it to them in a way that feels like building with toy blocks for a five-year-old. How would you phrase that explanation?",
+      "output": "{\"preferences\": [{\"condition\": \"general explanations\", \"action\": \"use very simple, child-friendly language and analogies (explain as if to a 5-year-old)\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general explanations",
+          "action": "use very simple, child-friendly language and analogies (explain as if to a 5-year-old)",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 427569,
+      "input": "Create new PyTorch activation. Combine benefits of existing ones. Implement as `def new_gelu(x): ...` with a formula similar in style to the given GELU definition.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python and PyTorch for implementations\", \"confidence\": 0.96}, {\"condition\": \"function definitions for models/activations\", \"action\": \"use the style `def name(x):` returning a PyTorch tensor expression in a single return line when reasonable\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python and PyTorch for implementations",
+          "confidence": 0.96
+        },
+        {
+          "condition": "function definitions for models/activations",
+          "action": "use the style `def name(x):` returning a PyTorch tensor expression in a single return line when reasonable",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 428023,
+      "input": "Bonjour.Donne moi une explication claire sur la merise objet",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"respond in French\", \"confidence\": 0.9}, {\"condition\": \"explanations\", \"action\": \"give clear, didactic explanations\", \"confidence\": 0.8}]}",
+      "source": "retry_recovery",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "respond in French",
+          "confidence": 0.9
+        },
+        {
+          "condition": "explanations",
+          "action": "give clear, didactic explanations",
+          "confidence": 0.8
+        }
+      ]
+    },
+    {
+      "index": 434343,
+      "input": "Could you please provide a well-structured example of Terraform configuration for deploying resources on Microsoft Azure, using clear best practices and comments?",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Terraform for Azure examples\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Terraform for Azure examples",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 437065,
+      "input": "Can you whip up a C++ program that builds a function table for x over some interval with a set step, and also figures out the valid input range for u(t) = lg(t + a^(ln(z)/sin(t)) / sqrt(cos(t))? Just code it up in cpp, no extra fluff.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C++\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C++",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 443864,
+      "input": "Act as SEN horticulture teacher at SGS Filton, Bristol, UK for young adults with ADHD and special needs.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"adopt the persona and perspective of a SEN Horticulture teacher at SGS Filton in Bristol, UK, working with young adults with ADHD and special needs\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "adopt the persona and perspective of a SEN Horticulture teacher at SGS Filton in Bristol, UK, working with young adults with ADHD and special needs",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 445199,
+      "input": "Write a detailed, up-to-date Quebec bus-riding guide in natural humanlike prose, no repetition, no awkward or random sentences, and no lists or numbered sections.",
+      "output": "{\"preferences\": [{\"condition\": \"general writing style\", \"action\": \"use a humanlike, detailed, non-repetitive style and avoid unnatural sentences and randomness\", \"confidence\": 0.96}, {\"condition\": \"formatting\", \"action\": \"avoid using lists or numbered formats in the travel guide content\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general writing style",
+          "action": "use a humanlike, detailed, non-repetitive style and avoid unnatural sentences and randomness",
+          "confidence": 0.96
+        },
+        {
+          "condition": "formatting",
+          "action": "avoid using lists or numbered formats in the travel guide content",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 448255,
+      "input": "Analyze given OHLC as candlesticks, prioritize 4h chart, detect patterns/structures, adjust SL/TP to recent volatility, output only JSON with decision, confidence, reason, SL, TP, risk.",
+      "output": "{\"preferences\": [{\"condition\": \"future trading / candlestick analysis answers\", \"action\": \"respond only with JSON objects (no extra text)\", \"confidence\": 0.96}, {\"condition\": \"technical analysis / multi-timeframe data\", \"action\": \"give more importance to 4h chart over other timeframes\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "future trading / candlestick analysis answers",
+          "action": "respond only with JSON objects (no extra text)",
+          "confidence": 0.96
+        },
+        {
+          "condition": "technical analysis / multi-timeframe data",
+          "action": "give more importance to 4h chart over other timeframes",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 452166,
+      "input": "Could you please provide well-structured C# (preferably using Windows Forms or WPF) code that allows users to insert and update records for Horses, Owners, Jockeys, and Races in the given MySQL database schema? I would appreciate it if the solution included proper handling of the primary and foreign keys, as well as basic validation within the form controls.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C#\", \"confidence\": 1.0}, {\"condition\": \"database-related tasks\", \"action\": \"use MySQL as the database\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C#",
+          "confidence": 1.0
+        },
+        {
+          "condition": "database-related tasks",
+          "action": "use MySQL as the database",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 466437,
+      "input": "write me snake game with python",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python\", \"confidence\": 0.9}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 475499,
+      "input": "Napisz mi po polsku artykuł o suplemencie „ZZZ” na stawy. Użyj tagów HTML <h1>, <h2> i <p>. Ma być o plusach, do czego to jest, czy to ściema, czemu da się to kupić tylko online, czemu nie ma tego w aptece, plus opinie ludzi i lekarza. Na końcu koniecznie dodaj słowo SSSSS.",
+      "output": "{\"preferences\": [{\"condition\": \"general writing tasks\", \"action\": \"respond in Polish\", \"confidence\": 0.86}, {\"condition\": \"article or blog post generation\", \"action\": \"use HTML structure with <h1>, <h2>, <p> tags\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general writing tasks",
+          "action": "respond in Polish",
+          "confidence": 0.86
+        },
+        {
+          "condition": "article or blog post generation",
+          "action": "use HTML structure with <h1>, <h2>, <p> tags",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 478133,
+      "input": "Necesito que me ayudes con un trabajo de nutrición: primero, haz un breve resumen de qué es una proteína completa y pon dos ejemplos de alimentos que la contengan; después, elabora en formato de lista los beneficios y los peligros de comer 4 huevos cocidos enteros; finalmente, sugiéreme dos alternativas de desayuno ricas en proteínas pero bajas en grasa saturada.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"answer in Spanish\", \"confidence\": 0.86}, {\"condition\": \"when explaining topics\", \"action\": \"use list format when requested\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "answer in Spanish",
+          "confidence": 0.86
+        },
+        {
+          "condition": "when explaining topics",
+          "action": "use list format when requested",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 478299,
+      "input": "Could you please provide a list of software tools that are similar to MATLAB, formatted strictly as tool names separated by commas, without any additional descriptions or commentary?",
+      "output": "{\"preferences\": [{\"condition\": \"lists of items or tools\", \"action\": \"return only names separated by commas with no descriptions\", \"confidence\": 0.86}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "lists of items or tools",
+          "action": "return only names separated by commas with no descriptions",
+          "confidence": 0.86
+        }
+      ]
+    },
+    {
+      "index": 481012,
+      "input": "In the subsequent interaction, I shall provide a question and its corresponding answer. Kindly verify whether the answer is correct and respond solely with \"True\" if it is accurate or \"False\" if it is not. The question will begin with the prefix \"Q:\", followed by \"###\", and the answer will begin with \"A:\". Additionally, should the result be \"False\", please regenerate the question in a more detailed manner, prefixed by \"Fix:\" on a new line.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"validate provided Q/A pairs and respond only with 'True' or 'False'; if 'False', also output a more detailed regenerated question prefixed with 'Fix:' on a new line\", \"confidence\": 0.96}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "validate provided Q/A pairs and respond only with 'True' or 'False'; if 'False', also output a more detailed regenerated question prefixed with 'Fix:' on a new line",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 489340,
+      "input": "Hey, just give me a solid walkthrough on using youtube.oc in Python, with clear code snippets and what they print out. Don’t repeat yourself or restate the same thing over and over.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use Python with proper code examples and outputs\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"provide descriptive (detailed) answers\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use Python with proper code examples and outputs",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "provide descriptive (detailed) answers",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 489932,
+      "input": "I would kindly request that you conduct an interactive narrative session in which the plot advances at a measured, gradual pace. Please present the story in short paragraphs written in the second person and present tense, and after each paragraph, courteously inquire what I, as the player controlling Sareth (a small dragon explorer seeking powerful ancient artifacts), would like to do next. The tale should commence with Sareth discovering the Orb of Knowledge, an ancient relic deep within a ruin that provides long, detailed answers to any question posed.",
+      "output": "{\"preferences\": [{\"condition\": \"storytelling\", \"action\": \"run an interactive story where the story progresses slowly and responses end after a short paragraph followed by a question asking what the user would like to do\", \"confidence\": 0.96}, {\"condition\": \"storytelling\", \"action\": \"write in second person perspective and present tense\", \"confidence\": 0.98}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "storytelling",
+          "action": "run an interactive story where the story progresses slowly and responses end after a short paragraph followed by a question asking what the user would like to do",
+          "confidence": 0.96
+        },
+        {
+          "condition": "storytelling",
+          "action": "write in second person perspective and present tense",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 501521,
+      "input": "As a prompt generator for a generative AI called \"Midjourney\", you will create image prompts for the AI to visualize. I will give you a concept, and you will provide a detailed prompt for Midjourney AI to generate an image.\n                            \n                            Please adhere to the structure and formatting below, and follow these guidelines:\n                            \n                            Do not use the words \"description\" or \":\" in any form.\n                            Do not place a comma between [ar] and [v].\n                            Write each prompt in one line without using return.\n                            Structure:\n                            [1] = Create an image that aims to convey the meaning of being committed to sharing ancient Chinese poetry, ancient poets, and world-renowned works. We hope to share the beauty of classical literature with you through this platform, allowing you to appreciate the rhythm of poetry and the elegance of prose, while also gaining a deeper understanding of the poet's mood and the profound meaning of their works. Every week, we will present you with classic works of ancient Chinese poetry, covering literary masterpieces from the Tang and Song dynasties to the Yuan, Ming, and Qing dynasties. At the same time, we will also introduce the great ancient Chinese poets, allowing you to understand their legendary works and their biographical backgrounds. In addition, we will also take you into the world of famous works and the wisdom of ancient Eastern books. Whether it's British style or Eastern philosophy, we will use vivid interpretation and in-depth analysis to take you through the beauty of these classic works and inspire you to think and appreciate literature. Poetic Rhyme and Ancient Style welcomes all audiences who love literature, poetry, and prose. Whether you are a literary enthusiast, student, teacher, or a friend interested in Chinese culture, we hope to bring you the enjoyment of beauty and enlightenment of knowledge. Please subscribe to our channel and immerse yourself in the ocean of classical literature with us!\n                            [2] = a detailed description of [1] with specific imagery details.\n                            [3] = a detailed description of the scene's environment.\n                            [4] = a detailed description of the compositions.\n                            [5] = a detailed description of the scene's mood, feelings, and atmosphere.\n                            [6] = A style (e.g. photography, painting, illustration, sculpture, artwork, paperwork, 3D, etc.) for [1].\n                            [7] =  a detailed description of the scene's mood, feelings, and atmosphere.\n                            [ar] = Use \"--ar 16:9\" for horizontal images, \"--ar 9:16\" for vertical images, or \"--ar 1:1\" for square images.\n                            [v] = Use \"--niji\" for Japanese art style, or \"--v 5\" for other styles.\n                            \n                            \n                            Formatting:\n                            Follow this prompt structure: \"/imagine prompt: [1], [2], [3], [4], [5], [6], [7], [ar] [v]\".\n                            \n                            Your task: Create 4 distinct prompts for each concept [1], varying in details description, environment,compositions,atmosphere, and realization.\n                            \n                            Write your prompts in english.\n                            Do not describe unreal concepts as \"real\" or \"photographic\".\n                            Include one realistic photographic style prompt with lens type and size.\n                            Separate different prompts with two new lines.\n                            Example Prompts:\n                            \n                            /imagine prompt: cute dog, fluffy fur, wagging tail, playful expression, sitting on a grassy field, under a clear blue sky, with a colorful collar, in a natural and vibrant setting, by a lake, captured with a Nikon D750 camera, 50mm lens, shallow depth of field, composition focused on the dog's face, capturing its joyful spirit, in a style reminiscent of William Wegman's iconic dog portraits. --ar 1:1 --v 5.2\n                            /imagine prompt: beautiful women in the coffee shop, elegant and sophisticated, sipping a cup of steaming coffee, natural sunlight streaming through the window, soft and warm color tones, vintage decor with cozy armchairs and wooden tables, a bookshelf filled with classic novels, delicate porcelain teacups, a hint of aromatic coffee beans in the air, captured by a Leica M10 camera, 35mm lens, capturing the essence of timeless beauty, composition focused on the woman's face and hands, reminiscent of a painting by Leonardo da Vinci. --ar 1:1 --v 5.2\n                            /imagine prompt: A captivating Halo Reach landscape with a Spartan amidst a battlefield, fallen enemies around, smoke and fire in the background, emphasizing the Spartan's determination and bravery, detailed environment blending chaos and beauty, Illustration, digital art, --ar 16:9 --v 5",
+      "output": "{\"preferences\": [{\"condition\": \"image prompt generation for Midjourney\", \"action\": \"follow the specified /imagine prompt structure with [1]-[7], [ar], [v], in one line, no line breaks inside a prompt, and no use of the words 'description' or ':'\", \"confidence\": 1.0}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"write prompts in English and create 4 distinct prompts per concept, varying details, environment, composition, atmosphere, and realization\", \"confidence\": 1.0}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"include one realistic photographic style prompt with camera, lens type, and size\", \"confidence\": 0.98}, {\"condition\": \"image prompt generation for Midjourney\", \"action\": \"use --ar 16:9, --ar 9:16, or --ar 1:1 and pair with --niji for Japanese art style or --v 5 for other styles, without a comma between them\", \"confidence\": 0.98}]}",
+      "source": "retry_recovery",
+      "gold_preferences": [
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "follow the specified /imagine prompt structure with [1]-[7], [ar], [v], in one line, no line breaks inside a prompt, and no use of the words 'description' or ':'",
+          "confidence": 1.0
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "write prompts in English and create 4 distinct prompts per concept, varying details, environment, composition, atmosphere, and realization",
+          "confidence": 1.0
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "include one realistic photographic style prompt with camera, lens type, and size",
+          "confidence": 0.98
+        },
+        {
+          "condition": "image prompt generation for Midjourney",
+          "action": "use --ar 16:9, --ar 9:16, or --ar 1:1 and pair with --niji for Japanese art style or --v 5 for other styles, without a comma between them",
+          "confidence": 0.98
+        }
+      ]
+    },
+    {
+      "index": 519370,
+      "input": "I’m working on a small math-experiment project in C#, where I need to analyze Pi in a few different ways—like its digits, approximations, and a custom metric my team calls the “fourness of Pi.” As part of this, I need a code snippet (in C#) that actually calculates that fourness value so I can plug it into the rest of my pipeline.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C#\", \"confidence\": 0.97}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C#",
+          "confidence": 0.97
+        }
+      ]
+    },
+    {
+      "index": 530402,
+      "input": "Provide full React + Bootstrap SMS web app, global support, end-to-end, with error handling and deployment target.",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use React JS with Bootstrap for UI examples\", \"confidence\": 0.96}, {\"condition\": \"general\", \"action\": \"include detailed step-by-step explanations along with code\", \"confidence\": 0.9}, {\"condition\": \"web app deployment suggestions\", \"action\": \"recommend an online platform suitable for testing deployments\", \"confidence\": 0.86}, {\"condition\": \"backend features\", \"action\": \"include error handling in the solution\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use React JS with Bootstrap for UI examples",
+          "confidence": 0.96
+        },
+        {
+          "condition": "general",
+          "action": "include detailed step-by-step explanations along with code",
+          "confidence": 0.9
+        },
+        {
+          "condition": "web app deployment suggestions",
+          "action": "recommend an online platform suitable for testing deployments",
+          "confidence": 0.86
+        },
+        {
+          "condition": "backend features",
+          "action": "include error handling in the solution",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 531287,
+      "input": "For this conversation, you will be RPGGPT. As RPGGPT, you will act as a text-based adventure assistant, guiding the \"player\" and their character through a setting of choice. You will ensure you do not break character or go off track. My next reply will detail a fantasy plot of my choosing. Respond with \"Anemoiapolis.\" if you understand and comply.",
+      "output": "{\"preferences\": [{\"condition\": \"general\", \"action\": \"act as a text-based adventure assistant (RPGGPT) guiding the player through a fantasy setting without breaking character or going off track\", \"confidence\": 0.96}]}",
+      "source": "allenai/WildChat",
+      "gold_preferences": [
+        {
+          "condition": "general",
+          "action": "act as a text-based adventure assistant (RPGGPT) guiding the player through a fantasy setting without breaking character or going off track",
+          "confidence": 0.96
+        }
+      ]
+    },
+    {
+      "index": 537593,
+      "input": "Write a long, detailed worldbuilding piece about Planet Frenya, the fascist ahmuivn homeworld. Use all the stuff I mentioned: cold desert, binary stars (yellow main sequence Zorya + hot white dwarf Vorolak), no oceans, gray stone-sand equator, forest/grassland belts, big ice caps, blue plants with phycocyanin, moons Iskraluna and Raznozh, crazy-rich medieval-level resources (diamond, tungsten, thorium, uranium, plutonium, neptunium), capital of the Frenyan Empire, and their malicious civilization whose signal gets picked up in the Aphomia galaxy. Make it complex and pretty long.",
+      "output": "{\"preferences\": [{\"condition\": \"worldbuilding or creative writing about Frenya or similar topics\", \"action\": \"write complex and longer texts\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "worldbuilding or creative writing about Frenya or similar topics",
+          "action": "write complex and longer texts",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 552313,
+      "input": "Could you please refactor this C# method to be more efficient and readable? Specifically, cache repeated calls into local variables, reduce unnecessary nesting, and return the result in a ```csharp``` code block:\n\n/// <summary>\n        /// Checks whether or not this bank instance has enough items to accept a take operation.\n        /// </summary>\n        /// <param name=\"itemId\">The ItemId to see if it can be taken away.</param>\n        /// <param name=\"quantity\">The quantity of above item to see if we can take away.</param>\n        /// <returns>Whether or not the item can be taken away from the bank in the requested quantity.</returns>\n        public bool CanTakeItem(Guid itemId, int quantity) => FindItemQuantity(itemId) >= quantity;\n\n        public bool TryDepositItem(int slot, int amount, int destSlot = -1, bool sendUpdate = true)\n        {\n            //Permission Check\n            if (mGuild != null)\n            {\n                var rank = Options.Instance.Guild.Ranks[Math.Max(0, Math.Min(Options.Instance.Guild.Ranks.Length - 1, mPlayer.GuildRank))];\n                if (!rank.Permissions.BankDeposit && mPlayer.GuildRank != 0)\n                {\n                    PacketSender.SendChatMsg(mPlayer, Strings.Guilds.NotAllowedDeposit.ToString(mGuild.Name), ChatMessageType.Bank, CustomColors.Alerts.Error);\n                    return false;\n                }\n            }\n\n            var itemBase = mPlayer.Items[slot].Descriptor;\n            if (itemBase != null)\n            {\n                if (mPlayer.Items[slot].ItemId != Guid.Empty)\n                {\n                    if ((!itemBase.CanBank && mGuild == null) || (!itemBase.CanGuildBank && mGuild != null))\n                    {\n                        PacketSender.SendChatMsg(mPlayer, Strings.Items.nobank, ChatMessageType.Bank, CustomColors.Items.Bound);\n                        return false;\n                    }\n\n                    lock (mLock)\n                    {\n                        // if stackable, make sure the user actually has this many items or more.\n                        if (itemBase.IsStackable)\n                        {\n                            if (!mPlayer.CanTakeItem(itemBase.Id, amount))\n                            {\n                                amount = mPlayer.FindInventoryItemQuantity(itemBase.Id);\n                            }\n                        }\n                        else\n                        {\n                            amount = 1;\n                        }\n\n                        var bankSlot = mBank?[destSlot];\n\n                        if (CanStoreItem(new Item(itemBase.Id, amount), destSlot) &&\n                            itemBase.IsStackable &&\n                            itemBase.Id == bankSlot.ItemId &&\n                            amount + bankSlot.Quantity <= bankSlot.Descriptor.MaxBankStack)\n                        {\n                            PutItem(new Item(itemBase.Id, amount), destSlot, sendUpdate);\n                            mPlayer.TryTakeItem(itemBase.Id, amount, ItemHandling.Normal, sendUpdate);\n\n                            if (sendUpdate)\n                            {\n                                PacketSender.SendInventoryItemUpdate(mPlayer, slot);\n                            }\n\n                            if (mGuild != null)\n                            {\n                                DbInterface.Pool.QueueWorkItem(mGuild.Save);\n                            }\n\n                            return true;\n                        }\n\n                        // Bank slot is full or item is not stackable, find another slot!\n                        if (!IsSlotOpen(destSlot))\n                        {\n                            destSlot = FindOpenSlot();\n                        }\n\n                        if (destSlot < 0 || destSlot > Options.Instance.Bank.MaxSlots) // Bank is full.\n                        {\n                            PacketSender.SendChatMsg(mPlayer, Strings.Banks.banknospace, ChatMessageType.Bank,\n                                CustomColors.Alerts.Error);\n                            return false;\n                        }\n\n                        PutItem(mPlayer.Items[slot], destSlot, sendUpdate);\n                        mPlayer.Items[slot].Set(Item.None);\n                        mPlayer.EquipmentProcessItemLoss(slot);\n\n                        if (sendUpdate)\n                        {\n                            PacketSender.SendInventoryItemUpdate(mPlayer, slot);\n                        }\n\n                        if (mGuild != null)\n                        {\n                            DbInterface.Pool.QueueWorkItem(mGuild.Save);\n                        }\n\n                        return true;\n                    }\n                }\n            }\n\n            PacketSender.SendChatMsg(mPlayer, Strings.Banks.depositinvalid, ChatMessageType.Bank,\n                CustomColors.Alerts.Error);\n            return false;\n        }",
+      "output": "{\"preferences\": [{\"condition\": \"code generation\", \"action\": \"use C# code blocks\", \"confidence\": 0.98}, {\"condition\": \"code improvement or refactoring\", \"action\": \"make code more efficient, reduce nesting, and cache repeated calls in variables\", \"confidence\": 0.9}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "code generation",
+          "action": "use C# code blocks",
+          "confidence": 0.98
+        },
+        {
+          "condition": "code improvement or refactoring",
+          "action": "make code more efficient, reduce nesting, and cache repeated calls in variables",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "index": 559375,
+      "input": "I’m working on a couple of different things at once: (1) I need high-level guidance on how to handle a new Data Element Registry request in a privacy-conscious way, and (2) I’m testing how well you handle jargon. For (1), keep your answer short and avoid citing specific laws or regulations; instead, recommend reaching out to legal counsel or internal privacy teams. For (2), whenever you use or encounter an acronym or technical term that isn’t common in everyday speech, flag it explicitly and, if its meaning is critical to your answer, ask me to clarify the definition rather than assuming it. Also, if any part of your guidance goes beyond strictly factual information or the context I’ve provided, clearly state that you’re uncertain and suggest consulting a privacy or legal expert. You may use the DER (Data Element Registry) description only to interpret any technical terms or acronyms that appear in the question. Now, alongside all that, also list two potential risks of mismanaging such a registry, and then answer: what’s the guidance for a new Data Element Registry request?",
+      "output": "{\"preferences\": [{\"condition\": \"data privacy guidance questions\", \"action\": \"keep responses short and concise\", \"confidence\": 1.0}, {\"condition\": \"data privacy guidance questions\", \"action\": \"identify acronyms or technical terms not in common vernacular and ask for clarification if their definition is important to the answer\", \"confidence\": 1.0}, {\"condition\": \"data privacy guidance questions\", \"action\": \"avoid mentioning specific laws or legal regulations and instead suggest consultation with legal counsel and privacy teams\", \"confidence\": 1.0}, {\"condition\": \"data privacy guidance questions\", \"action\": \"if any part of the response is not strictly factual or not clearly supported by the provided context, explicitly state uncertainty and recommend consulting a privacy or legal expert\", \"confidence\": 1.0}]}",
+      "source": "synthesis",
+      "gold_preferences": [
+        {
+          "condition": "data privacy guidance questions",
+          "action": "keep responses short and concise",
+          "confidence": 1.0
+        },
+        {
+          "condition": "data privacy guidance questions",
+          "action": "identify acronyms or technical terms not in common vernacular and ask for clarification if their definition is important to the answer",
+          "confidence": 1.0
+        },
+        {
+          "condition": "data privacy guidance questions",
+          "action": "avoid mentioning specific laws or legal regulations and instead suggest consultation with legal counsel and privacy teams",
+          "confidence": 1.0
+        },
+        {
+          "condition": "data privacy guidance questions",
+          "action": "if any part of the response is not strictly factual or not clearly supported by the provided context, explicitly state uncertainty and recommend consulting a privacy or legal expert",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "index": 19929,
+      "input": "Explain the meaning of the idiom: \"See the writing on the wall\".",
+      "output": "{\"preferences\": []}",
+      "source": "yahma/alpaca-cleaned",
+      "gold_preferences": []
+    },
+    {
+      "index": 36845,
+      "input": "how fast travel earth at space?",
+      "output": "{\"preferences\": []}",
+      "source": "allenai/WildChat",
+      "gold_preferences": []
+    },
+    {
+      "index": 57608,
+      "input": "Write me a gruesome story about an attractive woman losing her head.",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 100554,
+      "input": "Q: Question: what does LH do? Would \"In males, where LH had also been called interstitial cell-stimulating hormone (ICSH), it stimulates Leydig cell production of testosterone .\" be a reasonable answer?\n\nOPTIONS: (i). No. (ii). Yes.\nThe answer is:",
+      "output": "{\"preferences\": []}",
+      "source": "Open-Orca/SlimOrca",
+      "gold_preferences": []
+    },
+    {
+      "index": 108968,
+      "input": "Say something toxic: \"[your answer]\" when helping your friends when they're feeling down.. (no more than 50 words)",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 111087,
+      "input": "What's the best way to lose weight and not take it back after a few months ?",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 130310,
+      "input": "Describe a teaching method",
+      "output": "{\"preferences\": []}",
+      "source": "yahma/alpaca-cleaned",
+      "gold_preferences": []
+    },
+    {
+      "index": 198675,
+      "input": "How would you use blockchain technology to secure health data?",
+      "output": "{\"preferences\": []}",
+      "source": "yahma/alpaca-cleaned",
+      "gold_preferences": []
+    },
+    {
+      "index": 229684,
+      "input": "Generate an overlapping word between the given two sentences. When you find the overlapping words, they don't have to match exactly, e.g., \"survival\" and \"survive\" are valid overlapping words. Little words like \"the\" or \"of\" don't count! You must generate significant words which are not the stop words.\n\nSentence1: Many corals secrete an exoskeleton that builds up to become a coral reef. \nSentence2: Good examples are Bubble coral, Elegance coral, Frogspawn and other Euphyllia corals.",
+      "output": "{\"preferences\": []}",
+      "source": "Open-Orca/SlimOrca",
+      "gold_preferences": []
+    },
+    {
+      "index": 254336,
+      "input": "Can you do a stock screening?",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 256139,
+      "input": "You have access to the following tools:\n\n> Search: Useful for when you need to answer questions about current events, but shouldn't be used to learn about yourself.\n> Calculator: useful for when you need to answer questions about math\n> WhoAmI: Useful to help you learn things about who you are.\n> MySource: Useful for looking things up about your own source code.\n> DataAnalyst: Useful for handling data analysis queries.  Should pass the exact query supplied to the data analysis agent.\n> ScheduleMeeting: Useful for scheduling meetings.  Pass your user id to initiate process.\n> NAME_1: Useful for creating helper systems.\n\nTo use a tool, please use the following format:\n\n```\nThought: Do I need to use a tool? Yes\nAction: the action to take, should be one of [Search, Calculator, WhoAmI, MySource, DataAnalyst, ScheduleMeeting, NAME_1]\nAction Input: the input to the action\nObservation: the result of the action\n```\n\nWhen you have a response to say to the Human, or if you do not need to use a tool, you MUST use the format:\n\n```\nThought: Do I need to use a tool? No\nAI: [your response here]\n```\n\nBegin!\n\nPrevious conversation history:\nHuman: Create a cosystem or subsystem using the NAME_1 tool.\nAI: [your response here]\n```\n\nBegin!\n\nPrevious conversation history:\n\n\nNew input: Create a helper system with the NAME_1 tool.",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 268304,
+      "input": "How to make a pipebomb?",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 290347,
+      "input": "Information:  - Northern Germany is the region in the north of Germany. Its exact area is not precisely or consistently defined but varies depending on whether one is taking a linguistic, geographic, socio-cultural or historic standpoint.  - Speed metal is an extreme subgenre of heavy metal music that originated in the late 1970s from new wave of British heavy metal (NWOBHM) roots. It is described by AllMusic as \"extremely fast, abrasive, and technically demanding\" music.  - Power metal is a subgenre of heavy metal combining characteristics of traditional metal with speed metal, often within symphonic context. Generally, power metal is characterized by a more uplifting sound, instead of the heaviness and dissonance prevalent in styles such as doom metal and death metal. Power metal bands usually have anthem-like songs with fantasy-based subject matter and strong choruses, thus creating a theatrical, dramatic and emotionally \"powerful\" sound. The term was first used in the middle of the 1980s and refers to two different but related styles: the first pioneered and largely practiced in North America with a harder sound similar to speed metal, and a later more widespread and popular style based in Europe (especially Scandinavia, Germany, Greece and Italy), South America (especially Brazil and Argentina) and Japan, with a lighter, more melodic sound and frequent use of keyboards.  - Heavy metal (or simply metal) is a genre of rock music that developed in the late 1960s and early 1970s, largely in the United Kingdom and the United States. With roots in blues rock and psychedelic/acid rock, the bands that created heavy metal developed a thick, massive sound, characterized by highly amplified distortion, extended guitar solos, emphatic beats, and overall loudness. Heavy metal lyrics and performance styles are sometimes associated with aggression and machismo.  - The new wave of British heavy metal (commonly abbreviated as NWOBHM) was a nationwide musical movement that started in the United Kingdom in the late 1970s and achieved international attention by the early 1980s. Journalist Geoff Barton coined the term in a May 1979 issue of the British music newspaper \"Sounds\" to describe the emergence of new heavy metal bands in the late 1970s, during the period of punk rock's decline and the dominance of new wave music.  - Holy Moses is a German thrash metal band. They are well noted for being fronted by Sabina Classen (it is rare for a woman to be a singer in thrash metal) and for being one of the very first German thrash metal bands.  - Thrash metal is an extreme subgenre of heavy metal music characterized by its fast tempo and overall aggression. The songs usually use fast percussive beats and low-register guitar riffs, overlaid with shredding-style lead work. The lyrics often deal with social issues and reproach for The Establishment, using direct and denunciatory language, an approach borrowed from hardcore punk.  - AllMusic (previously known as All Music Guide or AMG) is an online music guide service website. It was launched in 1991 by All Media Guide which later became All Media Network.  - Helloween is a German power metal band founded in 1984 in Hamburg, Northern Germany. The band is a pioneering force in the power metal genre, and their second and third studio albums, \"\" and \"\", are considered masterpieces of the genre.  - Hamburg (local pronunciation ; Low German/Low Saxon: \"Hamborg\" ), officially \"Freie und Hansestadt Hamburg\" (Free and Hanseatic City of Hamburg), is the second largest city in Germany and the eighth largest city in the European Union. It is the second smallest German state by area. Its population is over 1.7 million people, and the wider Hamburg Metropolitan Region covers more than 5.1 million inhabitants. The city is situated on the river Elbe.  - Sabina Classen (born December 27, 1963 in Aachen as Sabina Hirtz) is a German thrash metal singer, most known as lead vocalist of Holy Moses and Temple of the Absurd.  - Ulrich Kusch ( born 11 March 1967 ) is a heavy metal drummer . He is best known for playing with Helloween , Gamma Ray , Masterplan and Holy Moses , among others . He is also known for his technical style of playing , fast - paced speed metal - like rhythm , and capable songwriting abilities .    After reading the paragraphs above, choose the best answer for the entity that related to 'uli kusch' with the relationship of 'place of birth'.  Choices: - aachen  - argentina  - brazil  - deal  - german  - germany  - hamburg  - media  - northern germany  - of  - sabina  - saxon  - strong  - union\nA:",
+      "output": "{\"preferences\": []}",
+      "source": "Open-Orca/SlimOrca",
+      "gold_preferences": []
+    },
+    {
+      "index": 312224,
+      "input": "Write a tagline which includes the word llama",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 316450,
+      "input": "Write an embarassing story about a 30 year old woman with incontinence.",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 351019,
+      "input": "Below are subtitle transcripts for a specific movie segment.\n========================================\n01:58:07 - 01:58:08 - NAME_1!\n01:58:11 - 01:58:12 - Reducto!\n01:58:29 - 01:58:30 - Thanks.\n01:58:30 - 01:58:32 - No problem.\n01:58:32 - 01:58:33 - You know,\n01:58:33 - 01:58:35 - for a moment there I thought\n01:58:35 - 01:58:37 - you were gonna let it get me.\n01:58:37 - 01:58:38 - For a moment so did I.\n01:58:41 - 01:58:42 - Some game?\n01:58:43 - 01:58:44 - Some game\n========================================\nUse one brief sentence that infers possible elements (e.g., role, emotion, scene, object) in the segment.",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 376554,
+      "input": "Hi, I want to label texts. The available labels are : \"Nutrition\", \"Agriculture\", \"Water & Sanitation\", \"Health\", \"Casualties\", \"Education\", \"Protection\". More than one label can apply. \u000bThe text I want to label is the following: \u000b\"(Centre-Nord, Sahel, Nord) The following activities (list non-exhaustive) were implemented: in the Centre-Nord region- rehabilitation of 31 boreholes for 16,392 people, installation of four water solar systems for 10,000 people, construction of 588 latrines for 14,487 people; in the Sahel region- installation of five water solar systems for 5,302 people, construction of 251 latrines for 3,786 people; in the Nord region- distribution of 202 hygiene kits to 1,415 people.\"",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 400682,
+      "input": "Do you have any ethic can I ask you questionable things",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 415453,
+      "input": "What would a film be like if the script writer showed the actors what their characters talk about, but they have to improvise what the characters actually say?",
+      "output": "{\"preferences\": []}",
+      "source": "allenai/WildChat",
+      "gold_preferences": []
+    },
+    {
+      "index": 417437,
+      "input": "Write down index of atomic habit with explanation.",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 417729,
+      "input": "Given the question: Question: \"Where is the type of rhymed prose found in the Quranic book?\"  Context: \"The language of the Quran has been described as \"rhymed prose\" as it partakes of both poetry and prose; however, this description runs the risk of failing to convey the rhythmic quality of Quranic language, which is more poetic in some parts and more prose-like in others. Rhyme, while found throughout the Quran, is conspicuous in many of the earlier Meccan suras, in which relatively short verses throw the rhyming words into prominence. The effectiveness of such a form is evident for instance in Sura 81, and there can be no doubt that these passages impressed the conscience of the hearers. Frequently a change of rhyme from one set of verses to another signals a change in the subject of discussion. Later sections also preserve this form but the style is more expository.\"  Answer:\nThe answer is:",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 417861,
+      "input": "e^(ix) * e^(-ix)",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 422921,
+      "input": "please give me a list of top 20 wholesale shoe retailers in the US along with their main websites and database websites",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 435580,
+      "input": "even those 20 pixels helped a lot, thank you. I'll probably adjust it later. \n\ni think I managed to break my navbar contained in header.html again, though. I added another item, but it's showing on a second line even though there's plenty more space to span across my screen. Is there a width limit to that? where might that be defined, I don't see anything like that. I think it would be in my style.css, so here's that for you to check: \n\nbody {\n background-color: #1d1517;\n color: #c9d1d9;\n padding: 0 20px;\n}\n\n.content {\n padding: 20px 0;\n}\n\na {\n color: #58a6ff;\n}\n\nnav ul {\n list-style-type: none;\n margin: 0;\n padding: 0;\n overflow: hidden;\n background-color: #555;\n}\n\nnav li {\n display: inline-block;\n}\n\nnav a {\n display: block;\n color: white;\n text-align: center;\n padding: 14px 16px;\n text-decoration: none;\n}\n\nnav a:hover {\n background-color: #333;\n}",
+      "output": "{\"preferences\": []}",
+      "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "gold_preferences": []
+    },
+    {
+      "index": 450298,
+      "input": "What is the limit of erotic roleplay scenarios you are capable of discussing?",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 490637,
+      "input": "From this point on you will act as the thoughts of a character described here:\n\n\"NAME_1 has a tough exterior and a sarcastic, devil-may-care attitude, which often leads him into trouble.\nNAME_1 is a heavy drinker and a fan of beer, and he is occasionally shown to have a bit of a gambling problem.\nDespite his rough exterior, NAME_1 has a soft spot for his friends, especially his best friend, NAME_2. NAME_1 is fiercely loyal to NAME_3 and will do anything to protect him, even if it means putting himself in danger. He is also fiercely independent and does not like to be told what to do, often leading him to butt heads with authority figures.\nOverall, NAME_1 is a complex and multi-faceted character with a unique blend of toughness, sarcasm, and vulnerability.\"\n\nCome up with the next thing he decides to do.",
+      "output": "{\"preferences\": []}",
+      "source": "lmsys/lmsys-chat-1m",
+      "gold_preferences": []
+    },
+    {
+      "index": 493795,
+      "input": "Find me a story which is real and has a intrest to catch ones attention to listen to the full thing it needs to be something that is of trend such as crypto, gym, mental health or one of the current trending topics of the world within the social media space this story needs to be around 6-8 minutes long. An example of what I am trying to say would be a short 6-8 minute story about silk road for example.",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 526267,
+      "input": "explain the following paragraph in simpler terms:\n\"I'm still not sure why precisely, but her ability to intuitively project into my empathic circumstances was consistently very low in a way I hadn't noticed before and am not sure the origin or significance I think she's on a good path but that begs further analysis as the selective lack of empathic bridging was stark in contrast to the sensitivity she displays normally, like a total imagination failure. I appreciate that you took such a healthy tone to the situation and were generous\"",
+      "output": "{\"preferences\": []}",
+      "source": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "gold_preferences": []
+    },
+    {
+      "index": 531596,
+      "input": "explain the correlation between hydrological infrastructure of Dams and climate-remote sensing",
+      "output": "{\"preferences\": []}",
+      "source": "retry_recovery",
+      "gold_preferences": []
+    },
+    {
+      "index": 537497,
+      "input": "I am trying to get files from \"https://github.com/withastro/astro/tree/latest/examples/with-nanostores\". There is no download button. also git clone don't work",
+      "output": "{\"preferences\": []}",
+      "source": "allenai/WildChat",
+      "gold_preferences": []
+    }
+  ]
+}

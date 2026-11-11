@@ -1,0 +1,3989 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T15:40:28",
+    "seed": 42,
+    "n_requested": 100,
+    "n_eval": 92,
+    "n_update": 70,
+    "n_control": 22,
+    "skipped_update_lt2_turns": 8,
+    "dataset": "<repo>/git/longmemeval_oracle.json",
+    "type_counts": {
+      "temporal-reasoning": 133,
+      "multi-session": 133,
+      "knowledge-update": 78,
+      "single-session-preference": 30,
+      "single-session-assistant": 56,
+      "single-session-user": 70
+    },
+    "metric_scope": "knowledge-update: same knowledge_key, latest fact should REPLACE and semantic recall of the question should contain the gold updated answer. Controls: identical content re-ingest should not be a conflict. Not LongMemEval official LLM-judge QA accuracy.",
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "9a1ddbd"
+  },
+  "resolver": {
+    "samples": 92,
+    "correct": 92,
+    "correctness": 1.0,
+    "pass_88": true,
+    "by_category": {
+      "knowledge-update": {
+        "n": 70,
+        "correct": 70
+      },
+      "no_conflict_repeat": {
+        "n": 22,
+        "correct": 22
+      }
+    },
+    "details": [
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "6a1eabeb",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "6aeb4375",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "830ce83f",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "852ce960",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "945e3d21",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "d7c942c3",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "71315a70",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "89941a93",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "ce6d2d27",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "9ea5eabc",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "07741c44",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "a1eacc2a",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "184da446",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "031748ae",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "4d6b87c8",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "0f05491a",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "08e075c7",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "f9e8c073",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "41698283",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "2698e78f",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "b6019101",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "45dc21b6",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "5a4f22c0",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "6071bd76",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "e493bb7c",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "618f13b2",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "72e3ee87",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "c4ea545c",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "01493427",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "6a27ffc2",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "2133c1b5",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "18bc8abd",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "db467c8c",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "7a87bd0c",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "e61a7584",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "1cea1afa",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "ed4ddc30",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "8fb83627",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "b01defab",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "0e4e4c46",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "4b24c848",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "7e974930",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "603deb26",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "59524333",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "5831f84d",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "affe2881",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "50635ada",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "e66b632c",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "0ddfec37",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "f685340e",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "cc5ded98",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "dfde3500",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "69fee5aa",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "7401057b",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "cf22b7bf",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "a2f3aa27",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "c7dc5443",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "06db6396",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "3ba21379",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "9bbe84a2",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "10e09553",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "dad224aa",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "ba61f0b9",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "42ec0761",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "5c40ec5b",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "c6853660",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "26bdc477",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "0977f2af",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "89941a94",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "replace",
+        "got": "replace",
+        "correct": true,
+        "detected": true,
+        "reason": "知识取最新事实（新事实更新鲜）",
+        "id": "07741c45",
+        "category": "knowledge-update"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "95bcc1c8",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "18dcd5a5",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "e9327a54",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "577d4d32",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "352ab8bd",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "e3fc4d6e",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "6222b6eb",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "8cf51dda",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "bc8a6e93_abs",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "dc439ea3",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "b86304ba",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "36580ce8",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "3b6f954b",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "fea54f57",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "dccbc061",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "65240037",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "4c36ccef",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "19b5f2b3_abs",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "29f2956b",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "1568498a",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "e8a79c70",
+        "category": "no_conflict_repeat"
+      },
+      {
+        "expected": "no_conflict",
+        "got": "no_conflict",
+        "correct": true,
+        "detected": false,
+        "id": "58ef2f1c",
+        "category": "no_conflict_repeat"
+      }
+    ]
+  },
+  "e2e": {
+    "skipped": false,
+    "samples": 92,
+    "correct": 48,
+    "correctness": 0.5217,
+    "pass_88": false,
+    "query_p95_ms": 46.887,
+    "query_avg_ms": 26.654,
+    "latency_passed": true,
+    "details": [
+      {
+        "id": "6a1eabeb",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f64d0626-42dd-4fb4-b229-7915a9d4036d",
+          "superseded_memory_id": null,
+          "store_ms": 481.613
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f7fab5bf-edd8-406c-8637-27347f5469b2",
+          "superseded_memory_id": "f64d0626-42dd-4fb4-b229-7915a9d4036d",
+          "store_ms": 315.352
+        },
+        "recall": {
+          "latency_ms": 40.364,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm training for another charity 5K run coming up and I was wondering if you could give me some tips on how to improve my endurance. By the way, I'm hoping to b"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What was my personal best time in the charity 5K run?",
+        "answer": "25 minutes and 50 seconds (or 25:50)"
+      },
+      {
+        "id": "6aeb4375",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e3e0d986-9954-4d3f-98d7-cd28644b1021",
+          "superseded_memory_id": null,
+          "store_ms": 79.626
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f25a1dfe-8e8c-43bd-aa1f-5c6255e898a7",
+          "superseded_memory_id": "e3e0d986-9954-4d3f-98d7-cd28644b1021",
+          "store_ms": 141.735
+        },
+        "recall": {
+          "latency_ms": 45.978,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I think I'll go with kimchi and bokkeumbap. By the way, have you tried any good Korean restaurants in my city lately? I've tried four different ones so far, and"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many Korean restaurants have I tried in my city?",
+        "answer": "four"
+      },
+      {
+        "id": "830ce83f",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7851c6da-2b30-4dad-9482-fa4a6542c5e6",
+          "superseded_memory_id": null,
+          "store_ms": 216.484
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8069cfc4-dbc5-4f04-b8a3-f0c60a90d3f2",
+          "superseded_memory_id": "7851c6da-2b30-4dad-9482-fa4a6542c5e6",
+          "store_ms": 110.692
+        },
+        "recall": {
+          "latency_ms": 25.031,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "Miami Beach sounds fun, but I've been there before. I'm thinking of somewhere more relaxed. My friend Rachel actually just moved back to the suburbs again, so I"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "Where did Rachel move to after her recent relocation?",
+        "answer": "the suburbs"
+      },
+      {
+        "id": "852ce960",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "53592985-fc12-4a09-b0f6-385ecd5d47e9",
+          "superseded_memory_id": null,
+          "store_ms": 106.533
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "71bd0fee-920f-4252-994a-d6083fd2248c",
+          "superseded_memory_id": "53592985-fc12-4a09-b0f6-385ecd5d47e9",
+          "store_ms": 135.917
+        },
+        "recall": {
+          "latency_ms": 99.263,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning to move into my new home soon and I need to set up cable and TV services. Can you recommend some providers in my area and their prices? By the way,"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+        "answer": "$400,000"
+      },
+      {
+        "id": "945e3d21",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f8ad6fed-67ed-42d5-82b1-9ed892bea69f",
+          "superseded_memory_id": null,
+          "store_ms": 159.543
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "1f8448c7-59ba-4493-a8c7-547bccc08a5f",
+          "superseded_memory_id": "f8ad6fed-67ed-42d5-82b1-9ed892bea69f",
+          "store_ms": 357.966
+        },
+        "recall": {
+          "latency_ms": 47.997,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I've got a bunch of projects going on, including a marketing campaign, a report due next Friday, and some website updates. I'd say the marketing campaign is the"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How often do I attend yoga classes to help with my anxiety?",
+        "answer": "Three times a week."
+      },
+      {
+        "id": "d7c942c3",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fa28c465-2ae5-48da-bb69-a957b880b19b",
+          "superseded_memory_id": null,
+          "store_ms": 160.743
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9ac54d6c-6cf6-47f3-a54f-86f188bd5a35",
+          "superseded_memory_id": "fa28c465-2ae5-48da-bb69-a957b880b19b",
+          "store_ms": 62.921
+        },
+        "recall": {
+          "latency_ms": 23.077,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "By the way, I was just thinking, my mom is actually using the same grocery list app as me now, so we can easily share lists and keep track of what we need. Anyw"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Is my mom using the same grocery list method as me?",
+        "answer": "Yes."
+      },
+      {
+        "id": "71315a70",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "cf62f5a6-b92a-4f4a-a9c1-c922d2940fa2",
+          "superseded_memory_id": null,
+          "store_ms": 81.402
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "45a20937-164b-4a0b-b82c-d8e686c0b2fe",
+          "superseded_memory_id": "cf62f5a6-b92a-4f4a-a9c1-c922d2940fa2",
+          "store_ms": 94.079
+        },
+        "recall": {
+          "latency_ms": 26.382,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm thinking of creating a sculpture inspired by the sunset. Do you have any tips on how to capture the colors and texture of the sky in clay? By the way, I've "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many hours have I spent on my abstract ocean sculpture?",
+        "answer": "10-12 hours"
+      },
+      {
+        "id": "89941a93",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "76361bf7-156a-4d96-94d8-40129d63cb0e",
+          "superseded_memory_id": null,
+          "store_ms": 69.848
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "01415f5d-6520-4fa7-88b7-2a7fff1e7f5a",
+          "superseded_memory_id": "76361bf7-156a-4d96-94d8-40129d63cb0e",
+          "store_ms": 148.652
+        },
+        "recall": {
+          "latency_ms": 34.618,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That sounds like an amazing itinerary! I'm really excited about the scenic routes and bike-friendly stops. Since I'll have four bikes with me, I'll make sure to"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many bikes do I currently own?",
+        "answer": "4"
+      },
+      {
+        "id": "ce6d2d27",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9c947bcc-3999-4954-9ca6-18ca641224e8",
+          "superseded_memory_id": null,
+          "store_ms": 111.783
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "bdbdcfb3-adae-45f2-b17b-91d6ce78bfe6",
+          "superseded_memory_id": "9c947bcc-3999-4954-9ca6-18ca641224e8",
+          "store_ms": 73.649
+        },
+        "recall": {
+          "latency_ms": 23.248,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking for some inspiration for a new cocktail recipe. Do you have any ideas for a refreshing summer drink that incorporates tequila? By the way, I have a "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What day of the week do I take a cocktail-making class?",
+        "answer": "Friday"
+      },
+      {
+        "id": "9ea5eabc",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2486b1f8-3fad-4321-a6e8-f4109df5c025",
+          "superseded_memory_id": null,
+          "store_ms": 101.935
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "0f08808f-add2-48d7-b0e8-4d67f996f4a1",
+          "superseded_memory_id": "2486b1f8-3fad-4321-a6e8-f4109df5c025",
+          "store_ms": 55.75
+        },
+        "recall": {
+          "latency_ms": 19.941,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm so excited to explore all these hidden gems in Tokyo! Since I've been thinking about my recent family trip to Paris, I was wondering if you could help me co"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "Where did I go on my most recent family trip?",
+        "answer": "Paris"
+      },
+      {
+        "id": "07741c44",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "711e6433-b296-4166-bebc-32980cfa3268",
+          "superseded_memory_id": null,
+          "store_ms": 63.979
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9fa7336f-4a2b-4bf4-8025-ce2e8f203c2a",
+          "superseded_memory_id": "711e6433-b296-4166-bebc-32980cfa3268",
+          "store_ms": 90.402
+        },
+        "recall": {
+          "latency_ms": 37.75,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm thinking of buying a new pair of sandals with better quality straps. Can you recommend some good brands or stores that offer durable sandals? By the way, I "
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Where do I initially keep my old sneakers?",
+        "answer": "under my bed"
+      },
+      {
+        "id": "a1eacc2a",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "0d7ab229-52a6-4b97-a1e0-b685d43c4b43",
+          "superseded_memory_id": null,
+          "store_ms": 77.929
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "c83b2ed3-f287-4087-b6e3-69ce1c18c8d3",
+          "superseded_memory_id": "0d7ab229-52a6-4b97-a1e0-b685d43c4b43",
+          "store_ms": 74.641
+        },
+        "recall": {
+          "latency_ms": 19.358,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm thinking of continuing to experiment with non-linear narrative structures in my writing. Can you recommend some books or authors that are known for using th"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many short stories have I written since I started writing regularly?",
+        "answer": "seven"
+      },
+      {
+        "id": "184da446",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6bbd6225-2c1d-438c-a335-f86eb88442ac",
+          "superseded_memory_id": null,
+          "store_ms": 77.005
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fcba8045-7391-43c8-8a04-9c330c63c2a5",
+          "superseded_memory_id": "6bbd6225-2c1d-438c-a335-f86eb88442ac",
+          "store_ms": 73.065
+        },
+        "recall": {
+          "latency_ms": 26.192,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm interested in learning more about renewable energy, can you recommend some online resources or documentaries that I can check out? By the way, I just finish"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many pages of 'A Short History of Nearly Everything' have I read so far?",
+        "answer": "220"
+      },
+      {
+        "id": "031748ae",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f48b3e7d-e1e1-4dc0-b7a5-3605164320be",
+          "superseded_memory_id": null,
+          "store_ms": 68.271
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a310e8d3-78a3-4326-a448-3d81cc00a23c",
+          "superseded_memory_id": "f48b3e7d-e1e1-4dc0-b7a5-3605164320be",
+          "store_ms": 94.007
+        },
+        "recall": {
+          "latency_ms": 30.718,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That's a great list! I think I'll go with the group hike option. Do you know if there are any nearby parks or nature reserves that are suitable for a 6-person g"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many engineers do I lead when I just started my new role as Senior Software Engineer? How many engineers do I lead now?",
+        "answer": "When you just started your new role as Senior Software Engineer, you led 4 engineers. Now, you lead 5 engineers"
+      },
+      {
+        "id": "4d6b87c8",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "1f71eb85-1a0c-4523-a236-bbb804a22e77",
+          "superseded_memory_id": null,
+          "store_ms": 68.727
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "dcfe373c-52c6-4e38-8b74-cf3400654b5e",
+          "superseded_memory_id": "1f71eb85-1a0c-4523-a236-bbb804a22e77",
+          "store_ms": 65.362
+        },
+        "recall": {
+          "latency_ms": 19.751,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'll definitely check some of those out. I've been meaning to watch \"Victoria\" anyway. By the way, do you think you could suggest some historical dramas that ar"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many titles are currently on my to-watch list?",
+        "answer": "25"
+      },
+      {
+        "id": "0f05491a",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7df72a18-e3c5-4e69-bd66-06f656ad116b",
+          "superseded_memory_id": null,
+          "store_ms": 49.972
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fdcb9297-0597-4c3d-9507-8df4ed215fed",
+          "superseded_memory_id": "7df72a18-e3c5-4e69-bd66-06f656ad116b",
+          "store_ms": 75.22
+        },
+        "recall": {
+          "latency_ms": 23.469,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "Actually, I need 120 stars to reach the gold level, not 300. Anyway, thanks for the tips on earning stars. I'll try to make the most out of my Starbucks visits."
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many stars do I need to reach the gold level on my Starbucks Rewards app?",
+        "answer": "120"
+      },
+      {
+        "id": "08e075c7",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d6c47e3c-ff5a-49dd-a157-0d0807a0cf10",
+          "superseded_memory_id": null,
+          "store_ms": 88.386
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6da75674-7b4d-4c3d-952e-152ccd375f1d",
+          "superseded_memory_id": "d6c47e3c-ff5a-49dd-a157-0d0807a0cf10",
+          "store_ms": 116.579
+        },
+        "recall": {
+          "latency_ms": 19.747,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I've already been working on establishing a consistent bedtime routine and creating a sleep-conducive environment, but I think I need to focus on limiting stimu"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How long have I been using my Fitbit Charge 3?",
+        "answer": "9 months"
+      },
+      {
+        "id": "f9e8c073",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "62fdfef2-6c69-487b-af15-09af11e11a07",
+          "superseded_memory_id": null,
+          "store_ms": 65.907
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "1cc8befb-14a3-4024-8679-d6babf2fab34",
+          "superseded_memory_id": "62fdfef2-6c69-487b-af15-09af11e11a07",
+          "store_ms": 316.781
+        },
+        "recall": {
+          "latency_ms": 38.65,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I think I'll start with \"Wild: From Lost to Found on the Pacific Crest Trail\" by Cheryl Strayed. I've heard great things about it and I've always been intereste"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many sessions of the bereavement support group did I attend?",
+        "answer": "five"
+      },
+      {
+        "id": "41698283",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "97031222-fe7d-402c-b300-4b43a99c60da",
+          "superseded_memory_id": null,
+          "store_ms": 146.634
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "26a5cd98-0432-41ca-bc63-e0dc3ab91f25",
+          "superseded_memory_id": "97031222-fe7d-402c-b300-4b43a99c60da",
+          "store_ms": 63.101
+        },
+        "recall": {
+          "latency_ms": 20.057,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm considering getting a new tripod, but I'm not sure which one to choose. Can you compare the Gitzo and Really Right Stuff tripods for me? By the way, I've be"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What type of camera lens did I purchase most recently?",
+        "answer": "a 70-200mm zoom lens"
+      },
+      {
+        "id": "2698e78f",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e4156f3d-8fa3-4963-972d-1785adfbab6a",
+          "superseded_memory_id": null,
+          "store_ms": 92.923
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "3aaa4c49-35b3-4233-b4dd-9c0673e20901",
+          "superseded_memory_id": "e4156f3d-8fa3-4963-972d-1785adfbab6a",
+          "store_ms": 84.177
+        },
+        "recall": {
+          "latency_ms": 21.987,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I see what you're doing here, but I think it's a bit too structured for me. I'd rather have some flexibility in my schedule. Can you help me come up with a more"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How often do I see my therapist, Dr. Smith?",
+        "answer": "every week"
+      },
+      {
+        "id": "b6019101",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fa1cfc00-1c90-4def-bb88-7884f304f3c0",
+          "superseded_memory_id": null,
+          "store_ms": 53.133
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "42296d66-5ab5-4ad7-9716-986a9884ba68",
+          "superseded_memory_id": "fa1cfc00-1c90-4def-bb88-7884f304f3c0",
+          "store_ms": 69.195
+        },
+        "recall": {
+          "latency_ms": 20.17,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm planning a movie marathon with my family over the upcoming long weekend and I want to include some classic movies from my childhood. Can you give me some su"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many MCU films did I watch in the last 3 months?",
+        "answer": "5"
+      },
+      {
+        "id": "45dc21b6",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e48e3017-6063-4668-9b6b-724d752e5270",
+          "superseded_memory_id": null,
+          "store_ms": 49.591
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "53ca68b8-8032-43f7-babf-b2cc8f60359e",
+          "superseded_memory_id": "e48e3017-6063-4668-9b6b-724d752e5270",
+          "store_ms": 70.391
+        },
+        "recall": {
+          "latency_ms": 20.085,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm actually thinking of visiting Europe, maybe Spain or Italy. Do you have any specific tips for those countries? Also, I've been trying out some new recipes l"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many of Emma's recipes have I tried out?",
+        "answer": "3"
+      },
+      {
+        "id": "5a4f22c0",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "496d4080-885d-492f-832d-9e221645514e",
+          "superseded_memory_id": null,
+          "store_ms": 79.903
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d05b1fb0-f4ca-451b-b463-b4f5493d7944",
+          "superseded_memory_id": "496d4080-885d-492f-832d-9e221645514e",
+          "store_ms": 80.946
+        },
+        "recall": {
+          "latency_ms": 23.118,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking for some advice on marketing strategies for my startup. I recently met Tom, a marketing expert, and he offered to provide feedback on my marketing s"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What company is Rachel, an old colleague from my previous company, currently working at?",
+        "answer": "TechCorp"
+      },
+      {
+        "id": "6071bd76",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "4b2ca8db-6c3b-41c0-975d-13020ecf4ae5",
+          "superseded_memory_id": null,
+          "store_ms": 66.636
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fb97f77e-4c8b-4de5-b730-72ba97c634e8",
+          "superseded_memory_id": "4b2ca8db-6c3b-41c0-975d-13020ecf4ae5",
+          "store_ms": 80.134
+        },
+        "recall": {
+          "latency_ms": 34.075,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm thinking of trying out a new tea blend this weekend. Do you have any recommendations for a relaxing tea that's similar to chamomile? By the way, I'm plannin"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "For the coffee-to-water ratio in my French press, did I switch to more water per tablespoon of coffee, or less?",
+        "answer": "You switched to less water (5 ounces) per tablespoon of coffee."
+      },
+      {
+        "id": "e493bb7c",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "076b5e53-e56b-4a0e-86b8-a752627aa699",
+          "superseded_memory_id": null,
+          "store_ms": 128.714
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "b92ce2a7-5c02-43ea-8118-18a14c933c96",
+          "superseded_memory_id": "076b5e53-e56b-4a0e-86b8-a752627aa699",
+          "store_ms": 80.581
+        },
+        "recall": {
+          "latency_ms": 22.744,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm actually planning to work on a piece that incorporates a figure in a dreamlike environment. I've been inspired by the \"Moonlit Ocean\" print in my bedroom, a"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "Where is the painting 'Ethereal Dreams' by Emma Taylor currently hanging?",
+        "answer": "in my bedroom"
+      },
+      {
+        "id": "618f13b2",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "0f5f037e-504c-40c1-b61e-6ac9ef03f41e",
+          "superseded_memory_id": null,
+          "store_ms": 87.123
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6cea72b1-17a2-4e89-9e63-7abb6111547a",
+          "superseded_memory_id": "0f5f037e-504c-40c1-b61e-6ac9ef03f41e",
+          "store_ms": 72.576
+        },
+        "recall": {
+          "latency_ms": 23.985,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I need help finding a good cobbler to fix my brown leather boots. Do you have any recommendations? Also, I was thinking of getting a shoe cleaning kit to make c"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many times have I worn my new black Converse Chuck Taylor All Star sneakers?",
+        "answer": "six"
+      },
+      {
+        "id": "72e3ee87",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7588dd2e-af98-4757-97f4-7f0ef17598c3",
+          "superseded_memory_id": null,
+          "store_ms": 64.977
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a067f487-4516-42a8-b419-0d525d165158",
+          "superseded_memory_id": "7588dd2e-af98-4757-97f4-7f0ef17598c3",
+          "store_ms": 63.042
+        },
+        "recall": {
+          "latency_ms": 21.306,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I think I'll start with SpanishDict and then move on to Coursera's Spanish for Beginners course. By the way, I've been watching Crash Course's Science series, a"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many episodes of the Science series have I completed on Crash Course?",
+        "answer": "50"
+      },
+      {
+        "id": "c4ea545c",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "1100e310-9fc5-49a1-974f-35488c7966af",
+          "superseded_memory_id": null,
+          "store_ms": 42.565
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fa23b208-7dc9-448c-9d56-6b3cc90a19cf",
+          "superseded_memory_id": "1100e310-9fc5-49a1-974f-35488c7966af",
+          "store_ms": 58.166
+        },
+        "recall": {
+          "latency_ms": 20.932,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm trying to plan out my week ahead. Can you suggest some healthy dinner recipes I can meal prep on Sunday? By the way, I'm thinking of rewarding myself with a"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Do I go to the gym more frequently than I did previously?",
+        "answer": "Yes"
+      },
+      {
+        "id": "01493427",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f5e23119-95af-4eba-8c6f-b271bc8bb47d",
+          "superseded_memory_id": null,
+          "store_ms": 63.148
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "34e94604-443e-428d-b4c4-e9afb778e892",
+          "superseded_memory_id": "f5e23119-95af-4eba-8c6f-b271bc8bb47d",
+          "store_ms": 113.994
+        },
+        "recall": {
+          "latency_ms": 22.545,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm really excited to host this collector's gathering and share my passion with like-minded enthusiasts. Speaking of which, I just realized I've added 25 new po"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many new postcards have I added to my collection since I started collecting again?",
+        "answer": "25"
+      },
+      {
+        "id": "6a27ffc2",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d2fc1911-ec89-4e27-a00b-e5ae2ee0939a",
+          "superseded_memory_id": null,
+          "store_ms": 74.168
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "937d8612-dff1-4661-b394-ccb59dfaf9dd",
+          "superseded_memory_id": "d2fc1911-ec89-4e27-a00b-e5ae2ee0939a",
+          "store_ms": 50.019
+        },
+        "recall": {
+          "latency_ms": 22.911,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I've completed 30 videos so far for Corey's series and I'll start with the DataCamp course, it seems like a good starting point. Can you help me with setting up"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many videos of Corey Schafer's Python programming series have I completed so far?",
+        "answer": "30"
+      },
+      {
+        "id": "2133c1b5",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "139f58bd-f143-4c2c-bb58-98c107045764",
+          "superseded_memory_id": null,
+          "store_ms": 69.25
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7fb236d5-9089-444a-a1f7-a7dc24f6ab9f",
+          "superseded_memory_id": "139f58bd-f143-4c2c-bb58-98c107045764",
+          "store_ms": 58.437
+        },
+        "recall": {
+          "latency_ms": 20.335,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'll definitely check out Minato Mirai 21 and the Red Brick Warehouse. I've heard great things about the harbor views. By the way, I've been living in Harajuku "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How long have I been living in my current apartment in Harajuku?",
+        "answer": "3 months"
+      },
+      {
+        "id": "18bc8abd",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "027f6f11-d2b6-4406-8630-4de713735234",
+          "superseded_memory_id": null,
+          "store_ms": 64.608
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6d05264c-9c2c-40c3-b68f-edecafdb9116",
+          "superseded_memory_id": "027f6f11-d2b6-4406-8630-4de713735234",
+          "store_ms": 70.304
+        },
+        "recall": {
+          "latency_ms": 21.415,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm thinking of hosting another backyard BBQ soon and I want to try out some new recipes. Can you give me some tips on how to make smoked brisket? By the way, I"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What brand of BBQ sauce am I currently obsessed with?",
+        "answer": "Kansas City Masterpiece"
+      },
+      {
+        "id": "db467c8c",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "3f71c3d5-77d1-4522-bb91-0a866700cc02",
+          "superseded_memory_id": null,
+          "store_ms": 71.731
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e0a89e36-43b3-4a44-94ff-a9cdcbe7bae5",
+          "superseded_memory_id": "3f71c3d5-77d1-4522-bb91-0a866700cc02",
+          "store_ms": 55.654
+        },
+        "recall": {
+          "latency_ms": 18.575,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning to apply for a green card soon and I'm not sure what documents I need to prepare. Can you guide me through the process? By the way, my parents have"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How long have my parents been staying with me in the US?",
+        "answer": "nine months"
+      },
+      {
+        "id": "7a87bd0c",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d22ad91d-2ce6-4db9-a4e9-b047309d73dc",
+          "superseded_memory_id": null,
+          "store_ms": 55.502
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "730acafb-405a-4af4-a8d6-fa4264589547",
+          "superseded_memory_id": "d22ad91d-2ce6-4db9-a4e9-b047309d73dc",
+          "store_ms": 59.808
+        },
+        "recall": {
+          "latency_ms": 19.736,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning to clean out the garage this weekend, but I need some advice on how to organize all the storage bins and boxes. Do you have any tips? By the way, I"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How long have I been sticking to my daily tidying routine?",
+        "answer": "4 weeks"
+      },
+      {
+        "id": "e61a7584",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "531d8d3e-630f-496f-9762-1237e2b30d44",
+          "superseded_memory_id": null,
+          "store_ms": 58.616
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "4214e970-f7aa-40b2-a9ca-f1ef1b5021b9",
+          "superseded_memory_id": "531d8d3e-630f-496f-9762-1237e2b30d44",
+          "store_ms": 75.914
+        },
+        "recall": {
+          "latency_ms": 16.726,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I've had my cat, Luna, for about 9 months now, and I've been trying to keep her active and engaged. I've set up her cat tree, and she loves climbing up and down"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How long have I had my cat, Luna?",
+        "answer": "9 months"
+      },
+      {
+        "id": "1cea1afa",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "97f611a1-b726-4011-91ec-648cdc1bb210",
+          "superseded_memory_id": null,
+          "store_ms": 67.26
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "68e6b47f-0b58-4463-a3b3-0af719ace75a",
+          "superseded_memory_id": "97f611a1-b726-4011-91ec-648cdc1bb210",
+          "store_ms": 48.165
+        },
+        "recall": {
+          "latency_ms": 17.952,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm trying to increase my social media presence. Can you help me come up with some ideas for more engaging promotional content on Instagram? By the way, I just "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many Instagram followers do I currently have?",
+        "answer": "600"
+      },
+      {
+        "id": "ed4ddc30",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f254965d-43e0-4e83-a08d-4da5f5787628",
+          "superseded_memory_id": null,
+          "store_ms": 49.33
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8794d768-9429-4c4f-aa80-bd6dd68b754a",
+          "superseded_memory_id": "f254965d-43e0-4e83-a08d-4da5f5787628",
+          "store_ms": 68.349
+        },
+        "recall": {
+          "latency_ms": 23.341,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I think I'll try the spinach and feta variation, sounds delicious. By the way, I was thinking of using some of our fresh eggs from the coop - we've got 20 dozen"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many dozen eggs do we currently have stocked up in our refrigerator?",
+        "answer": "20"
+      },
+      {
+        "id": "8fb83627",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "4b5559bb-3c6f-43b3-b387-cf12381431fe",
+          "superseded_memory_id": null,
+          "store_ms": 69.573
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "b48fdbc3-7eb3-4a9e-8cc5-6a058c1c91fc",
+          "superseded_memory_id": "4b5559bb-3c6f-43b3-b387-cf12381431fe",
+          "store_ms": 59.775
+        },
+        "recall": {
+          "latency_ms": 18.679,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I've been reading about the Amazon rainforest and its indigenous communities in National Geographic, and I just finished my fifth issue. I'm really interested i"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many issues of National Geographic have I finished reading?",
+        "answer": "Five"
+      },
+      {
+        "id": "b01defab",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "dd4f0eea-5110-4442-897c-7d46e90e238c",
+          "superseded_memory_id": null,
+          "store_ms": 102.211
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "61c411e5-a819-469f-a776-c4ab638a8a2f",
+          "superseded_memory_id": "dd4f0eea-5110-4442-897c-7d46e90e238c",
+          "store_ms": 59.174
+        },
+        "recall": {
+          "latency_ms": 18.833,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking for some book recommendations. I've been into historical fiction lately, and I just finished reading \"The Seven Husbands of Evelyn Hugo\". I also rec"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Did I finish reading 'The Nightingale' by Kristin Hannah?",
+        "answer": "Yes"
+      },
+      {
+        "id": "0e4e4c46",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "aa92fe2c-a0ae-41fb-97de-8de11aa66a48",
+          "superseded_memory_id": null,
+          "store_ms": 76.006
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "27dd57fd-96b3-4f00-96b9-6a39595592d4",
+          "superseded_memory_id": "aa92fe2c-a0ae-41fb-97de-8de11aa66a48",
+          "store_ms": 63.802
+        },
+        "recall": {
+          "latency_ms": 19.947,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "Building structures and trading resources is indeed a crucial part of the game. By the way, speaking of building and creating things, I just got my highest scor"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What is my current highest score in Ticket to Ride?",
+        "answer": "132 points"
+      },
+      {
+        "id": "4b24c848",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "aeb087ce-c781-4e7d-9337-e7f9e0cedba9",
+          "superseded_memory_id": null,
+          "store_ms": 40.806
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9919aa0f-f7a7-4df9-bd22-35a7def418a0",
+          "superseded_memory_id": "aeb087ce-c781-4e7d-9337-e7f9e0cedba9",
+          "store_ms": 54.209
+        },
+        "recall": {
+          "latency_ms": 19.559,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning to go to the mall this weekend and was wondering if there are any sales or promotions going on at H&M or Sephora that I should know about. By the w"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many tops have I bought from H&M so far?",
+        "answer": "five"
+      },
+      {
+        "id": "7e974930",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2794cd4e-5df7-4109-a393-5620938739b6",
+          "superseded_memory_id": null,
+          "store_ms": 82.038
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e1e9f990-2041-409c-91a2-49c1375c16e2",
+          "superseded_memory_id": "2794cd4e-5df7-4109-a393-5620938739b6",
+          "store_ms": 48.396
+        },
+        "recall": {
+          "latency_ms": 24.368,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm thinking of setting up a loyalty program to reward my repeat customers. Do you have any suggestions on how to implement it? By the way, speaking of recent s"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How much did I earn at the Downtown Farmers Market on my most recent visit?",
+        "answer": "$420"
+      },
+      {
+        "id": "603deb26",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "0f9246c2-7e0c-4f73-ba57-bc59d4208ac9",
+          "superseded_memory_id": null,
+          "store_ms": 111.783
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "871eb843-8747-4055-9334-6317e9fee0f3",
+          "superseded_memory_id": "0f9246c2-7e0c-4f73-ba57-bc59d4208ac9",
+          "store_ms": 61.968
+        },
+        "recall": {
+          "latency_ms": 27.909,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking for some inspiration for a new cocktail to serve at my next dinner party. Do you have any unique recipes that incorporate lavender or grapefruit? By"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many times have I tried making a Negroni at home since my friend Emma showed me how to make it?",
+        "answer": "10"
+      },
+      {
+        "id": "59524333",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2a2ac4f2-2a14-488e-bb2a-df4cb91290b1",
+          "superseded_memory_id": null,
+          "store_ms": 57.294
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "81159d95-86a0-4aa1-a055-8b329534b827",
+          "superseded_memory_id": "2a2ac4f2-2a14-488e-bb2a-df4cb91290b1",
+          "store_ms": 38.256
+        },
+        "recall": {
+          "latency_ms": 17.984,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I think Tuesday afternoon at 2:00 pm could work well. I need to make sure I'm done with the meeting before I head to the gym, which is usually at 6:00 pm."
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What time do I usually go to the gym?",
+        "answer": "6:00 pm"
+      },
+      {
+        "id": "5831f84d",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "c87c8d9b-05ea-4625-97a2-755bc0e77314",
+          "superseded_memory_id": null,
+          "store_ms": 58.56
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "efc540ea-df84-43bf-93da-23bb9c5ba5df",
+          "superseded_memory_id": "c87c8d9b-05ea-4625-97a2-755bc0e77314",
+          "store_ms": 47.687
+        },
+        "recall": {
+          "latency_ms": 19.264,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm trying to learn more about natural language processing, can you recommend some online resources or courses that cover this topic? By the way, I've been on a"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many Crash Course videos have I watched in the past few weeks?",
+        "answer": "15"
+      },
+      {
+        "id": "affe2881",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "36380109-7fd7-4482-ba31-7c8c10bec8e5",
+          "superseded_memory_id": null,
+          "store_ms": 61.994
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "332a3bff-b480-4bb5-8f31-ae25dded07fe",
+          "superseded_memory_id": "36380109-7fd7-4482-ba31-7c8c10bec8e5",
+          "store_ms": 63.245
+        },
+        "recall": {
+          "latency_ms": 23.364,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'll definitely bring some sunflower seeds and suet to attract the woodpeckers. By the way, speaking of woodpeckers, I just saw a Northern Flicker in my local p"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many different species of birds have I seen in my local park?",
+        "answer": "32"
+      },
+      {
+        "id": "50635ada",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f15e8c78-5832-475e-aa75-f1b47ac5d38a",
+          "superseded_memory_id": null,
+          "store_ms": 45.564
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7fa888ba-1dd7-45f0-af53-2274992520db",
+          "superseded_memory_id": "f15e8c78-5832-475e-aa75-f1b47ac5d38a",
+          "store_ms": 53.584
+        },
+        "recall": {
+          "latency_ms": 23.983,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm flying from DC, and I'm flexible with my travel dates. I'm looking for Economy tickets and my budget is around $400. Oh, and I do have a United Airlines Mil"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What was my previous frequent flyer status on United Airlines before I got the current status?",
+        "answer": "Premier Silver"
+      },
+      {
+        "id": "e66b632c",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e97c3b9e-a0fe-4916-b209-dc214e884ca1",
+          "superseded_memory_id": null,
+          "store_ms": 181.382
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "04cfd56f-b0dd-42c9-9109-9d9a012f858e",
+          "superseded_memory_id": "e97c3b9e-a0fe-4916-b209-dc214e884ca1",
+          "store_ms": 61.532
+        },
+        "recall": {
+          "latency_ms": 20.637,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That looks like a solid plan! I'm excited to get started. One question: how does my previous charity 5K run performance factor into this plan? You know, the one"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What was my previous personal best time for the charity 5K run?",
+        "answer": "27 minutes and 45 seconds"
+      },
+      {
+        "id": "0ddfec37",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8d7b9ae2-e84d-4830-9861-892b1454d0be",
+          "superseded_memory_id": null,
+          "store_ms": 67.027
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8c422f16-f57c-4e7a-a226-8bd1f8e9e3db",
+          "superseded_memory_id": "8d7b9ae2-e84d-4830-9861-892b1454d0be",
+          "store_ms": 65.974
+        },
+        "recall": {
+          "latency_ms": 24.859,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking to get some information on upcoming sports memorabilia auctions in the city. Do you know of any notable ones happening in the next few weeks? By the"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many autographed baseballs have I added to my collection in the first three months of collection?",
+        "answer": "15"
+      },
+      {
+        "id": "f685340e",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9716943c-9b41-46dd-a35f-4a7dabfa8122",
+          "superseded_memory_id": null,
+          "store_ms": 58.181
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "26123cc3-79bc-4176-b6a1-7e1a74267752",
+          "superseded_memory_id": "9716943c-9b41-46dd-a35f-4a7dabfa8122",
+          "store_ms": 43.896
+        },
+        "recall": {
+          "latency_ms": 24.701,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking to plan out my weekend. Can you suggest some jogging routes near my house? Oh, and by the way, I'm planning to play tennis with my friends at the lo"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How often do I play tennis with my friends at the local park previously? How often do I play now?",
+        "answer": "Previously, you play tennis with your friends at the local park every week (on Sunday). Currently, you play tennis every other week (on Sunday)."
+      },
+      {
+        "id": "cc5ded98",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e5fb93ab-75d2-4f11-88a5-3d922ba10110",
+          "superseded_memory_id": null,
+          "store_ms": 40.44
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d11a7947-c68c-4b58-8c6e-e0a31e0040e4",
+          "superseded_memory_id": "e5fb93ab-75d2-4f11-88a5-3d922ba10110",
+          "store_ms": 58.454
+        },
+        "recall": {
+          "latency_ms": 21.144,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm trying to improve my coding skills and I was wondering if you could recommend some resources for learning data structures and algorithms. By the way, I've b"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How much time do I dedicate to coding exercises each day?",
+        "answer": "about two hours"
+      },
+      {
+        "id": "dfde3500",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "dc4c211f-3ea1-4b85-bf41-cdd8dea9034d",
+          "superseded_memory_id": null,
+          "store_ms": 63.588
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "84ee89b1-adb1-4da1-9f50-cc6bd6b3a3f5",
+          "superseded_memory_id": "dc4c211f-3ea1-4b85-bf41-cdd8dea9034d",
+          "store_ms": 27.943
+        },
+        "recall": {
+          "latency_ms": 21.73,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm actually meeting Maria on Thursday,. Could you help me with some common phrases for shopping in Colombia?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What day of the week did I meet with my previous language exchange tutor Juan?",
+        "answer": "Wednesday"
+      },
+      {
+        "id": "69fee5aa",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "3bf40ca4-8e22-4bd3-9574-30331f09f3c9",
+          "superseded_memory_id": null,
+          "store_ms": 53.714
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8d9d50c0-70d3-47ed-b058-8e3314a2527a",
+          "superseded_memory_id": "3bf40ca4-8e22-4bd3-9574-30331f09f3c9",
+          "store_ms": 57.923
+        },
+        "recall": {
+          "latency_ms": 19.588,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking to learn more about error coins, specifically ones with misprinted dates. Can you tell me about some notable examples, and how I can identify them? "
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many pre-1920 American coins do I have in my collection?",
+        "answer": "38"
+      },
+      {
+        "id": "7401057b",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f20278be-9419-417b-8e51-6efdd0508987",
+          "superseded_memory_id": null,
+          "store_ms": 50.335
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "25ea8712-e217-480b-9b80-b54b52d33a93",
+          "superseded_memory_id": "f20278be-9419-417b-8e51-6efdd0508987",
+          "store_ms": 61.151
+        },
+        "recall": {
+          "latency_ms": 24.977,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning a trip to Europe in November and considering hotels in Paris with an Eiffel Tower view. Can you help me find some options within my budget? By the "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many free night's stays can I redeem at any Hilton property with my accumulated points?",
+        "answer": "Two"
+      },
+      {
+        "id": "cf22b7bf",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9a3f3b2b-6a87-4861-93e7-6e971177df97",
+          "superseded_memory_id": null,
+          "store_ms": 136.193
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "90808396-3acf-4626-b911-187f00222443",
+          "superseded_memory_id": "9a3f3b2b-6a87-4861-93e7-6e971177df97",
+          "store_ms": 116.061
+        },
+        "recall": {
+          "latency_ms": 19.837,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "That's a lot of options! I'll check out a few of those playlists, thanks. By the way, speaking of my cardio days, I've been doing great and I just realized I've"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How much weight have I lost since I started going to the gym consistently?",
+        "answer": "10 pounds"
+      },
+      {
+        "id": "a2f3aa27",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e084897c-8721-45ec-8265-a7f06031006d",
+          "superseded_memory_id": null,
+          "store_ms": 97.471
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "eb2a37a7-9e47-4ddd-b93d-8cb1687bbced",
+          "superseded_memory_id": "e084897c-8721-45ec-8265-a7f06031006d",
+          "store_ms": 63.982
+        },
+        "recall": {
+          "latency_ms": 17.913,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking to create a new Instagram post about a recent industry event I attended. Can you help me come up with a catchy caption that will encourage engagemen"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many followers do I have on Instagram now?",
+        "answer": "1300"
+      },
+      {
+        "id": "c7dc5443",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a0594530-6111-47e3-a38f-cb5ec0782ad5",
+          "superseded_memory_id": null,
+          "store_ms": 56.475
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "c34959dd-a964-41e5-95a6-3904d004954c",
+          "superseded_memory_id": "a0594530-6111-47e3-a38f-cb5ec0782ad5",
+          "store_ms": 63.857
+        },
+        "recall": {
+          "latency_ms": 20.079,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "Hey, I'm thinking of signing up for a triathlon in the fall, can you give me some tips on how to train for it? By the way, I'm feeling pretty confident about my"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What is my current record in the recreational volleyball league?",
+        "answer": "5-2"
+      },
+      {
+        "id": "06db6396",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "ec9c30c8-f1b0-4e5d-ab51-cbe1b28431a6",
+          "superseded_memory_id": null,
+          "store_ms": 55.393
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "cd453c66-ad3e-4c21-b9ba-64f9080b2d92",
+          "superseded_memory_id": "ec9c30c8-f1b0-4e5d-ab51-cbe1b28431a6",
+          "store_ms": 50.909
+        },
+        "recall": {
+          "latency_ms": 20.035,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking for some inspiration for my next painting project. I've been stuck on what to paint next and was wondering if you could suggest some ideas or themes"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many projects have I completed since starting painting classes?",
+        "answer": "5"
+      },
+      {
+        "id": "3ba21379",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d2b305ab-90fc-4989-8aaa-24283fb32061",
+          "superseded_memory_id": null,
+          "store_ms": 47.374
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8c22c590-5734-461f-b845-6bfb76b52377",
+          "superseded_memory_id": "d2b305ab-90fc-4989-8aaa-24283fb32061",
+          "store_ms": 53.901
+        },
+        "recall": {
+          "latency_ms": 17.805,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I have just wrapped up a model and switched to a Ford F-150 pickup truck. I'm thinking of adding some decals to my Ford model. Do you have any advice on how to "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What type of vehicle model am I currently working on?",
+        "answer": "Ford F-150 pickup truck"
+      },
+      {
+        "id": "9bbe84a2",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fffe9d94-b2ff-4387-bfc9-fba8cba625a4",
+          "superseded_memory_id": null,
+          "store_ms": 60.906
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "30bb8c1c-bb3f-4c1f-befa-917ba7a48674",
+          "superseded_memory_id": "fffe9d94-b2ff-4387-bfc9-fba8cba625a4",
+          "store_ms": 51.829
+        },
+        "recall": {
+          "latency_ms": 24.225,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I think we'll just play for fun and not worry too much about leveling up. But, I'm still aiming to hit level 150 eventually, it's just not the main focus this w"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What was my previous goal for my Apex Legends level before I updated my goal?",
+        "answer": "level 100"
+      },
+      {
+        "id": "10e09553",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "79aef5bb-4bcd-4b7b-ac49-3f63588915a3",
+          "superseded_memory_id": null,
+          "store_ms": 61.232
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "aef98328-0988-4c09-8421-b71817d9585c",
+          "superseded_memory_id": "79aef5bb-4bcd-4b7b-ac49-3f63588915a3",
+          "store_ms": 60.137
+        },
+        "recall": {
+          "latency_ms": 29.896,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm planning to fish from Illinois, probably around the Waukegan harbor area. By the way, I'm thinking of using spinnerbaits and plastic worms as lures again, s"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many largemouth bass did I catch with Alex on the earlier fishing trip to Lake Michigan before the 7/22 trip?",
+        "answer": "7"
+      },
+      {
+        "id": "dad224aa",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "24e1240d-b9fa-4abb-ac50-20b852ce15e7",
+          "superseded_memory_id": null,
+          "store_ms": 86.109
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "40d0af64-b8c7-4719-b45f-6cb2d16c12a7",
+          "superseded_memory_id": "24e1240d-b9fa-4abb-ac50-20b852ce15e7",
+          "store_ms": 51.827
+        },
+        "recall": {
+          "latency_ms": 20.022,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'll check the forecast later, thanks. Do you have any jogging route suggestions around my neighborhood? Also, what time do you think I should aim to start my j"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What time do I wake up on Saturday mornings?",
+        "answer": "7:30 am"
+      },
+      {
+        "id": "ba61f0b9",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8931b481-a09b-4884-b20b-fe24d7fcf50a",
+          "superseded_memory_id": null,
+          "store_ms": 93.069
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "3df751f7-14bb-4f61-8d76-4e77121e2b6c",
+          "superseded_memory_id": "8931b481-a09b-4884-b20b-fe24d7fcf50a",
+          "store_ms": 72.605
+        },
+        "recall": {
+          "latency_ms": 21.35,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm looking for some information on companies that are doing a good job of promoting gender diversity in the workplace. Do you have any examples or resources yo"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many women are on the team led by my former manager Rachel?",
+        "answer": "6"
+      },
+      {
+        "id": "42ec0761",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "4bf1aa7d-7c77-4bc9-a62f-709ff95de9d2",
+          "superseded_memory_id": null,
+          "store_ms": 65.938
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "20e7cf1a-3251-4f83-9fb5-9213a5497f15",
+          "superseded_memory_id": "4bf1aa7d-7c77-4bc9-a62f-709ff95de9d2",
+          "store_ms": 53.09
+        },
+        "recall": {
+          "latency_ms": 21.994,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I actually have a spare screwdriver that I picked up when I organized my computer desk a while back, so I'm all set there. Now, about that cable organizer... I "
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Do I have a spare screwdriver for opening up my laptop?",
+        "answer": "Yes"
+      },
+      {
+        "id": "5c40ec5b",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "0a491392-93af-4233-8ec8-21ba57ba4a5a",
+          "superseded_memory_id": null,
+          "store_ms": 37.52
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "36feff2c-fdbd-431e-bca0-15148ba89c32",
+          "superseded_memory_id": "0a491392-93af-4233-8ec8-21ba57ba4a5a",
+          "store_ms": 55.537
+        },
+        "recall": {
+          "latency_ms": 19.37,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm planning a trip to Germany soon and was wondering if you could recommend some indie rock music venues in Berlin. By the way, speaking of Germany, I've got a"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How many times have I met up with Alex from Germany?",
+        "answer": "We've met up twice."
+      },
+      {
+        "id": "c6853660",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2c196e6c-c407-4fa7-b8c3-af0a3249b2e8",
+          "superseded_memory_id": null,
+          "store_ms": 57.046
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "94d3f3ec-092a-4b53-a6e0-ead21af200bb",
+          "superseded_memory_id": "2c196e6c-c407-4fa7-b8c3-af0a3249b2e8",
+          "store_ms": 58.133
+        },
+        "recall": {
+          "latency_ms": 25.304,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm trying to decide on a new coffee maker, can you recommend any good ones? I'm currently using a drip coffee maker, but I'm open to exploring other options. B"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Did I mostly recently increase or decrease the limit on the number of cups of coffee in the morning?",
+        "answer": "You increased the limit (from one cup to two cups)"
+      },
+      {
+        "id": "26bdc477",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "b455cdf0-5074-42ce-b247-c3cccf073a8f",
+          "superseded_memory_id": null,
+          "store_ms": 76.146
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6bf7d206-7614-4721-b9f0-774b8bc872cd",
+          "superseded_memory_id": "b455cdf0-5074-42ce-b247-c3cccf073a8f",
+          "store_ms": 61.558
+        },
+        "recall": {
+          "latency_ms": 19.64,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm planning a trip to Zion National Park and want to capture some great landscape shots. Can you recommend any tips for shooting in bright sunlight and high co"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many trips have I taken my Canon EOS 80D camera on?",
+        "answer": "five"
+      },
+      {
+        "id": "0977f2af",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "8a78920c-6ee3-4cfa-8707-e444a9276353",
+          "superseded_memory_id": null,
+          "store_ms": 37.36
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "123f6fdb-0c6f-4d9c-8f49-9ec010da1c6f",
+          "superseded_memory_id": "8a78920c-6ee3-4cfa-8707-e444a9276353",
+          "store_ms": 43.912
+        },
+        "recall": {
+          "latency_ms": 24.827,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm actually thinking of using the Air Fryer I got yesterday to make some crispy sweet potato fries to go with the meals. Do you have any tips on how to get the"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What new kitchen gadget did I invest in before getting the Air Fryer?",
+        "answer": "Instant Pot"
+      },
+      {
+        "id": "89941a94",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "b1e9c2be-e788-48b0-9722-35a9214eef17",
+          "superseded_memory_id": null,
+          "store_ms": 49.508
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e32e21e5-3de2-42c8-bc33-dfefae879752",
+          "superseded_memory_id": "b1e9c2be-e788-48b0-9722-35a9214eef17",
+          "store_ms": 87.713
+        },
+        "recall": {
+          "latency_ms": 28.422,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That sounds like an amazing itinerary! I'm really excited about the scenic routes and bike-friendly stops. Since I'll have four bikes with me, I'll make sure to"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Before I purchased the gravel bike, do I have other bikes in addition to my mountain bike and my commuter bike?",
+        "answer": "Yes. (You have a road bike too.)"
+      },
+      {
+        "id": "07741c45",
+        "category": "knowledge-update",
+        "expected": "replace",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "bcedcc0e-eba5-4fac-a859-86cd21213f52",
+          "superseded_memory_id": null,
+          "store_ms": 50.525
+        },
+        "store_second": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "f2efd3b2-f934-4433-b059-7dc08684f627",
+          "superseded_memory_id": "bcedcc0e-eba5-4fac-a859-86cd21213f52",
+          "store_ms": 62.061
+        },
+        "recall": {
+          "latency_ms": 18.524,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm thinking of buying a new pair of sandals with better quality straps. Can you recommend some good brands or stores that offer durable sandals? By the way, I "
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Where do I currently keep my old sneakers?",
+        "answer": "in a shoe rack in my closet"
+      },
+      {
+        "id": "95bcc1c8",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "20ecd7ae-2615-4e7a-a2c7-43dbdc901d7c",
+          "superseded_memory_id": null,
+          "store_ms": 69.783
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "20ecd7ae-2615-4e7a-a2c7-43dbdc901d7c",
+          "superseded_memory_id": null,
+          "store_ms": 0.414
+        },
+        "recall": {
+          "latency_ms": 23.037,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking for some comedy writing tips. I've been taking a stand-up comedy class and I'm trying to come up with some new material. Do you have any advice on h"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How many amateur comedians did I watch perform at the open mic night?",
+        "answer": "10"
+      },
+      {
+        "id": "18dcd5a5",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "71988fd6-fd78-4d8a-93bb-26ce8ff8b32e",
+          "superseded_memory_id": null,
+          "store_ms": 72.552
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "71988fd6-fd78-4d8a-93bb-26ce8ff8b32e",
+          "superseded_memory_id": null,
+          "store_ms": 0.502
+        },
+        "recall": {
+          "latency_ms": 38.181,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "create a D&D one shot for level 8 PCs. Include stat blocks for the enemies and loot if they succeed. the final battle should include a suprise twist. also, ther"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I'm going back to our previous chat about the Lost Temple of the Djinn one-shot. Can you remind me how many mummies the party will face in the temple?",
+        "answer": "4"
+      },
+      {
+        "id": "e9327a54",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "6e3620cd-a109-45e0-b67b-c8d3df063b06",
+          "superseded_memory_id": null,
+          "store_ms": 23.018
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "6e3620cd-a109-45e0-b67b-c8d3df063b06",
+          "superseded_memory_id": null,
+          "store_ms": 0.202
+        },
+        "recall": {
+          "latency_ms": 38.722,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "Please suggest some family-friendly activities to do in Orlando."
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I'm planning to revisit Orlando. I was wondering if you could remind me of that unique dessert shop with the giant milkshakes we talked about last time?",
+        "answer": "The Sugar Factory at Icon Park."
+      },
+      {
+        "id": "577d4d32",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "fa646180-4131-43a8-8865-507baf40fd1f",
+          "superseded_memory_id": null,
+          "store_ms": 77.766
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "fa646180-4131-43a8-8865-507baf40fd1f",
+          "superseded_memory_id": null,
+          "store_ms": 0.556
+        },
+        "recall": {
+          "latency_ms": 23.089,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I've heard that this book is a great choice for a evening read, something to unwind with after a long day. Speaking of unwinding, I've been trying to establish "
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What time do I stop checking work emails and messages?",
+        "answer": "7 pm"
+      },
+      {
+        "id": "352ab8bd",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a550c50c-7757-4c6a-a560-b20af23ab1b7",
+          "superseded_memory_id": null,
+          "store_ms": 153.415
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "a550c50c-7757-4c6a-a560-b20af23ab1b7",
+          "superseded_memory_id": null,
+          "store_ms": 0.736
+        },
+        "recall": {
+          "latency_ms": 53.013,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "Based on all sections I've provided already (Abstract, Introduction, Methods, Experimental Results, Discussion and Conclusions), write an academic review of the"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Can you remind me what was the average improvement in framerate when using the Hardware-Aware Modular Training (HAMT) agent in the 'To Adapt or Not to Adapt? Real-Time Adaptation f",
+        "answer": "The average improvement in framerate was approximately 20% when using the Hardware-Aware Modular Training (HAMT) agent."
+      },
+      {
+        "id": "e3fc4d6e",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "3342c963-9c24-48c1-b9f6-22b4115af208",
+          "superseded_memory_id": null,
+          "store_ms": 1722.37
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "3342c963-9c24-48c1-b9f6-22b4115af208",
+          "superseded_memory_id": null,
+          "store_ms": 3.359
+        },
+        "recall": {
+          "latency_ms": 63.735,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "predict the entities of this article one sentence by a time: For First Time, Researchers Produce More Energy from Fusion Than Was Used to Drive It, Promising Fu"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "I wanted to follow up on our previous conversation about the fusion breakthrough at Lawrence Livermore National Laboratory. Can you remind me who is the President's Chief Advisor f",
+        "answer": "Dr. Arati Prabhakar"
+      },
+      {
+        "id": "6222b6eb",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d86e3041-e16c-47b2-aff9-4cd03ca98144",
+          "superseded_memory_id": null,
+          "store_ms": 14.174
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "d86e3041-e16c-47b2-aff9-4cd03ca98144",
+          "superseded_memory_id": null,
+          "store_ms": 0.148
+        },
+        "recall": {
+          "latency_ms": 61.22,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "How are you"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I was going through our previous conversation about atmospheric correction methods, and I wanted to confirm - you mentioned that 6S, MAJA, and Sen2Cor are all algorithms for atmosp",
+        "answer": "The 6S algorithm is implemented in the SIAC_GEE tool."
+      },
+      {
+        "id": "8cf51dda",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a458ac11-fcc5-45dd-a505-1232ab40fd96",
+          "superseded_memory_id": null,
+          "store_ms": 24.276
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "a458ac11-fcc5-45dd-a505-1232ab40fd96",
+          "superseded_memory_id": null,
+          "store_ms": 0.205
+        },
+        "recall": {
+          "latency_ms": 41.277,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "write a grants aim page on molecular subtypes and endometrial cancer"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I'm going back to our previous conversation about the grant aim page on molecular subtypes and endometrial cancer. Can you remind me what were the three objectives we outlined for ",
+        "answer": "The three objectives were: 1) to identify molecular subtypes of endometrial cancer, 2) to investigate their clinical and biological significance, and 3) to develop biomarkers for e"
+      },
+      {
+        "id": "bc8a6e93_abs",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "b5e92dd4-d56e-498a-9c9d-792e4f997325",
+          "superseded_memory_id": null,
+          "store_ms": 42.673
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "b5e92dd4-d56e-498a-9c9d-792e4f997325",
+          "superseded_memory_id": null,
+          "store_ms": 0.321
+        },
+        "recall": {
+          "latency_ms": 19.965,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm thinking of making some lemon-based desserts for an upcoming dinner party. Do you have any recommendations for a good lemon curd recipe or any tips on using"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "What did I bake for my uncle's birthday party?",
+        "answer": "You did not mention this information. You mentioned baking for your niece's birthday party but not your uncle's"
+      },
+      {
+        "id": "dc439ea3",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2d48fd97-3485-4d75-8535-3fb139205c9f",
+          "superseded_memory_id": null,
+          "store_ms": 30.506
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "2d48fd97-3485-4d75-8535-3fb139205c9f",
+          "superseded_memory_id": null,
+          "store_ms": 0.256
+        },
+        "recall": {
+          "latency_ms": 39.119,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'll definitely look into those powwows and try to attend one soon. Do you have any tips for what to wear or bring to a powwow?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I was looking back at our previous conversation about Native American powwows and I was wondering, which traditional game did you say was often performed by skilled dancers at poww",
+        "answer": "Hoop Dance"
+      },
+      {
+        "id": "b86304ba",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "d3956b6f-fb49-4ef1-ba81-746ce360c344",
+          "superseded_memory_id": null,
+          "store_ms": 33.43
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "d3956b6f-fb49-4ef1-ba81-746ce360c344",
+          "superseded_memory_id": null,
+          "store_ms": 0.289
+        },
+        "recall": {
+          "latency_ms": 24.36,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That's really helpful. I was thinking about my flea market find, and I realized that it's actually worth triple what I paid for it, which is amazing!"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How much is the painting of a sunset worth in terms of the amount I paid for it?",
+        "answer": "The painting is worth triple what I paid for it."
+      },
+      {
+        "id": "36580ce8",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "11978a67-f342-45af-a491-407b104377c5",
+          "superseded_memory_id": null,
+          "store_ms": 49.465
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "11978a67-f342-45af-a491-407b104377c5",
+          "superseded_memory_id": null,
+          "store_ms": 0.352
+        },
+        "recall": {
+          "latency_ms": 22.134,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I actually recently had a bad case of bronchitis that I initially thought was just a cold, but it turned out to be a lot more serious. Anyway, back to my questi"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What health issue did I initially think was just a cold?",
+        "answer": "bronchitis"
+      },
+      {
+        "id": "3b6f954b",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "16b83536-b92e-4818-8d41-b8ad89ff377a",
+          "superseded_memory_id": null,
+          "store_ms": 77.319
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "16b83536-b92e-4818-8d41-b8ad89ff377a",
+          "superseded_memory_id": null,
+          "store_ms": 0.534
+        },
+        "recall": {
+          "latency_ms": 21.212,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "That sounds amazing! I've been to the Great Ocean Road before, and it's definitely a must-see in Australia. I actually went there with some friends during my st"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Where did I attend for my study abroad program?",
+        "answer": "University of Melbourne in Australia"
+      },
+      {
+        "id": "fea54f57",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "339e914d-d537-419d-ac31-5ea795c70bc5",
+          "superseded_memory_id": null,
+          "store_ms": 44.181
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "339e914d-d537-419d-ac31-5ea795c70bc5",
+          "superseded_memory_id": null,
+          "store_ms": 0.295
+        },
+        "recall": {
+          "latency_ms": 41.765,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "Which song on the Fifth Album do you think best exemplifies the band's growth and development as artists, and how does it compare to their earlier work in terms"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I was thinking about our previous conversation about the Fifth Album, and I was wondering if you could remind me what song you said best exemplified the band's growth and developme",
+        "answer": "Evolution"
+      },
+      {
+        "id": "dccbc061",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "7b014a2a-e471-4522-8b03-481fff0555ae",
+          "superseded_memory_id": null,
+          "store_ms": 70.053
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "7b014a2a-e471-4522-8b03-481fff0555ae",
+          "superseded_memory_id": null,
+          "store_ms": 0.446
+        },
+        "recall": {
+          "latency_ms": 17.953,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm trying to find some books on synchronicity and its connection to spirituality. Can you recommend some titles or authors? By the way, I've been reading a lot"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "What was my previous stance on spirituality?",
+        "answer": "A staunch atheist"
+      },
+      {
+        "id": "65240037",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "a92d326c-5a43-4d24-9ed9-b10d3c2e075e",
+          "superseded_memory_id": null,
+          "store_ms": 28.204
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "a92d326c-5a43-4d24-9ed9-b10d3c2e075e",
+          "superseded_memory_id": null,
+          "store_ms": 0.275
+        },
+        "recall": {
+          "latency_ms": 33.128,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "How can tea tree oil help to treat acne or other skin conditions, and what is the proper application method?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I remember you told me to dilute tea tree oil with a carrier oil before applying it to my skin. Can you remind me what the recommended ratio is?",
+        "answer": "The recommended ratio is 1:10, meaning one part tea tree oil to ten parts carrier oil."
+      },
+      {
+        "id": "4c36ccef",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "c6e63a07-891b-4799-979a-15a63fdaa5eb",
+          "superseded_memory_id": null,
+          "store_ms": 18.949
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "c6e63a07-891b-4799-979a-15a63fdaa5eb",
+          "superseded_memory_id": null,
+          "store_ms": 0.225
+        },
+        "recall": {
+          "latency_ms": 26.456,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "Can you recommend some authentic Italian restaurants in Rome?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "Can you remind me of the name of the romantic Italian restaurant in Rome you recommended for dinner?",
+        "answer": "Roscioli"
+      },
+      {
+        "id": "19b5f2b3_abs",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "641851ea-dd33-4b7e-8d5a-77cc779dfa08",
+          "superseded_memory_id": null,
+          "store_ms": 30.912
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "641851ea-dd33-4b7e-8d5a-77cc779dfa08",
+          "superseded_memory_id": null,
+          "store_ms": 0.256
+        },
+        "recall": {
+          "latency_ms": 17.21,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm planning a trip to Asia and I'm considering visiting Japan. Can you recommend some must-see attractions in Kyoto?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "How long was I in Korea for?",
+        "answer": "You did not mention this information. You mentioned staying in Japan, but not in Korea."
+      },
+      {
+        "id": "29f2956b",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "2c548b7d-ce97-4c6f-b8f6-aad1d8bb4815",
+          "superseded_memory_id": null,
+          "store_ms": 48.688
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "2c548b7d-ce97-4c6f-b8f6-aad1d8bb4815",
+          "superseded_memory_id": null,
+          "store_ms": 0.358
+        },
+        "recall": {
+          "latency_ms": 20.741,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": true,
+          "gold_rank": 1,
+          "old_outranks_new": false,
+          "e2e_ok": true,
+          "preview": [
+            "I'm looking to improve my guitar playing and was wondering if you could recommend some online resources for learning more about music theory and fingerpicking t"
+          ]
+        },
+        "e2e_ok": true,
+        "question": "How much time do I dedicate to practicing guitar every day?",
+        "answer": "30 minutes"
+      },
+      {
+        "id": "1568498a",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "9b8ac5c4-1ba4-4993-84d8-ad2e9ef0950e",
+          "superseded_memory_id": null,
+          "store_ms": 134.275
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "9b8ac5c4-1ba4-4993-84d8-ad2e9ef0950e",
+          "superseded_memory_id": null,
+          "store_ms": 0.412
+        },
+        "recall": {
+          "latency_ms": 33.728,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "1. e4 c5 2. Nf3 Nf6 3. d4 cxd4 4. Nxd4 Nxe4 5. Bd3 d5 6. O-O e5 7. Nc3 Nxc3 8. bxc3 exd4 9. cxd4 Bb4 10. Rb1 a5 11. Re1+ Bxe1 12. Qxe1+ Qe7 13. Ba3 Qxe1+ 14. Rx"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I'm looking back at our previous chess game and I was wondering, what was the move you made after 27. Kg2 Bd5+?",
+        "answer": "28. Kg3"
+      },
+      {
+        "id": "e8a79c70",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "c12ff3cc-b86c-4e34-bd30-145cba8de5f2",
+          "superseded_memory_id": null,
+          "store_ms": 23.305
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "c12ff3cc-b86c-4e34-bd30-145cba8de5f2",
+          "superseded_memory_id": null,
+          "store_ms": 0.204
+        },
+        "recall": {
+          "latency_ms": 33.685,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "What are the essential ingredients and steps to make a classic French omelette?"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "I was going through our previous conversation about making a classic French omelette, and I wanted to confirm - how many eggs did you say we need for the recipe?",
+        "answer": "2-3 eggs"
+      },
+      {
+        "id": "58ef2f1c",
+        "category": "no_conflict_repeat",
+        "expected": "no_conflict",
+        "store_first": {
+          "created": true,
+          "reason": "评分达阈值",
+          "memory_id": "e7504708-4e7a-4d99-96b5-0f244a820c48",
+          "superseded_memory_id": null,
+          "store_ms": 70.399
+        },
+        "store_second": {
+          "created": false,
+          "reason": "unchanged_knowledge",
+          "memory_id": "e7504708-4e7a-4d99-96b5-0f244a820c48",
+          "superseded_memory_id": null,
+          "store_ms": 0.434
+        },
+        "recall": {
+          "latency_ms": 24.139,
+          "strategy": "query_memory:semantic",
+          "n_items": 1,
+          "gold_in_top5": false,
+          "gold_rank": null,
+          "old_outranks_new": false,
+          "e2e_ok": false,
+          "preview": [
+            "I'm really looking forward to the silent auction and raffles at \"Strut Your Mutt\". I've had a great experience with similar events in the past, like the \"Love i"
+          ]
+        },
+        "e2e_ok": false,
+        "question": "When did I volunteer at the local animal shelter's fundraising dinner?",
+        "answer": "February 14th"
+      }
+    ]
+  },
+  "target": 0.88
+}

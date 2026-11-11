@@ -1,0 +1,34 @@
+# -*- coding: utf-8 -*-
+# Kylin OS Agent Memory - Core dependencies
+# 依赖统一锁定为当前验证通过的精确版本，避免 >= 下限拉取非预期/被投毒版本（#11）。
+# 升级前请在隔离环境验证并通过全部测试后再更新此处；CI 建议额外生成 requirements.lock。
+# 本文件是麒麟真机和完整安装（含 BGE-M3）的锁定清单。
+# Windows 日常接线使用 requirements-windows.txt，不包含 sentence-transformers。
+
+pydantic==2.13.5
+pyyaml==6.0.3
+fastapi==0.141.1
+uvicorn==0.52.4
+langgraph==1.2.11       # single-agent workflow; Windows/Python 3.12 verified
+httpx==0.28.1
+python-multipart==0.0.32
+pypdf==6.18.1
+python-docx==1.2.0
+Pillow==12.3.0
+cryptography==50.0.1  # 敏感索引加密（AES-GCM）
+pymilvus==2.6.17   # Milvus 2.x client + Milvus Lite; use OS_AGENT_MILVUS_URI for project configuration
+openai==3.13.0           # SiliconFlow OpenAI-compatible client（preference extract）
+python-dotenv==1.2.3      # 从 .env 加载密钥等敏感配置，避免写死/误提交
+# Optional OSS integrations (install per adapter, see configs/adapters.yaml)
+# memoryos-pro          # MemoryOS: short/mid/long-term flow
+# mem0ai                # mem0: hybrid retrieval
+# cognee                # Cognee: knowledge graph + forget
+# langmem               # LangMem: background memory manager patterns
+# zep-cloud             # Zep Cloud SDK (if using managed ingestion examples)
+
+# Dev & test
+pytest==9.1.1
+pytest-asyncio==1.4.0
+
+# Local embedding (Windows dev) — efca9634 embedding_interface local backend
+sentence-transformers==6.0.1

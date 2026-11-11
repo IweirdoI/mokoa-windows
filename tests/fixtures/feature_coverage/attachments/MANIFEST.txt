@@ -1,0 +1,14 @@
+# Feature coverage demo attachments
+# dir: tests/fixtures/feature_coverage/attachments
+# oversized: data/demo_coverage/attachments/10_oversized_dummy.pdf
+01_xinghe_notes_manual.pdf	1679	bytes
+02_office_ops_guide.pdf	1533	bytes
+03_meeting_minutes.docx	1233	bytes
+04_xinghe_config_update.docx	1217	bytes
+05_terminal_error.png	25441	bytes
+06_settings_page.png	18861	bytes
+07_ocr_scan_page.png	21674	bytes
+08_empty.pdf	0	bytes
+09_unsupported.xyz	33	bytes
+10_oversized_dummy.README.txt	214	bytes
+10_oversized_dummy.pdf	8388672	bytes	(data/, gitignored)

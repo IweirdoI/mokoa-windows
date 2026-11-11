@@ -1,0 +1,366 @@
+{
+  "meta": {
+    "generated_at": "2026-09-14T01:57:11",
+    "seed": 42,
+    "n": 50,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "commit": "21967f0",
+    "query_strategy": "task_query_on_user_turns_v1",
+    "dialogbench_parse": "jsonl_skip_bad_lines",
+    "query_window": "complete_user_turns_within_indexed_1500_chars",
+    "metric_scope": "memory_id_self_retrieval_only; not BLEU, option accuracy or official task (7) score"
+  },
+  "dailydialog": {
+    "sampled_indices": [
+      106,
+      409,
+      434,
+      488,
+      520,
+      711,
+      1424,
+      1519,
+      1535,
+      1584,
+      1674,
+      1679,
+      1824,
+      2045,
+      2286,
+      2547,
+      2615,
+      3257,
+      3527,
+      3582,
+      3611,
+      3657,
+      3811,
+      4012,
+      4333,
+      4506,
+      4552,
+      4557,
+      5514,
+      5574,
+      5635,
+      5881,
+      6224,
+      6873,
+      6912,
+      6924,
+      7359,
+      7527,
+      8279,
+      8785,
+      8928,
+      8935,
+      9195,
+      9654,
+      9674,
+      9863,
+      9891,
+      10476,
+      10647,
+      11087
+    ],
+    "classify": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 47,
+        "preference": 3
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 47,
+        "expressed_preference": 3
+      },
+      "knowledge_rate": 0.94,
+      "preference_rate": 0.06
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 50,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 49,
+        "preference": 1
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.5381,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5095,
+          "reasons": [],
+          "preview": "So the company decided to cancel your trip to Hong Kong ?\nMaybe it's a good things . If you don't have to go to Hong Kon"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.6891,
+          "reasons": [],
+          "preview": "In my wedding ceremony , where do my parents sit in the church ?\nDo friends of the bride always sit on one side of the c"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5078,
+          "reasons": [],
+          "preview": "Please do excuse me for a moment . I've got diarrhea .\nIt may have something to do with the food I had last night\nI will"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.513,
+          "reasons": [],
+          "preview": "David , why don't you clean your room ?\nOh , cheer up ! A girlfriend is not everything .\nThen forgive her mistake ."
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.4592,
+          "reasons": [],
+          "preview": "I had a wonderful evening .\nI will ."
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 86.111,
+      "query_avg_ms": 37.591,
+      "query_p95_ms": 66.607,
+      "latency_passed": true
+    },
+    "last_user_control": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 0,
+      "n_user_turns_outside_window": 0,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.88,
+      "ingest_avg_ms": 85.628,
+      "query_avg_ms": 23.59,
+      "query_p95_ms": 37.818,
+      "latency_passed": true
+    }
+  },
+  "dialogbench": {
+    "parse_diagnostics": {
+      "Commonsense_aware_response_generation.json": {
+        "line_number": 765,
+        "bad_json_lines": 1,
+        "object_lines": 764
+      },
+      "Conversational_QA.json": {
+        "line_number": 894,
+        "object_lines": 894
+      },
+      "Dialogue_NLI.json": {
+        "line_number": 836,
+        "object_lines": 836
+      },
+      "Dialogue_Summarization.json": {
+        "line_number": 725,
+        "object_lines": 725
+      },
+      "Emotion_Classification.json": {
+        "line_number": 750,
+        "object_lines": 750
+      },
+      "Knowledge-grounded_Response_Generation.json": {
+        "line_number": 726,
+        "object_lines": 726
+      },
+      "Multi-trun_Response_Generation.json": {
+        "line_number": 901,
+        "object_lines": 901
+      },
+      "Offensive_Detection.json": {
+        "line_number": 880,
+        "object_lines": 880
+      },
+      "Persona-grounded_Response_Generation.json": {
+        "line_number": 853,
+        "object_lines": 853
+      },
+      "Question_Generation.json": {
+        "line_number": 646,
+        "object_lines": 646
+      },
+      "Relation_Question.json": {
+        "line_number": 345,
+        "object_lines": 345
+      },
+      "Slot_Filling.json": {
+        "line_number": 870,
+        "object_lines": 870
+      }
+    },
+    "sampled_indices": [
+      525,
+      750,
+      916,
+      1084,
+      1139,
+      1169,
+      1291,
+      1307,
+      1654,
+      2287,
+      2340,
+      2664,
+      2677,
+      2803,
+      3150,
+      3432,
+      3456,
+      3483,
+      3598,
+      3733,
+      3752,
+      3814,
+      4010,
+      4040,
+      4339,
+      4374,
+      4386,
+      4422,
+      4554,
+      4741,
+      4803,
+      5155,
+      5168,
+      5313,
+      5820,
+      5925,
+      5977,
+      6065,
+      6201,
+      6216,
+      6227,
+      6482,
+      6572,
+      7428,
+      7517,
+      7573,
+      8179,
+      8751,
+      9044,
+      9125
+    ],
+    "classify_dialogue": {
+      "n": 50,
+      "empty_content": 0,
+      "source": "conversation",
+      "type_distribution": {
+        "knowledge": 48,
+        "preference": 2
+      },
+      "reason_distribution": {
+        "no_preference_evidence": 48,
+        "expressed_preference": 2
+      },
+      "knowledge_rate": 0.96,
+      "preference_rate": 0.04
+    },
+    "orchestrator": {
+      "n": 50,
+      "accepted": 50,
+      "accept_rate": 1.0,
+      "memory_type_distribution": {
+        "knowledge": 50
+      },
+      "reject_reasons": {},
+      "quality_avg": 0.5559,
+      "samples": [
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5135,
+          "reasons": [],
+          "preview": "Surprising! I thought you'd say we'd start working in hell.\nSo, what's the plan for this week? More 'inspiring' meetings"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5125,
+          "reasons": [],
+          "preview": "Hey there, I just moved to the neighborhood and was hoping if you could recommend any good parks around.\nSounds good! Do"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5141,
+          "reasons": [],
+          "preview": "Did you know that the government is planning to increase taxes on luxurious goods?\nSome critics do argue that luxury tax"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5122,
+          "reasons": [],
+          "preview": "I can't believe you don't know the difference between prokaryotic and eukaryotic cells!\nUgh, of course there are. Eukary"
+        },
+        {
+          "accepted": true,
+          "memory_type": "knowledge",
+          "quality_score": 0.5108,
+          "reasons": [],
+          "preview": "Oh wow, did you just catch that basketball game?\nI'll be sure to watch next time, just so I can keep up with such a thri"
+        }
+      ]
+    },
+    "retrieval": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 23,
+      "n_user_turns_outside_window": 41,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 1.0,
+      "ingest_avg_ms": 269.329,
+      "query_avg_ms": 48.41,
+      "query_p95_ms": 65.491,
+      "latency_passed": true
+    },
+    "last_user_control": {
+      "n_indexed": 50,
+      "n_queries": 50,
+      "n_input": 50,
+      "n_index_rejected": 0,
+      "n_query_skipped": 0,
+      "n_empty_queries": 0,
+      "n_content_truncated": 23,
+      "n_user_turns_outside_window": 41,
+      "metric": "exact_memory_id_self_retrieval",
+      "scope": "create_memory/query_memory component; not Orchestrator.recall or semantic QA accuracy",
+      "hit_at_5": 0.96,
+      "ingest_avg_ms": 267.821,
+      "query_avg_ms": 26.254,
+      "query_p95_ms": 33.672,
+      "latency_passed": true
+    }
+  }
+}

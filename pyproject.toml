@@ -1,0 +1,6 @@
+# 工具配置。安装依赖仍走 requirements.txt（麒麟 / 完整环境）
+# 或 requirements-windows.txt（Windows 日常，不含 BGE）。
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

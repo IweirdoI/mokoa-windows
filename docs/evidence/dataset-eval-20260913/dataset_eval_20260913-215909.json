@@ -1,0 +1,501 @@
+{
+  "meta": {
+    "project": "麒忆智脑 / MOKOA",
+    "requirement": "XA-202612 (3) 知识检索 / (7) 量化评测",
+    "generated_at": "2026-09-13T21:56:48",
+    "seed": 42,
+    "embedding_backend": "kylin",
+    "memory_backend": "memory",
+    "reproducibility": "所有样本经 random.Random(seed) 无放回抽样, 选中索引记录在 sampled_indices"
+  },
+  "retrieval": {
+    "name": "知识检索召回率 (MS MARCO v1.1 validation, kylin)",
+    "method": "MOKOA create_memory/query_memory + embedding=kylin + 进程内余弦检索; 抽样 query 自带 is_selected 正例",
+    "n_queries_sampled": 50,
+    "n_queries_evaluated": 48,
+    "corpus_size": 1200,
+    "corpus_embed_seconds": 95.37,
+    "recall_at_5": 0.8646,
+    "mrr_at_10": 0.6173,
+    "ndcg_at_10": 0.7065,
+    "hit_at_1": 0.4583,
+    "latency_avg_ms": 67.742,
+    "latency_p50_ms": 66.005,
+    "latency_p95_ms": 75.639,
+    "latency_budget_ms": 500,
+    "latency_passed": true,
+    "sampled_query_indices": [
+      106,
+      409,
+      434,
+      488,
+      520,
+      711,
+      1291,
+      1424,
+      1519,
+      1535,
+      1584,
+      1674,
+      1679,
+      1824,
+      2045,
+      2286,
+      2547,
+      2615,
+      3257,
+      3527,
+      3582,
+      3611,
+      3657,
+      3811,
+      4012,
+      4333,
+      4506,
+      4552,
+      4557,
+      5514,
+      5574,
+      5635,
+      5881,
+      6201,
+      6224,
+      6873,
+      6912,
+      6924,
+      7359,
+      7527,
+      8279,
+      8785,
+      8928,
+      8935,
+      9044,
+      9195,
+      9654,
+      9674,
+      9863,
+      9891
+    ]
+  },
+  "ingestion": {
+    "PersonaChat": {
+      "name": "入库功能测试 (PersonaChat)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 230.836,
+      "classifier_type_distribution": {
+        "preference": 19,
+        "knowledge": 1
+      },
+      "classifier_source_type": "conversation",
+      "classifier_conversation_control_distribution": {
+        "preference": 19,
+        "knowledge": 1
+      },
+      "classifier_reason_distribution": {
+        "expressed_preference": 19,
+        "no_preference_evidence": 1
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        488,
+        584,
+        940,
+        1018,
+        1165,
+        1220,
+        1359,
+        1841,
+        2176,
+        2230,
+        2364,
+        2491,
+        2519,
+        3297,
+        3482,
+        3597,
+        3839,
+        4461,
+        4662,
+        4874
+      ]
+    },
+    "DailyDialog": {
+      "name": "入库功能测试 (DailyDialog)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 97.762,
+      "classifier_type_distribution": {
+        "knowledge": 17,
+        "preference": 3
+      },
+      "classifier_source_type": "conversation",
+      "classifier_conversation_control_distribution": {
+        "knowledge": 17,
+        "preference": 3
+      },
+      "classifier_reason_distribution": {
+        "no_preference_evidence": 17,
+        "expressed_preference": 3
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        339,
+        423,
+        653,
+        1317,
+        1496,
+        3750,
+        4102,
+        4415,
+        5280,
+        7078,
+        7172,
+        8090,
+        8199,
+        8847,
+        9424,
+        9619,
+        9798,
+        9891,
+        11014,
+        11047
+      ]
+    },
+    "MultiWOZ": {
+      "name": "入库功能测试 (MultiWOZ)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 15.378,
+      "classifier_type_distribution": {
+        "knowledge": 20
+      },
+      "classifier_source_type": "conversation",
+      "classifier_conversation_control_distribution": {
+        "knowledge": 20
+      },
+      "classifier_reason_distribution": {
+        "no_preference_evidence": 20
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        659,
+        1494,
+        1713,
+        2634,
+        2870,
+        2973,
+        4557,
+        4722,
+        5260,
+        5403,
+        5460,
+        5700,
+        6690,
+        6744,
+        7141,
+        7245,
+        7700,
+        7708,
+        8056,
+        8117
+      ]
+    },
+    "DIALOGBENCH": {
+      "name": "入库功能测试 (DIALOGBENCH)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 319.578,
+      "classifier_type_distribution": {
+        "knowledge": 17,
+        "preference": 3
+      },
+      "classifier_source_type": "conversation",
+      "classifier_conversation_control_distribution": {
+        "knowledge": 17,
+        "preference": 3
+      },
+      "classifier_reason_distribution": {
+        "no_preference_evidence": 17,
+        "expressed_preference": 3
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        18,
+        601,
+        888,
+        1442,
+        1899,
+        3073,
+        4135,
+        5153,
+        5296,
+        5927,
+        6561,
+        6622,
+        6770,
+        7451,
+        7569,
+        8167,
+        8431,
+        8494,
+        8889,
+        9012
+      ]
+    },
+    "ToolBench": {
+      "name": "入库功能测试 (ToolBench)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 89.106,
+      "classifier_type_distribution": {
+        "knowledge": 20
+      },
+      "classifier_source_type": "tool_result",
+      "classifier_conversation_control_distribution": {
+        "knowledge": 20
+      },
+      "classifier_reason_distribution": {
+        "knowledge_source": 20
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        17397,
+        21811,
+        28288,
+        64900,
+        54149,
+        52175,
+        49267,
+        78945,
+        80406,
+        94213,
+        92949,
+        21033,
+        5783,
+        104804,
+        40455,
+        72900,
+        109471,
+        59436,
+        26729,
+        80339
+      ]
+    },
+    "BPMN": {
+      "name": "入库功能测试 (BPMN)",
+      "n_samples": 20,
+      "n_created": 20,
+      "n_failed": 0,
+      "success_rate": 1.0,
+      "avg_latency_ms": 501.226,
+      "classifier_type_distribution": {
+        "knowledge": 20
+      },
+      "classifier_source_type": "document",
+      "classifier_conversation_control_distribution": {
+        "knowledge": 20
+      },
+      "classifier_reason_distribution": {
+        "knowledge_source": 20
+      },
+      "failure_samples": [],
+      "sampled_indices": [
+        37,
+        62,
+        234,
+        386,
+        436,
+        541,
+        690,
+        698,
+        764,
+        919,
+        922,
+        994,
+        1008,
+        1249,
+        1270,
+        1285,
+        1287,
+        1305,
+        1320,
+        1367
+      ]
+    }
+  },
+  "orchestrator_smoke": {
+    "name": "编排器端到端冒烟 (process_input)",
+    "status": "ran",
+    "n": 5,
+    "accepted": 1,
+    "accept_rate": 0.2,
+    "memory_type_distribution": {
+      "preference": 1
+    },
+    "samples": [
+      {
+        "accepted": false,
+        "reason": [
+          "综合质量分 0.4750 低于阈值 0.5000"
+        ]
+      },
+      {
+        "accepted": false,
+        "reason": [
+          "综合质量分 0.4750 低于阈值 0.5000"
+        ]
+      },
+      {
+        "accepted": false,
+        "reason": [
+          "综合质量分 0.4750 低于阈值 0.5000"
+        ]
+      }
+    ]
+  },
+  "sampled_indices": {
+    "PersonaChat": [
+      488,
+      584,
+      940,
+      1018,
+      1165,
+      1220,
+      1359,
+      1841,
+      2176,
+      2230,
+      2364,
+      2491,
+      2519,
+      3297,
+      3482,
+      3597,
+      3839,
+      4461,
+      4662,
+      4874
+    ],
+    "DailyDialog": [
+      339,
+      423,
+      653,
+      1317,
+      1496,
+      3750,
+      4102,
+      4415,
+      5280,
+      7078,
+      7172,
+      8090,
+      8199,
+      8847,
+      9424,
+      9619,
+      9798,
+      9891,
+      11014,
+      11047
+    ],
+    "MultiWOZ": [
+      659,
+      1494,
+      1713,
+      2634,
+      2870,
+      2973,
+      4557,
+      4722,
+      5260,
+      5403,
+      5460,
+      5700,
+      6690,
+      6744,
+      7141,
+      7245,
+      7700,
+      7708,
+      8056,
+      8117
+    ],
+    "DIALOGBENCH": [
+      18,
+      601,
+      888,
+      1442,
+      1899,
+      3073,
+      4135,
+      5153,
+      5296,
+      5927,
+      6561,
+      6622,
+      6770,
+      7451,
+      7569,
+      8167,
+      8431,
+      8494,
+      8889,
+      9012
+    ],
+    "ToolBench": [
+      17397,
+      21811,
+      28288,
+      64900,
+      54149,
+      52175,
+      49267,
+      78945,
+      80406,
+      94213,
+      92949,
+      21033,
+      5783,
+      104804,
+      40455,
+      72900,
+      109471,
+      59436,
+      26729,
+      80339
+    ],
+    "BPMN": [
+      37,
+      62,
+      234,
+      386,
+      436,
+      541,
+      690,
+      698,
+      764,
+      919,
+      922,
+      994,
+      1008,
+      1249,
+      1270,
+      1285,
+      1287,
+      1305,
+      1320,
+      1367
+    ]
+  }
+}
